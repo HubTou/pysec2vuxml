@@ -1,18 +1,44 @@
-  <vuln vid="70d0d2ec-cb62-11ed-956f-7054d21a9e2a">
-    <topic>py39-rencode -- infinite loop that could lead to Denial of Service</topic>
+  <vuln vid="2991178f-cbe8-11ed-956f-7054d21a9e2a">
+    <topic>py39-Elixir -- weak use of cryptography</topic>
     <affects>
       <package>
-	<name>py39-rencode</name>
-	<range><le>1.0.6_1</le></range>
+    <name>py39-Elixir</name>
+    <range><le>0.8.0</le></range>
       </package>
     </affects>
     <description>
       <body xmlns="http://www.w3.org/1999/xhtml">
-	<p>NIST reports:</p>
-	<blockquote cite="https://nvd.nist.gov/vuln/detail/CVE-2021-40839">
-	  <p>The rencode package through 1.0.6 for Python allows an infinite loop in typecode decoding (such as via ;\x2f\x7f), enabling a remote attack that consumes CPU
+    <p>Red Hat Security Response Team reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2012-13">
+      <p>Elixir 0.8.0 uses Blowfish in CFB mode without constructing a unique initialization vector (IV), which makes it easier for context-dependent users to obtain sensitive information and decrypt the database.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2012-2146</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2012-13</url>
+    </references>
+    <dates>
+      <discovery>2012-08-26</discovery>
+      <entry>2023-03-26</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="70d0d2ec-cb62-11ed-956f-7054d21a9e2a">
+    <topic>py39-rencode -- infinite loop that could lead to Denial of Service</topic>
+    <affects>
+      <package>
+        <name>py39-rencode</name>
+        <range><le>1.0.6_1</le></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+        <p>NIST reports:</p>
+        <blockquote cite="https://nvd.nist.gov/vuln/detail/CVE-2021-40839">
+          <p>The rencode package through 1.0.6 for Python allows an infinite loop in typecode decoding (such as via ;\x2f\x7f), enabling a remote attack that consumes CPU
 and memory.</p>
-	</blockquote>
+        </blockquote>
       </body>
     </description>
     <references>
@@ -23,6 +49,6 @@ and memory.</p>
     <dates>
       <discovery>2021-09-09</discovery>
       <entry>2023-03-25</entry>
+      <modified>2023-03-26</modified>
     </dates>
   </vuln>
-
