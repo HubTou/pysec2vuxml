@@ -3,7 +3,7 @@
     <affects>
       <package>
 	<name>py39-rencode</name>
-	<range><lt>1.0.6_1</lt></range>
+	<range><le>1.0.6_1</le></range>
       </package>
     </affects>
     <description>
