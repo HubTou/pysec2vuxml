@@ -1,3 +1,49 @@
+  <vuln vid="c13a8c17-cbeb-11ed-956f-7054d21a9e2a">
+    <topic>py39-lmdb -- multiple vulnerabilities</topic>
+    <affects>
+      <package>
+    <name>py39-lmdb</name>
+    <range><lt>0.98</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>TeamSeri0us reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2019-236">
+      <p>An issue was discovered in py-lmdb 0.97. For certain values of md_flags, mdb_node_add does not properly set up a memcpy destination, leading to an invalid write operation. NOTE: this outcome occurs when accessing a data.mdb file supplied by an attacker.</p>
+    </blockquote>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2019-237">
+      <p>An issue was discovered in py-lmdb 0.97. For certain values of mp_flags, mdb_page_touch does not properly set up mc->mc_pg[mc->top], leading to an invalid write operation. NOTE: this outcome occurs when accessing a data.mdb file supplied by an attacker.</p>
+    </blockquote>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2019-238">
+      <p>An issue was discovered in py-lmdb 0.97. mdb_node_del does not validate a memmove in the case of an unexpected node->mn_hi, leading to an invalid write operation. NOTE: this outcome occurs when accessing a data.mdb file supplied by an attacker.</p>
+    </blockquote>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2019-239">
+      <p>An issue was discovered in py-lmdb 0.97. For certain values of mn_flags, mdb_cursor_set triggers a memcpy with an invalid write operation within mdb_xcursor_init1. NOTE: this outcome occurs when accessing a data.mdb file supplied by an attacker.</p>
+    </blockquote>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2019-240">
+      <p>An issue was discovered in py-lmdb 0.97. There is a divide-by-zero error in the function mdb_env_open2 if mdb_env_read_header obtains a zero value for a certain size field. NOTE: this outcome occurs when accessing a data.mdb file supplied by an attacker.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2019-16224</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2019-236</url>
+      <cvename>CVE-2019-16225</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2019-237</url>
+      <cvename>CVE-2019-16226</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2019-238</url>
+      <cvename>CVE-2019-16227</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2019-239</url>
+      <cvename>CVE-2019-16228</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2019-240</url>
+    </references>
+    <dates>
+      <discovery>2019-09-11</discovery>
+      <entry>2023-03-26</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="2991178f-cbe8-11ed-956f-7054d21a9e2a">
     <topic>py39-Elixir -- weak use of cryptography</topic>
     <affects>
