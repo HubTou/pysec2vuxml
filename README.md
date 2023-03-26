@@ -33,7 +33,7 @@ The file [vuxml_newentries.txt](https://github.com/HubTou/pysec2vuxml/blob/main/
 
 You can get a [quick introduction to the VuXML format](https://docs.freebsd.org/en/books/porters-handbook/security/#security-notify-vuxml-intro) in the [FreeBSD Porter's Handbook](https://docs.freebsd.org/en/books/porters-handbook/).
 
-The structure that needs to be filed for each of these 45 vulnerabilities is:
+The structure that needs to be filled for each of these 45 vulnerabilities is:
 ```xml
   <vuln vid="INSERT UUID HERE">
     <topic>INSERT PORT NAME HERE -- INSERT VULNERABILITY SUMMARY HERE</topic>
