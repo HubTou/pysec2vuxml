@@ -66,4 +66,4 @@ You can obtain a new UUID by running the [uuidgen](https://man.freebsd.org/cgi/m
 
 Or you can get full assistance for [making and validating new entries](https://docs.freebsd.org/en/books/porters-handbook/security/#security-notify-vuxml-testing) with the scripts included in the [vuxml](https://www.freshports.org/security/vuxml/) FreeBSD port.
 
-If you produce one or more of these new entries please clone this repository and [submit pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request), and/or directly send your entries to  the FreeBSD Ports Security Team at <ports-secteam@FreeBSD.org>.
+If you produce one or more of these new entries please clone this repository and [submit pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) to the [vuxml_newentries.txt](https://github.com/HubTou/pysec2vuxml/blob/main/vuxml_newentries.txt) file, and/or directly send your entries to  the FreeBSD Ports Security Team at <ports-secteam@FreeBSD.org>.
