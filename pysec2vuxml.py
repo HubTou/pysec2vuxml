@@ -28,7 +28,7 @@ def get_freebsd_ports_list():
     for line in lines:
         fields = line.split('|')
         if len(fields) != 13:
-            print(f"WARNING: line '{line}' from '{ports_list}' doesn't has 13 fields", file=sys.stderr)
+            print(f"WARNING: line '{line}' from '{ports_list}' doesn't have 13 fields", file=sys.stderr)
         else:
             # {"vname": versioned_name, "dir": port_directory}
             ports_list.append({"vname": fields[0], "dir": fields[1]})
