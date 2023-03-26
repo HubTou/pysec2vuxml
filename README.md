@@ -29,7 +29,7 @@ The file [results.txt](https://github.com/HubTou/pysec2vuxml/blob/main/results.t
 The file [vuxml_newentries.txt](https://github.com/HubTou/pysec2vuxml/blob/main/vuxml_newentries.txt) contains the beginning of VuXML new entries for the vulnerable ports identified.
 
 ## Helping the security team
-**I need help converting the above results in new port VuXML port entries!**
+**I need help converting the above results in new VuXML port entries!**
 
 You can get a [quick introduction to the VuXML format](https://docs.freebsd.org/en/books/porters-handbook/security/#security-notify-vuxml-intro) in the [FreeBSD Porter's Handbook](https://docs.freebsd.org/en/books/porters-handbook/).
 
