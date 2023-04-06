@@ -111,7 +111,7 @@ def enrich_ports_list(ports_list):
 
 ####################################################################################################
 def print_vulnerabilities(python_ports, vulnerable_ports):
-    """ Try """
+    """ Print vulnerabilities to stdout """
     # Loading the FreeBSD VuXML database
     vuxml_data = vuxml.load_vuxml()
 
