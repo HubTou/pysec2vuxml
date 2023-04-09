@@ -1,3 +1,29 @@
+  <vuln vid="e87a9326-dd35-49fc-b20b-f57cbebaae87">
+    <topic>py39-nicotine-plus -- Denial of service vulnerability</topic>
+    <affects>
+      <package>
+    <name>py39-nicotine-plus</name>
+    <range><lt>3.2.1</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>ztauras reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/GHSA-p4v2-r99v-wjc2">
+      <p>Denial of service (DoS) vulnerability in Nicotine+ starting with version 3.0.3 and prior to version 3.2.1 allows a user with a modified Soulseek client to crash Nicotine+ by sending a file download request with a file path containing a null character.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2021-45848</cvename>
+      <url>https://osv.dev/vulnerability/GHSA-p4v2-r99v-wjc2</url>
+    </references>
+    <dates>
+      <discovery>2022-03-16</discovery>
+      <entry>2023-04-09</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="93db4f92-9997-4f4f-8614-3963d9e2b0ec">
     <topic>py39-slixmpp -- incomplete SSL certificate validation</topic>
     <affects>
