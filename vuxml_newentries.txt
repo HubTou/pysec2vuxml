@@ -1,3 +1,31 @@
+  <vuln vid="da438408-d717-11ed-956f-7054d21a9e2a">
+    <topic>py39-tensorflow -- denial of service vulnerability</topic>
+    <affects>
+      <package>
+    <name>py39-tensorflow</name>
+    <range><lt>2.8.4</lt></range>
+    <range><ge>2.9.0</ge><lt>2.9.3</lt></range>
+    <range><ge>2.10.0</ge><lt>2.10.1</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>Pattarakrit Rattankul reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/GHSA-xf83-q765-xm6m">
+      <p>Another instance of CVE-2022-35991, where `TensorListScatter` and `TensorListScatterV2` crash via non scalar inputs in`element_shape`, was found in eager mode and fixed.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2022-35991</cvename>
+      <url>https://osv.dev/vulnerability/GHSA-xf83-q765-xm6m</url>
+    </references>
+    <dates>
+      <discovery>2022-11-21</discovery>
+      <entry>2023-04-09</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="ae132c6c-d716-11ed-956f-7054d21a9e2a">
     <topic>py39-tensorflow -- denial of service vulnerability</topic>
     <affects>
