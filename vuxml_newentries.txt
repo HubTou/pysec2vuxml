@@ -1,3 +1,34 @@
+  <vuln vid="f767d615-01db-47e9-b4ab-07bb8d3409fd">
+    <topic>py39-cinder -- insecure-credentials flaw</topic>
+    <affects>
+      <package>
+    <name>py39-cinder</name>
+    <range><lt>14.1.0</lt></range>
+    <range><ge>15.0.0</ge><lt>15.2.0</lt></range>
+    <range><ge>16.0.0</ge><lt>15.1.0</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>OpenStack project reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2020-228">
+      <p>An insecure-credentials flaw was found in all openstack-cinder versions before openstack-cinder 14.1.0, all openstack-cinder 15.x.x versions before openstack-cinder 15.2.0 and all openstack-cinder 16.x.x versions before openstack-cinder 16.1.0.</p>
+      <p>When using openstack-cinder with the Dell EMC ScaleIO or VxFlex OS backend storage driver, credentials for the entire backend are exposed in the ``connection_info`` element in all Block Storage v3 Attachments API calls containing that element.</p>
+      <p>This flaw enables an end-user to create a volume, make an API call to show the attachment detail information, and retrieve a username and password that may be used to connect to another user's volume.</p>
+      <p>Additionally, these credentials are valid for the ScaleIO or VxFlex OS Management API, should an attacker discover the Management API endpoint.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2020-10755</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2020-228</url>
+    </references>
+    <dates>
+      <discovery>2020-06-10</discovery>
+      <entry>2023-04-09</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="e5d117b3-2153-4129-81ed-42b0221afa78">
     <topic>py39-OWSLib -- arbitrary file read vulnerability</topic>
     <affects>
