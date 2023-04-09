@@ -1,3 +1,5 @@
+<!-- Vulnerabilities below reported at https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=270723 -->
+
   <vuln vid="f767d615-01db-47e9-b4ab-07bb8d3409fd">
     <topic>py39-cinder -- insecure-credentials flaw</topic>
     <affects>
