@@ -1,3 +1,29 @@
+  <vuln vid="b31f7029-817c-4c1f-b7d3-252de5283393">
+    <topic>py39-suds -- vulnerable to symlink attacks</topic>
+    <affects>
+      <package>
+    <name>py39-suds</name>
+    <range><le>1.1.2</le></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>SUSE reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2013-32">
+      <p>cache.py in Suds 0.4, when tempdir is set to None, allows local users to redirect SOAP queries and possibly have other unspecified impact via a symlink attack on a cache file with a predictable name in /tmp/suds/.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2013-2217</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2013-32</url>
+    </references>
+    <dates>
+      <discovery>2013-09-23</discovery>
+      <entry>2023-04-09</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="b692a49c-9ae7-4958-af21-cbf8f5b819ea">
     <topic>py39-impacket -- multiple path traversal vulnerabilities</topic>
     <affects>
