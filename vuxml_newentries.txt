@@ -1,3 +1,28 @@
+  <vuln vid="951b513a-9f42-436d-888d-2162615d0fe4">
+    <topic>py39-pymatgen -- regular expression denial of service</topic>
+    <affects>
+      <package>
+    <name>py39-pymatgen</name>
+    <range><le>2022.9.21</le></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <blockquote cite="https://osv.dev/vulnerability/GHSA-5jqp-885w-xj32">
+      <p>An exponential ReDoS (Regular Expression Denial of Service) can be triggered in the pymatgen PyPI package, when an attacker is able to supply arbitrary input to the GaussianInput.from_string method.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2022-42964</cvename>
+      <url>https://osv.dev/vulnerability/GHSA-5jqp-885w-xj32</url>
+    </references>
+    <dates>
+      <discovery>2022-11-10</discovery>
+      <entry>2023-04-09</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="e87a9326-dd35-49fc-b20b-f57cbebaae87">
     <topic>py39-nicotine-plus -- Denial of service vulnerability</topic>
     <affects>
