@@ -1,3 +1,30 @@
+  <vuln vid="845f8430-d0ee-4134-ae35-480a3e139b8a">
+    <topic>py39-joblib -- arbitrary code execution</topic>
+    <affects>
+      <package>
+    <name>py39-joblib</name>
+    <range><lt>1.2.0</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>jimlinntu reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2022-288">
+      <p>The package joblib from 0 and before 1.2.0 are vulnerable to Arbitrary Code Execution via the pre_dispatch flag in Parallel() class due to the eval() statement.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2022-21797</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2022-288</url>
+      <url>https://osv.dev/vulnerability/GHSA-6hrg-qmvc-2xh8</url>
+    </references>
+    <dates>
+      <discovery>2022-09-26</discovery>
+      <entry>2023-04-09</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="de970aef-d60e-466b-8e30-1ae945a047f1">
     <topic>py39-configobj -- vulnerable to Regular Expression Denial of Service</topic>
     <affects>
