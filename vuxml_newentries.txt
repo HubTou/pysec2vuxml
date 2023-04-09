@@ -1,3 +1,31 @@
+  <vuln vid="a0509648-65ce-4a1b-855e-520a75bd2549">
+    <topic>py39-cinder -- unauthorized data access</topic>
+    <affects>
+      <package>
+    <name>py39-cinder</name>
+    <range><lt>19.1.2</lt></range>
+    <range><ge>20.0.0</ge><lt>20.0.2</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>Utkarsh Gupta reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/GHSA-7h75-hwxx-qpgc">
+      <p>An issue was discovered in OpenStack Cinder before 19.1.2, 20.x before 20.0.2, and 21.0.0; Glance before 23.0.1, 24.x before 24.1.1, and 25.0.0; and Nova before 24.1.2, 25.x before 25.0.2, and 26.0.0.</p>
+      <p>By supplying a specially created VMDK flat image that references a specific backing file path, an authenticated user may convince systems to return a copy of that file's contents from the server, resulting in unauthorized access to potentially sensitive data.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2022-47951</cvename>
+      <url>https://osv.dev/vulnerability/GHSA-7h75-hwxx-qpgc</url>
+    </references>
+    <dates>
+      <discovery>2023-01-27</discovery>
+      <entry>2023-04-09</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="f4a94232-7864-4afb-bbf9-ff2dc8e288d1">
     <topic>py39-cinder -- data leak</topic>
     <affects>
