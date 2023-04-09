@@ -113,7 +113,7 @@
       <entry>2023-04-09</entry>
     </dates>
   </vuln>
-  
+
   <vuln vid="1b38aec4-4149-4c7d-851c-3c4de3a1fbd0">
     <topic>py39-setuptools -- denial of service vulnerability</topic>
     <affects>
@@ -335,7 +335,7 @@
       <entry>2023-04-09</entry>
     </dates>
   </vuln>
-  
+
   <vuln vid="8aa6340d-e7c6-41e0-b2a3-3c9e9930312a">
     <topic>py39-redis -- can send response data to the client of an unrelated request</topic>
     <affects>
@@ -393,7 +393,7 @@
       <entry>2023-04-09</entry>
     </dates>
   </vuln>
-  
+
   <vuln vid="d2293e22-4390-42c2-a323-34cca2066000">
     <topic>py39-sqlalchemy12 -- multiple SQL Injection vulnerabilities</topic>
     <affects>
@@ -461,7 +461,7 @@
       <entry>2023-04-09</entry>
     </dates>
    </vuln>
-  
+
   <vuln vid="e4181981-ccf1-11ed-956f-7054d21a9e2a">
     <topic>py39-sqlalchemy10 -- multiple SQL Injection vulnerabilities</topic>
     <affects>
