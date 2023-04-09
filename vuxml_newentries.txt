@@ -1,3 +1,34 @@
+  <vuln vid="17083017-d993-43eb-8aaf-7138f4486d1c">
+    <topic>py39-unicorn -- sandbox escape and arbitrary code execution vulnerability</topic>
+    <affects>
+      <package>
+    <name>py39-unicorn</name>
+    <range><lt>2.0.0rc1</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>jwang-a reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2021-868">
+      <p>An issue was discovered in split_region in uc.c in Unicorn Engine before 2.0.0-rc5.</p>
+      <p>It allows local attackers to escape the sandbox.</p>
+      <p>An attacker must first obtain the ability to execute crafted code in the target sandbox in order to exploit this vulnerability.</p>
+      <p>The specific flaw exists within the virtual memory manager.</p>
+      <p>The issue results from the faulty comparison of GVA and GPA while calling uc_mem_map_ptr to free part of a claimed memory block.</p>
+      <p>An attacker can leverage this vulnerability to escape the sandbox and execute arbitrary code on the host machine.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2021-44078</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2021-868</url>
+    </references>
+    <dates>
+      <discovery>2021-12-26</discovery>
+      <entry>2023-04-09</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="43e9ffd4-d6e0-11ed-956f-7054d21a9e2a">
     <topic>py39-pycares -- domain hijacking vulnerability</topic>
     <affects>
