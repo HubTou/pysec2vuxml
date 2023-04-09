@@ -1,3 +1,39 @@
+  <vuln vid="f4a94232-7864-4afb-bbf9-ff2dc8e288d1">
+    <topic>py39-cinder -- data leak</topic>
+    <affects>
+      <package>
+    <name>py39-cinder</name>
+    <range><le>12.0.9</le></range>
+    <range><ge>13.0.0</ge><le>13.0.9</le></range>
+    <range><ge>14.0.0</ge><le>14.3.1</le></range>
+    <range><ge>15.0.0</ge><le>15.6.0</le></range>
+    <range><ge>16.0.0</ge><le>16.4.2</le></range>
+    <range><ge>17.0.0</ge><le>17.4.0</le></range>
+    <range><ge>18.0.0</ge><le>18.2.1</le></range>
+    <range><ge>19.0.0</ge><le>19.2.0</le></range>
+    <range><ge>20.0.0</ge><le>20.1.0</le></range>
+    <range><ge>21.0.0</ge><le>21.1.0</le></range>
+    <range><ge>22.0.0</ge><le>22.0.0.0rc2</le></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>Duncan Thomas reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/GHSA-qhch-g8qr-p497">
+      <p>The (1) GlusterFS and (2) Linux Smbfs drivers in OpenStack Cinder before 2014.1.3 allows remote authenticated users to obtain file data from the Cinder-volume host by cloning and attaching a volume with a crafted qcow2 header.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2014-3641</cvename>
+      <url>https://osv.dev/vulnerability/GHSA-qhch-g8qr-p497</url>
+    </references>
+    <dates>
+      <discovery>2022-05-17</discovery>
+      <entry>2023-04-09</entry>
+    </dates>
+  </vuln>
+
 <!-- Vulnerabilities below reported at https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=270723 -->
 
   <vuln vid="f767d615-01db-47e9-b4ab-07bb8d3409fd">
