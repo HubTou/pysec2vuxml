@@ -1,3 +1,33 @@
+  <vuln vid="0a38a0d9-757f-4ac3-9561-b439e933dfa9">
+    <topic>py39-celery -- command injection vulnerability</topic>
+    <affects>
+      <package>
+    <name>py39-celery</name>
+    <range><lt>5.2.2</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>Snyk reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2021-858">
+      <p>This affects the package celery before 5.2.2.</p>
+      <p>It by default trusts the messages and metadata stored in backends (result stores).</p>
+      <p>When reading task metadata from the backend, the data is deserialized.</p>
+      <p>Given that an attacker can gain access to, or somehow manipulate the metadata within a celery backend, they could trigger a stored command injection vulnerability and potentially gain further access to the system.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2021-23727</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2021-858</url>
+      <url>https://osv.dev/vulnerability/GHSA-q4xr-rc97-m4xx</url>
+    </references>
+    <dates>
+      <discovery>2021-12-09</discovery>
+      <entry>2023-04-09</entry>
+    </dates>
+  </vuln>
+  
   <vuln vid="8aa6340d-e7c6-41e0-b2a3-3c9e9930312a">
     <topic>py39-redis -- can send response data to the client of an unrelated request</topic>
     <affects>
@@ -5,14 +35,14 @@
     <name>py39-redis</name>
     <range><ge>4.4.0</ge><lt>4.4.4</lt></range>
     <range><ge>4.5.0</ge><lt>4.5.4</lt></range>
- 	  </package>
+      </package>
     </affects>
     <description>
       <body xmlns="http://www.w3.org/1999/xhtml">
     <p>drago-balto reports:</p>
     <blockquote cite="https://osv.dev/vulnerability/GHSA-8fww-64cx-x8p5">
       <p>redis-py through 4.5.3 and 4.4.3 leaves a connection open after canceling an async Redis command at an inopportune time (in the case of a non-pipeline operation), and can send response data to the client of an unrelated request.</p>
-	  <p>NOTE: this issue exists because of an incomplete fix for CVE-2023-28858.</p>
+      <p>NOTE: this issue exists because of an incomplete fix for CVE-2023-28858.</p>
     </blockquote>
       </body>
     </description>
@@ -41,8 +71,8 @@
     <p>drago-balto reports:</p>
     <blockquote cite="https://osv.dev/vulnerability/GHSA-24wv-mv5m-xv4h">
       <p>redis-py before 4.5.3, as used in ChatGPT and other products, leaves a connection open after canceling an async Redis command at an inopportune time (in the case of a pipeline operation), and can send response data to the client of an unrelated request in an off-by-one manner.</p>
-	  <p>The fixed versions for this CVE Record are 4.3.6, 4.4.3, and 4.5.3, but [are believed to be incomplete](https://github.com/redis/redis-py/issues/2665).</p>
-	  <p>CVE-2023-28859 has been assigned the issues caused by the incomplete fixes.</p>
+      <p>The fixed versions for this CVE Record are 4.3.6, 4.4.3, and 4.5.3, but [are believed to be incomplete](https://github.com/redis/redis-py/issues/2665).</p>
+      <p>CVE-2023-28859 has been assigned the issues caused by the incomplete fixes.</p>
     </blockquote>
       </body>
     </description>
