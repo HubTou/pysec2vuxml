@@ -1,3 +1,31 @@
+  <vuln vid="d82bcd2b-5cd6-421c-8179-b3ff0231029f">
+    <topic>py39-tflite -- denial of service vulnerability</topic>
+    <affects>
+      <package>
+    <name>py39-tflite</name>
+    <range><lt>2.3.4</lt></range>
+    <range><ge>2.4.0</ge><lt>2.4.3</lt></range>
+    <range><ge>2.5.0</ge><lt>2.5.1</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>Yakun Zhang of Baidu Security reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/GHSA-wf5p-c75w-w3wh">
+      <p>An attacker can craft a TFLite model that would trigger a null pointer dereference, which would result in a crash and denial of service</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2021-37689</cvename>
+      <url>https://osv.dev/vulnerability/GHSA-wf5p-c75w-w3wh</url>
+    </references>
+    <dates>
+      <discovery>2021-08-25</discovery>
+      <entry>2023-04-09</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="a0509648-65ce-4a1b-855e-520a75bd2549">
     <topic>py39-cinder -- unauthorized data access</topic>
     <affects>
