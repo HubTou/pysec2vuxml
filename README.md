@@ -21,19 +21,17 @@ The execution will take some time in order to call the [Python Packaging Authori
 The web service results are cached and reused for 1 day.
 
 ## Results
-Out of the current versions of 4.075 Python packages FreeBSD ports, 364 weren't found in the [PyPA](https://www.pypa.io/en/latest/)'s web service, and 45 vulnerable ports were identified.
+On the first run, out of the current versions of 4.075 Python packages FreeBSD ports, 364 weren't found in the [PyPA](https://www.pypa.io/en/latest/)'s web service, and 45 vulnerable ports were identified.
 None of those 45 vulnerable ports were already reported in FreeBSD VuXML port vulnerabilities database.
 
-The file [results.txt](https://github.com/HubTou/pysec2vuxml/blob/main/results.txt) contains the script output on my last run.
+The file [results.txt](https://github.com/HubTou/pysec2vuxml/blob/main/results.txt) contains the script output of this first run.
 
 The file [vuxml_newentries.txt](https://github.com/HubTou/pysec2vuxml/blob/main/vuxml_newentries.txt) contains the beginning of VuXML new entries for the vulnerable ports identified.
 
-## Helping the security team
-**I need help converting the above results in new VuXML port entries!**
-
+## Reporting new vulnerabilities to the security team
 You can get a [quick introduction to the VuXML format](https://docs.freebsd.org/en/books/porters-handbook/security/#security-notify-vuxml-intro) in the [FreeBSD Porter's Handbook](https://docs.freebsd.org/en/books/porters-handbook/).
 
-The structure that needs to be filled for each of these 45 vulnerabilities is:
+The structure that needs to be filled for each vulnerability is:
 ```xml
   <vuln vid="INSERT UUID HERE">
     <topic>INSERT PORT NAME HERE -- INSERT VULNERABILITY SUMMARY HERE</topic>
@@ -66,4 +64,6 @@ You can obtain a new UUID by running the [uuidgen](https://man.freebsd.org/cgi/m
 
 Or you can get full assistance for [making and validating new entries](https://docs.freebsd.org/en/books/porters-handbook/security/#security-notify-vuxml-testing) with the scripts included in the [vuxml](https://www.freshports.org/security/vuxml/) FreeBSD port.
 
-If you produce one or more of these new entries please clone this repository and [submit pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) to the [vuxml_newentries.txt](https://github.com/HubTou/pysec2vuxml/blob/main/vuxml_newentries.txt) file, and/or directly send your entries to  the FreeBSD Ports Security Team at <ports-secteam@FreeBSD.org>.
+Or you'll be able to use the v2 of pysec2vuxml to generate an almost filled VuXML skeleton.
+
+If you produce one or more of these new entries please clone this repository and [submit pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) to the [vuxml_newentries.txt](https://github.com/HubTou/pysec2vuxml/blob/main/vuxml_newentries.txt) file, and/or directly create [bug reports](https://bugs.freebsd.org/bugzilla/enter_bug.cgi?product=Ports%20%26%20Packages&component=Individual%20Port%28s%29) with your entries, adding the **security** keyword.
