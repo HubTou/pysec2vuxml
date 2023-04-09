@@ -1,3 +1,87 @@
+  <vuln vid="1b38aec4-4149-4c7d-851c-3c4de3a1fbd0">
+    <topic>py39-setuptools -- denial of service vulnerability</topic>
+    <affects>
+      <package>
+    <name>py39-setuptools</name>
+    <range><lt>65.5.1</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>SCH227 reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/GHSA-r9hx-vwmv-q579">
+      <p>Python Packaging Authority (PyPA)'s setuptools is a library designed to facilitate packaging Python projects.</p>
+      <p>Setuptools version 65.5.0 and earlier could allow remote attackers to cause a denial of service by fetching malicious HTML from a PyPI package or custom PackageIndex page due to a vulnerable Regular Expression in `package_index`.</p>
+      <p>This has been patched in version 65.5.1.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2022-40897</cvename>
+      <url>https://osv.dev/vulnerability/GHSA-r9hx-vwmv-q579</url>
+    </references>
+    <dates>
+      <discovery>2022-12-23</discovery>
+      <entry>2023-04-09</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="187ab98e-2953-4495-b379-4060bd4b75ee">
+    <topic>py27-setuptools44 -- denial of service vulnerability</topic>
+    <affects>
+      <package>
+    <name>py27-setuptools44</name>
+    <range><lt>65.5.1</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>SCH227 reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/GHSA-r9hx-vwmv-q579">
+      <p>Python Packaging Authority (PyPA)'s setuptools is a library designed to facilitate packaging Python projects.</p>
+      <p>Setuptools version 65.5.0 and earlier could allow remote attackers to cause a denial of service by fetching malicious HTML from a PyPI package or custom PackageIndex page due to a vulnerable Regular Expression in `package_index`.</p>
+      <p>This has been patched in version 65.5.1.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2022-40897</cvename>
+      <url>https://osv.dev/vulnerability/GHSA-r9hx-vwmv-q579</url>
+    </references>
+    <dates>
+      <discovery>2022-12-23</discovery>
+      <entry>2023-04-09</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="24da150a-33e0-4fee-b4ee-2c6b377d3395">
+    <topic>py39-setuptools58 -- denial of service vulnerability</topic>
+    <affects>
+      <package>
+    <name>py39-setuptools58</name>
+    <range><lt>65.5.1</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>SCH227 reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/GHSA-r9hx-vwmv-q579">
+      <p>Python Packaging Authority (PyPA)'s setuptools is a library designed to facilitate packaging Python projects.</p>
+      <p>Setuptools version 65.5.0 and earlier could allow remote attackers to cause a denial of service by fetching malicious HTML from a PyPI package or custom PackageIndex page due to a vulnerable Regular Expression in `package_index`.</p>
+      <p>This has been patched in version 65.5.1.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2022-40897</cvename>
+      <url>https://osv.dev/vulnerability/GHSA-r9hx-vwmv-q579</url>
+    </references>
+    <dates>
+      <discovery>2022-12-23</discovery>
+      <entry>2023-04-09</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="15dae5cc-9ee6-4577-a93e-2ab57780e707">
     <topic>py39-sentry-sdk -- sensitive cookies leak</topic>
     <affects>
