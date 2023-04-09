@@ -301,7 +301,7 @@
       <url>https://osv.dev/vulnerability/GHSA-c33w-24p9-8m24</url>
     </references>
     <dates>
-      <discovery>2024-04-03</discovery>
+      <discovery>2023-04-03</discovery>
       <entry>2023-04-09</entry>
     </dates>
   </vuln>
@@ -572,16 +572,16 @@
     <topic>py39-rencode -- infinite loop that could lead to Denial of Service</topic>
     <affects>
       <package>
-        <name>py39-rencode</name>
-        <range><le>1.0.6_1</le></range>
+    <name>py39-rencode</name>
+    <range><le>1.0.6_1</le></range>
       </package>
     </affects>
     <description>
       <body xmlns="http://www.w3.org/1999/xhtml">
-        <p>NIST reports:</p>
-        <blockquote cite="https://nvd.nist.gov/vuln/detail/CVE-2021-40839">
-          <p>The rencode package through 1.0.6 for Python allows an infinite loop in typecode decoding (such as via ;\x2f\x7f), enabling a remote attack that consumes CPU and memory.</p>
-        </blockquote>
+    <p>NIST reports:</p>
+    <blockquote cite="https://nvd.nist.gov/vuln/detail/CVE-2021-40839">
+      <p>The rencode package through 1.0.6 for Python allows an infinite loop in typecode decoding (such as via ;\x2f\x7f), enabling a remote attack that consumes CPU and memory.</p>
+    </blockquote>
       </body>
     </description>
     <references>
@@ -595,3 +595,4 @@
       <modified>2023-03-26</modified>
     </dates>
   </vuln>
+
