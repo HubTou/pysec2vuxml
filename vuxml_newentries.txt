@@ -147,7 +147,7 @@
     </dates>
   </vuln>
 
-  <vuln <vuln vid="8ccff771-ceca-43a0-85ad-3e595e73b425">
+  <vuln vid="8ccff771-ceca-43a0-85ad-3e595e73b425">
     <topic>py39-sqlalchemy11 -- multiple SQL Injection vulnerabilities</topic>
     <affects>
       <package>
@@ -179,8 +179,9 @@
       <discovery>2019-02-06</discovery>
       <entry>2023-04-09</entry>
     </dates>
- 
-  </vuln> vid="e4181981-ccf1-11ed-956f-7054d21a9e2a">
+   </vuln>
+  
+  <vuln vid="e4181981-ccf1-11ed-956f-7054d21a9e2a">
     <topic>py39-sqlalchemy10 -- multiple SQL Injection vulnerabilities</topic>
     <affects>
       <package>
@@ -298,8 +299,7 @@
       <body xmlns="http://www.w3.org/1999/xhtml">
         <p>NIST reports:</p>
         <blockquote cite="https://nvd.nist.gov/vuln/detail/CVE-2021-40839">
-          <p>The rencode package through 1.0.6 for Python allows an infinite loop in typecode decoding (such as via ;\x2f\x7f), enabling a remote attack that consumes CPU
-and memory.</p>
+          <p>The rencode package through 1.0.6 for Python allows an infinite loop in typecode decoding (such as via ;\x2f\x7f), enabling a remote attack that consumes CPU and memory.</p>
         </blockquote>
       </body>
     </description>
