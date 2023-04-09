@@ -1,3 +1,30 @@
+  <vuln vid="15dae5cc-9ee6-4577-a93e-2ab57780e707">
+    <topic>py39-sentry-sdk -- sensitive cookies leak</topic>
+    <affects>
+      <package>
+    <name>py39-sentry-sdk</name>
+    <range><lt>1.14.0</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>Tom Wolters reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/GHSA-29pr-6jr8-q5jm">
+      <p>When using the Django integration of the Sentry SDK in a specific configuration it is possible to leak sensitive cookies values, including the session cookie to Sentry.</p>
+      <p>These sensitive cookies could then be used by someone with access to your Sentry issues to impersonate or escalate their privileges within your application.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2023-28117</cvename>
+      <url>https://osv.dev/vulnerability/GHSA-29pr-6jr8-q5jm</url>
+    </references>
+    <dates>
+      <discovery>2023-03-21</discovery>
+      <entry>2023-04-09</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="28a37df6-ba1a-4eed-bb64-623fc8e8dfd0">
     <topic>py39-py -- Regular expression Denial of Service vulnerability</topic>
     <affects>
