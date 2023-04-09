@@ -1,4 +1,71 @@
- <vuln vid="e4181981-ccf1-11ed-956f-7054d21a9e2a">
+  <vuln vid="d2293e22-4390-42c2-a323-34cca2066000">
+    <topic>py39-sqlalchemy12 -- multiple SQL Injection vulnerabilities</topic>
+    <affects>
+      <package>
+    <name>py39-sqlalchemy12</name>
+    <range><lt>1.3.0</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>21k reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2019-123">
+      <p>SQLAlchemy through 1.2.17 and 1.3.x through 1.3.0b2 allows SQL Injection via the order_by parameter.</p>
+    </blockquote>
+    <p>nosecurity reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2019-124">
+      <p>SQLAlchemy 1.2.17 has SQL Injection when the group_by parameter can be controlled.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2019-7548</cvename>
+      <cvename>CVE-2019-7164</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2019-123</url>
+      <url>https://osv.dev/vulnerability/PYSEC-2019-124</url>
+      <url>https://osv.dev/vulnerability/GHSA-38fc-9xqv-7f7q</url>
+      <url>https://osv.dev/vulnerability/GHSA-887w-45rq-vxgf</url>
+    </references>
+    <dates>
+      <discovery>2019-02-06</discovery>
+      <entry>2023-04-09</entry>
+    </dates>
+  </vuln>
+
+  <vuln <vuln vid="8ccff771-ceca-43a0-85ad-3e595e73b425">
+    <topic>py39-sqlalchemy11 -- multiple SQL Injection vulnerabilities</topic>
+    <affects>
+      <package>
+    <name>py39-sqlalchemy11</name>
+    <range><lt>1.3.0</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>21k reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2019-123">
+      <p>SQLAlchemy through 1.2.17 and 1.3.x through 1.3.0b2 allows SQL Injection via the order_by parameter.</p>
+    </blockquote>
+    <p>nosecurity reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2019-124">
+      <p>SQLAlchemy 1.2.17 has SQL Injection when the group_by parameter can be controlled.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2019-7164</cvename>
+      <cvename>CVE-2019-7548</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2019-123</url>
+      <url>https://osv.dev/vulnerability/PYSEC-2019-124</url>
+      <url>https://osv.dev/vulnerability/GHSA-38fc-9xqv-7f7q</url>
+      <url>https://osv.dev/vulnerability/GHSA-887w-45rq-vxgf</url>
+    </references>
+    <dates>
+      <discovery>2019-02-06</discovery>
+      <entry>2023-04-09</entry>
+    </dates>
+ 
+  </vuln> vid="e4181981-ccf1-11ed-956f-7054d21a9e2a">
     <topic>py39-sqlalchemy10 -- multiple SQL Injection vulnerabilities</topic>
     <affects>
       <package>
