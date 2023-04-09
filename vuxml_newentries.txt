@@ -1,3 +1,30 @@
+  <vuln vid="e5d117b3-2153-4129-81ed-42b0221afa78">
+    <topic>py39-OWSLib -- arbitrary file read vulnerability</topic>
+    <affects>
+      <package>
+    <name>py39-OWSLib</name>
+    <range><lt>0.28.1</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>Jorge Rosillo reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/GHSA-8h9c-r582-mggc">
+      <p>OWSLib's XML parser (which supports both `lxml` and `xml.etree`) does not disable entity resolution for `lxml`, and could lead to arbitrary file reads from an attacker-controlled XML payload.</p>
+      <p>This affects all XML parsing in the codebase.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2023-27476</cvename>
+      <url>https://osv.dev/vulnerability/GHSA-8h9c-r582-mggc</url>
+    </references>
+    <dates>
+      <discovery>2023-03-07</discovery>
+      <entry>2023-04-09</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="17083017-d993-43eb-8aaf-7138f4486d1c">
     <topic>py39-unicorn -- sandbox escape and arbitrary code execution vulnerability</topic>
     <affects>
