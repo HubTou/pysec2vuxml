@@ -1,3 +1,61 @@
+  <vuln vid="8aa6340d-e7c6-41e0-b2a3-3c9e9930312a">
+    <topic>py39-redis -- can send response data to the client of an unrelated request</topic>
+    <affects>
+      <package>
+    <name>py39-redis</name>
+    <range><ge>4.4.0</ge><lt>4.4.4</lt></range>
+    <range><ge>4.5.0</ge><lt>4.5.4</lt></range>
+ 	  </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>drago-balto reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/GHSA-8fww-64cx-x8p5">
+      <p>redis-py through 4.5.3 and 4.4.3 leaves a connection open after canceling an async Redis command at an inopportune time (in the case of a non-pipeline operation), and can send response data to the client of an unrelated request.</p>
+	  <p>NOTE: this issue exists because of an incomplete fix for CVE-2023-28858.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2023-28859</cvename>
+      <url>https://osv.dev/vulnerability/GHSA-8fww-64cx-x8p5</url>
+    </references>
+    <dates>
+      <discovery>2023-03-26</discovery>
+      <entry>2023-04-09</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="3f6d6181-79b2-4d33-bb1e-5d3f9df0c1d1">
+    <topic>py39-redis -- can send response data to the client of an unrelated request</topic>
+    <affects>
+      <package>
+    <name>py39-redis</name>
+    <range><lt>4.3.6</lt></range>
+    <range><ge>4.4.0</ge><lt>4.4.3</lt></range>
+    <range><ge>4.5.0</ge><lt>4.5.3</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>drago-balto reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/GHSA-24wv-mv5m-xv4h">
+      <p>redis-py before 4.5.3, as used in ChatGPT and other products, leaves a connection open after canceling an async Redis command at an inopportune time (in the case of a pipeline operation), and can send response data to the client of an unrelated request in an off-by-one manner.</p>
+	  <p>The fixed versions for this CVE Record are 4.3.6, 4.4.3, and 4.5.3, but [are believed to be incomplete](https://github.com/redis/redis-py/issues/2665).</p>
+	  <p>CVE-2023-28859 has been assigned the issues caused by the incomplete fixes.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2023-28858</cvename>
+      <url>https://osv.dev/vulnerability/GHSA-24wv-mv5m-xv4h</url>
+    </references>
+    <dates>
+      <discovery>2023-03-26</discovery>
+      <entry>2023-04-09</entry>
+    </dates>
+  </vuln>
+  
   <vuln vid="d2293e22-4390-42c2-a323-34cca2066000">
     <topic>py39-sqlalchemy12 -- multiple SQL Injection vulnerabilities</topic>
     <affects>
