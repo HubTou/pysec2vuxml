@@ -1,3 +1,30 @@
+  <vuln vid="28a37df6-ba1a-4eed-bb64-623fc8e8dfd0">
+    <topic>py39-py -- Regular expression Denial of Service vulnerability</topic>
+    <affects>
+      <package>
+    <name>py39-py</name>
+    <range><le>1.11.0</le></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>SCH227 reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2022-42969">
+      <p>The py library through 1.11.0 for Python allows remote attackers to conduct a ReDoS (Regular expression Denial of Service) attack via a Subversion repository with crafted info data, because the InfoSvnCommand argument is mishandled.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2022-42969</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2022-42969</url>
+      <url>https://osv.dev/vulnerability/GHSA-w596-4wvx-j9j6</url>
+    </references>
+    <dates>
+      <discovery>2022-11-04</discovery>
+      <entry>2023-04-09</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="845f8430-d0ee-4134-ae35-480a3e139b8a">
     <topic>py39-joblib -- arbitrary code execution</topic>
     <affects>
