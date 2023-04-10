@@ -1,3 +1,29 @@
+  <vuln vid="b54abe9d-7024-4d10-98b2-180cf1717766">
+    <topic>py39-beaker -- arbitrary code execution vulnerability</topic>
+    <affects>
+      <package>
+    <name>py39-beaker</name>
+    <range><le>1.12.1</le></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>matheusbrat reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2020-216">
+      <p>The Beaker library through 1.12.1 for Python is affected by deserialization of untrusted data, which could lead to arbitrary code execution.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2013-7489</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2020-216</url>
+    </references>
+    <dates>
+      <discovery>2020-06-26</discovery>
+      <entry>2023-04-10</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="374793ad-2720-4c4a-b86c-fc4a1780deac">
     <topic>py39-psutil121 -- double free vulnerability</topic>
     <affects>
