@@ -1,3 +1,33 @@
+  <vuln vid="a32ef450-9781-414b-a944-39f2f61677f2">
+    <topic>py39-cryptography -- allows programmers to misuse an API</topic>
+    <affects>
+      <package>
+    <name>py39-cryptography</name>
+    <range><ge>1.8</ge><lt>39.0.1</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>alex reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/GHSA-w7pp-m8wf-vj6r">
+      <p>Previously, `Cipher.update_into` would accept Python objects which implement the buffer protocol, but provide only immutable buffers.</p>
+      <p>This would allow immutable objects (such as `bytes`) to be mutated, thus violating fundamental rules of Python.</p>
+      <p>This is a soundness bug -- it allows programmers to misuse an API, it cannot be exploited by attacker controlled data alone.</p>
+      <p>This now correctly raises an exception.</p>
+      <p>This issue has been present since `update_into` was originally introduced in cryptography 1.8.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2023-23931</cvename>
+      <url>https://osv.dev/vulnerability/GHSA-w7pp-m8wf-vj6r</url>
+    </references>
+    <dates>
+      <discovery>2023-02-07</discovery>
+      <entry>2023-04-10</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="ae132c6c-d716-11ed-956f-7054d21a9e2a">
     <topic>py39-tensorflow -- denial of service vulnerability</topic>
     <affects>
