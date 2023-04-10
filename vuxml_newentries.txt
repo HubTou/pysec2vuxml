@@ -1,3 +1,32 @@
+  <vuln vid="c1a8ed1c-2814-4260-82aa-9e37c83aac93">
+    <topic>py39-cryptography -- includes a vulnerable copy of OpenSSL</topic>
+    <affects>
+      <package>
+    <name>py39-cryptography</name>
+    <range><lt>39.0.1</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <blockquote cite="https://osv.dev/vulnerability/GHSA-x4qr-2fvf-3mr5">
+      <p>pyca/cryptography's wheels include a statically linked copy of OpenSSL.</p>
+      <p>The versions of OpenSSL included in cryptography 0.8.1-39.0.0  are vulnerable to a security issue.</p>
+      <p>More details about the vulnerabilities themselves can be found in https://www.openssl.org/news/secadv/20221213.txt and https://www.openssl.org/news/secadv/20230207.txt.</p>
+      <p>If you are building cryptography source ("sdist") then you are responsible for upgrading your copy of OpenSSL.</p>
+      <p>Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2023-0286</cvename>
+      <url>https://osv.dev/vulnerability/GHSA-x4qr-2fvf-3mr5</url>
+    </references>
+    <dates>
+      <discovery>2023-02-08</discovery>
+      <entry>2023-04-10</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="a32ef450-9781-414b-a944-39f2f61677f2">
     <topic>py39-cryptography -- allows programmers to misuse an API</topic>
     <affects>
