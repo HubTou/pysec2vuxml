@@ -1,3 +1,31 @@
+  <vuln vid="374793ad-2720-4c4a-b86c-fc4a1780deac">
+    <topic>py39-psutil121 -- double free vulnerability</topic>
+    <affects>
+      <package>
+    <name>py39-psutil121</name>
+    <range><lt>5.6.6</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>ret2libc reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2019-41">
+      <p>psutil (aka python-psutil) through 5.6.5 can have a double free.</p>
+      <p>This occurs because of refcount mishandling within a while or for loop that converts system data into a Python object.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2019-18874</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2019-41</url>
+      <url>https://osv.dev/vulnerability/GHSA-qfc5-mcwq-26q8</url>
+    </references>
+    <dates>
+      <discovery>2019-11-12</discovery>
+      <entry>2023-04-10</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="e1b77733-a982-442e-8796-a200571bfcf2">
     <topic>py39-ansible -- multiple vulnerabilities</topic>
     <affects>
