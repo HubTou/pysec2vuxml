@@ -1,3 +1,5 @@
+<!-- Vulnerabilities below reported at https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=270744 -->
+
   <vuln vid="b54abe9d-7024-4d10-98b2-180cf1717766">
     <topic>py39-beaker -- arbitrary code execution vulnerability</topic>
     <affects>
