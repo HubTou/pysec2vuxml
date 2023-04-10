@@ -37,6 +37,7 @@ py39-setuptools58-58.5.3_2
 ```
 
 ## New features
+* Fetching the discovery date from the CVE published date 
 
 ## Other possible features
 * Downloading the latest version of the Ports index instead of relying on an up-to-date ports tree:
