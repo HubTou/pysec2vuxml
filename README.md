@@ -15,7 +15,7 @@ chmod a+x pysec2vuxml.py
 
 Then launch the script:
 ```
-portsnap fetch update # To update the ports index and the port tree
+portsnap fetch update # You need superuser rights to update the ports index and the port tree
 pysec2vuxml.py
 ```
 
