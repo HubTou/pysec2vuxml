@@ -79,7 +79,7 @@
       <cvename>CVE-2020-25635</cvename>
       <url>https://osv.dev/vulnerability/PYSEC-2020-220</url>
       <cvename>CVE-2020-25636</cvename>
-      <url>https://osv.dev/vulnerability/PYSEC-2020-221</url>https://osv.dev/vulnerability/PYSEC-2020-220
+      <url>https://osv.dev/vulnerability/PYSEC-2020-221</url>
     </references>
     <dates>
       <discovery>2020-10-05</discovery>
@@ -165,7 +165,7 @@
     <p>Brian Wolff reports:</p>
     <blockquote cite="https://osv.dev/vulnerability/GHSA-5p3x-r448-pc62">
       <p>All users of pysaml2 that use the default `CryptoBackendXmlSec1` backend and need to verify signed SAML documents are impacted.</p>
-      <p>`pysaml2 <= 6.4.1` does not ensure that a signed SAML document is correctly signed.</p>
+      <p>`pysaml2 &lt;= 6.4.1` does not ensure that a signed SAML document is correctly signed.</p>
       <p>The default `CryptoBackendXmlSec1` backend is using the `xmlsec1` binary to verify the signature of signed SAML documents, but by default, `xmlsec1` accepts any type of key found within the given document.</p>
       <p>`xmlsec1` needs to be configured explicitly to only use only _x509 certificates_ for the verification process of the SAML document signature.</p>
     </blockquote>
