@@ -215,8 +215,8 @@ def print_table_of_contents(python_ports, vulnerable_ports, ignored_vulns, vuxml
         vulnerabilities_count += content['vulnerabilities']
     print("=" * (longuest_vulnerabilities + longuest_package + longuest_subdir + longuest_name + longuest_version + longuest_maintainer + 5))
     print(f"Python packages's FreeBSD ports = {len(python_ports)}")
-    print(f"  vulnerable ports              = {len(vulnerable_ports) - false_positive}")
-    print(f"  vulnerable ports/version      = {len(contents)}")
+    print(f"  vulnerable packages           = {len(vulnerable_ports) - false_positive}")
+    print(f"  vulnerable ports              = {len(contents)}")
     print(f"    vulnerabilities             = {vulnerabilities_count}")
     print("-" * (longuest_vulnerabilities + longuest_package + longuest_subdir + longuest_name + longuest_version + longuest_maintainer + 5))
 
