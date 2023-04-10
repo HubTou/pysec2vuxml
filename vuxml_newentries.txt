@@ -1,3 +1,73 @@
+  <vuln vid="643086d4-b2e3-48e3-95cb-b8e30b1bd834">
+    <topic>py39-pysaml24 -- XML Signature Wrapping (XSW) vulnerability</topic>
+    <affects>
+      <package>
+    <name>py39-pysaml24</name>
+    <range><lt>5.0.0</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>Alexey Sintsov and Yuri Goltsev report:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2020-94">
+      <p>PySAML2 before 5.0.0 does not check that the signature in a SAML document is enveloped and thus signature wrapping is effective, i.e., it is affected by XML Signature Wrapping (XSW).</p>
+      <p>The signature information and the node/object that is signed can be in different places and thus the signature verification will succeed, but the wrong data will be used.</p>
+      <p>This specifically affects the verification of assertion that have been signed.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2020-5390</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2020-94</url>
+      <url>https://osv.dev/vulnerability/GHSA-qf7v-8hj3-4xw7</url>
+    </references>
+    <dates>
+      <discovery>2020-01-13</discovery>
+      <entry>2023-04-10</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="d2d6996a-ea5b-4c41-873f-bf514d44517d">
+    <topic>py39-pysaml24 -- improper verification of cryptographic signature vulnerabilities</topic>
+    <affects>
+      <package>
+    <name>py39-pysaml24</name>
+    <range><lt>6.5.0</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>Victor Schönfelder Garcia, Juraj Somorovsky and Vladislav Mladenov report:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2021-48">
+      <p>PySAML2 is a pure python implementation of SAML Version 2 Standard.</p>
+      <p>PySAML2 before 6.5.0 has an improper verification of cryptographic signature vulnerability.</p>
+      <p>All users of pysaml2 that need to validate signed SAML documents are impacted.</p>
+      <p>The vulnerability is a variant of XML Signature wrapping because it did not validate the SAML document against an XML schema.</p>
+      <p>This allowed invalid XML documents to be processed and such a document can trick pysaml2 with a wrapped signature.</p>
+    </blockquote>
+    <p>Brian Wolff reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/GHSA-5p3x-r448-pc62">
+      <p>All users of pysaml2 that use the default `CryptoBackendXmlSec1` backend and need to verify signed SAML documents are impacted.</p>
+      <p>`pysaml2 <= 6.4.1` does not ensure that a signed SAML document is correctly signed.</p>
+      <p>The default `CryptoBackendXmlSec1` backend is using the `xmlsec1` binary to verify the signature of signed SAML documents, but by default, `xmlsec1` accepts any type of key found within the given document.</p>
+      <p>`xmlsec1` needs to be configured explicitly to only use only _x509 certificates_ for the verification process of the SAML document signature.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2021-21238</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2021-48</url>
+      <url>https://osv.dev/vulnerability/GHSA-f4g9-h89h-jgv9</url>
+      <cvename>CVE-2021-21239</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2021-49</url>
+      <url>https://osv.dev/vulnerability/GHSA-5p3x-r448-pc62</url>
+    </references>
+    <dates>
+      <discovery>2021-01-21</discovery>
+      <entry>2023-04-10</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="2acdf364-9f8d-4aaf-8d1b-867fdfd771c6">
     <topic>py39-kerberos -- DoS and MitM vulnerabilities</topic>
     <affects>
