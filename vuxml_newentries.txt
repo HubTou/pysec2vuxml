@@ -677,10 +677,10 @@
   </vuln>
 
   <vuln vid="8aa6340d-e7c6-41e0-b2a3-3c9e9930312a">
-    <topic>py39-redis -- can send response data to the client of an unrelated request</topic>
+    <topic>py39-redis3 -- can send response data to the client of an unrelated request</topic>
     <affects>
       <package>
-    <name>py39-redis</name>
+    <name>py39-redis3</name>
     <range><ge>4.4.0</ge><lt>4.4.4</lt></range>
     <range><ge>4.5.0</ge><lt>4.5.4</lt></range>
       </package>
@@ -701,14 +701,15 @@
     <dates>
       <discovery>2023-03-26</discovery>
       <entry>2023-04-09</entry>
+      <modified>2023-04-10</modified>
     </dates>
   </vuln>
 
   <vuln vid="3f6d6181-79b2-4d33-bb1e-5d3f9df0c1d1">
-    <topic>py39-redis -- can send response data to the client of an unrelated request</topic>
+    <topic>py39-redis3 -- can send response data to the client of an unrelated request</topic>
     <affects>
       <package>
-    <name>py39-redis</name>
+    <name>py39-redis3</name>
     <range><lt>4.3.6</lt></range>
     <range><ge>4.4.0</ge><lt>4.4.3</lt></range>
     <range><ge>4.5.0</ge><lt>4.5.3</lt></range>
@@ -731,6 +732,7 @@
     <dates>
       <discovery>2023-03-26</discovery>
       <entry>2023-04-09</entry>
+      <modified>2023-04-10</modified>
     </dates>
   </vuln>
 
@@ -935,4 +937,3 @@
       <modified>2023-03-26</modified>
     </dates>
   </vuln>
-
