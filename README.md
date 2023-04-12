@@ -28,7 +28,7 @@ None of those 45 vulnerable ports were already reported in FreeBSD VuXML port vu
 
 The file [results.txt](https://github.com/HubTou/pysec2vuxml/blob/main/results.txt) contains the script output of a recent run as an example.
 
-The file [vuxml_newentries.txt](https://github.com/HubTou/pysec2vuxml/blob/main/vuxml_newentries.txt) contains new VuXML entries for the vulnerable ports identified.
+The files [vuxml_new_entries.xml](https://github.com/HubTou/pysec2vuxml/blob/main/vuxml_new_entries.xml) and [vuxml_modified_entries.xml](https://github.com/HubTou/pysec2vuxml/blob/main/vuxml_modified_entries.xml) respectively contain new and modified VuXML entries for the vulnerable ports identified.
 
 ## Reporting new vulnerabilities to the security team
 You can get a [quick introduction to the VuXML format](https://docs.freebsd.org/en/books/porters-handbook/security/#security-notify-vuxml-intro) in the [FreeBSD Porter's Handbook](https://docs.freebsd.org/en/books/porters-handbook/).
@@ -36,10 +36,14 @@ You can get a [quick introduction to the VuXML format](https://docs.freebsd.org/
 The structure that needs to be filled for each vulnerability is:
 ```xml
   <vuln vid="INSERT UUID HERE">
-    <topic>INSERT PORT NAME HERE -- INSERT VULNERABILITY SUMMARY HERE</topic>
+    <topic>py-PACKAGE_NAME -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
-    <name>INSERT PORT NAME HERE</name>
+    <name>py37-PORT_NAME</name>
+    <name>py38-PORT_NAME</name>
+    <name>py39-PORT_NAME</name>
+    <name>py310-PORT_NAME</name>
+    <name>py311-PORT_NAME</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -62,10 +66,14 @@ The structure that needs to be filled for each vulnerability is:
   </vuln>
 ```
 
-You can obtain a new UUID by running the [uuidgen](https://man.freebsd.org/cgi/man.cgi?query=uuidgen) command without parameter.
+pysec2vuxml will automatically generate most of this structure for each vulnerability that is not withdrawn, ignored (if its ID is present in the **ignore.txt** file) or already reported in FreeBSD VuXML.
 
-Or you can get full assistance for [making and validating new entries](https://docs.freebsd.org/en/books/porters-handbook/security/#security-notify-vuxml-testing) with the scripts included in the [vuxml](https://www.freshports.org/security/vuxml/) FreeBSD port.
+Check all the vulnerabilities for a given port to see if they can be factored.
 
-But the simplest way is just to use pysec2vuxml to generate an almost filled VuXML skeleton for each vulnerability.
+Then, if you have superuser access, put your new or modified entries into **/usr/ports/security/vuxml/vuln** and use the [vuxml](https://www.freshports.org/security/vuxml/) FreeBSD port to [verify if everything is correct](https://docs.freebsd.org/en/books/porters-handbook/security/#security-notify-vuxml-testing):
+```Shell
+cd /usr/ports/security/vuxml
+make validate
+```
 
-If you produce one or more of these new entries please clone this repository and [submit pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) to the [vuxml_newentries.txt](https://github.com/HubTou/pysec2vuxml/blob/main/vuxml_newentries.txt) file, and/or directly create [FreeBSD bug reports](https://bugs.freebsd.org/bugzilla/enter_bug.cgi?product=Ports%20%26%20Packages&component=Individual%20Port%28s%29) with your entries, adding the **security** keyword.
+If it's the case, please clone this repository and [submit pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) to the [vuxml_new_entries.xml](https://github.com/HubTou/pysec2vuxml/blob/main/vuxml_new_entries.xml) and [vuxml_modified_entries.xml](https://github.com/HubTou/pysec2vuxml/blob/main/vuxml_modified_entries.xml) files, and/or directly create [FreeBSD bug reports](https://bugs.freebsd.org/bugzilla/enter_bug.cgi?product=Ports%20%26%20Packages&component=Individual%20Port%28s%29) with your entries, adding the **security** keyword.
