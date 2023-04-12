@@ -1,10 +1,6 @@
 # pysec2vuxml
 ## Bugs to correct
-* **Use py-PACKAGE for topic tag**
-* **Use py37-PACKAGE, py38-PACKAGE, py39-PACKAGE, py310-PACKAGE, py311-PACKAGE for name tag**
-* **Replacing &lt; and &gt; characters by their & escaped equivalent**
-
-* In pipinfo:
+* In [pipinfo](https://github.com/HubTou/pipinfo):
   * Caching empty json files for "HTTP 404: Not Found" errors does not work
   * A way to suppress warnings for "HTTP 404: Not Found" errors would be useful
   * Understanding why these packages/versions are not found with the PyPI API
