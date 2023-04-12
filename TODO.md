@@ -15,7 +15,6 @@
 ```
 
 ## New features
-* **Checking if a CVE is already reported for any other port name**
 * **Fetching the discovery date from the CVE published date** 
 
 ## Other possible features
