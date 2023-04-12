@@ -66,7 +66,7 @@ The structure that needs to be filled for each vulnerability is:
   </vuln>
 ```
 
-pysec2vuxml will automatically generate most of this structure for each vulnerability that is not withdrawn, ignored (if its ID is present in the **ignore.txt** file) or already reported in FreeBSD VuXML.
+pysec2vuxml will automatically generate most of this structure for each vulnerability that is not withdrawn, ignored (if its ID is present in the [ignore.txt](https://github.com/HubTou/pysec2vuxml/blob/main/ignore.txt) file) or already reported in FreeBSD VuXML.
 
 Check all the vulnerabilities for a given port to see if they can be factored.
 
