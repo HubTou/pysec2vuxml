@@ -12,13 +12,13 @@ Vulns Package           Port path                 Port name              Port ve
 4     sqlalchemy        databases/py-sqlalchemy11 py39-sqlalchemy11      1.1.18       sunpoet@FreeBSD.org    
 2     sqlalchemy        databases/py-sqlalchemy12 py39-sqlalchemy12      1.2.19       sunpoet@FreeBSD.org    
 2     celery            devel/py-celery           py39-celery            4.4.7        olgeni@FreeBSD.org     
-1     configobj         devel/py-configobj        py39-configobj         5.0.6_1      nivit@FreeBSD.org      
+1     configobj         devel/py-configobj        py39-configobj         5.0.8        nivit@FreeBSD.org      
 2     joblib            devel/py-joblib           py39-joblib            1.1.0        skreuzer@FreeBSD.org   
 2     py                devel/py-py               py39-py                1.11.0       python@FreeBSD.org     
 1     sentry-sdk        devel/py-sentry-sdk       py39-sentry-sdk        1.5.12       0mp@FreeBSD.org        
-1     setuptools        devel/py-setuptools       py38-setuptools        63.1.0       python@FreeBSD.org     
+1     setuptools        devel/py-setuptools       py37-setuptools        63.1.0       python@FreeBSD.org     
 1     setuptools        devel/py-setuptools44     py27-setuptools44      44.1.1       python@FreeBSD.org     
-1     setuptools        devel/py-setuptools58     py37-setuptools58      58.5.3_2     python@FreeBSD.org     
+1     setuptools        devel/py-setuptools58     py39-setuptools58      58.5.3_2     python@FreeBSD.org     
 1     pycares           dns/py-pycares            py39-pycares           4.1.2        demon@FreeBSD.org      
 1     unicorn           emulators/py-unicorn      py39-unicorn           1.0.2        antoine@FreeBSD.org    
 1     OWSLib            graphics/py-OWSLib        py39-OWSLib            0.28.0       lbartoletti@FreeBSD.org
@@ -29,12 +29,12 @@ Vulns Package           Port path                 Port name              Port ve
 1     slixmpp           net-im/py-slixmpp         py39-slixmpp           1.7.1        0mp@FreeBSD.org        
 1     nicotine-plus     net-p2p/py-nicotine-plus  py39-nicotine-plus     3.2.0_1      ports@FreeBSD.org      
 1     pymatgen          science/py-pymatgen       py39-pymatgen          2022.7.19    yuri@FreeBSD.org       
-46    tensorflow        science/py-tensorflow     py39-tensorflow        2.9.1_5      amzo1337@gmail.com     
+47    tensorflow        science/py-tensorflow     py39-tensorflow        2.9.1_5      amzo1337@gmail.com     
 2     cryptography      security/py-cryptography  py39-cryptography      3.4.8_1,1    sunpoet@FreeBSD.org    
 1     kerberos          security/py-kerberos      py39-kerberos          1.3.1        dvl@FreeBSD.org        
 6     pysaml2           security/py-pysaml24      py39-pysaml24          4.9.0_1      sunpoet@FreeBSD.org    
 3     ansible           sysutils/ansible          py39-ansible           7.1.0        0mp@FreeBSD.org        
-2     psutil            sysutils/py-psutil121     py39-psutil121         1.2.1_2      swills@FreeBSD.org     
+2     psutil            sysutils/py-psutil121     py39-psutil121         1.2.1_2      bofh@FreeBSD.org       
 2     dparse            textproc/py-dparse        py39-dparse            0.5.1        kai@FreeBSD.org        
 4     markdown2         textproc/py-markdown2     py39-markdown2         2.3.6        wen@FreeBSD.org        
 4     pygments          textproc/py-pygments-25   py39-pygments-25       2.5.2        nivit@FreeBSD.org      
@@ -50,10 +50,10 @@ Vulns Package           Port path                 Port name              Port ve
 2     wagtail           www/py-wagtail            py39-wagtail           4.2_1        sunpoet@FreeBSD.org    
 1     WsgiDAV           www/py-wsgidav            py39-WsgiDAV           3.1.0        ultima@FreeBSD.org     
 =============================================================================================================
-Python packages's FreeBSD ports = 4127
+Python packages's FreeBSD ports = 4129
   vulnerable ports              = 41
   vulnerable ports/version      = 46
-    vulnerabilities             = 140
+    vulnerabilities             = 141
 -------------------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
@@ -71,11 +71,15 @@ Id:          PYSEC-2021-345
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="980f4bec-fd72-4bec-88ce-9f0917aa6324">
-    <topic>py39-rencode -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="a49a6463-b9ff-4c92-89c4-9fe4db9e668a">
+    <topic>py-rencode -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-rencode</name>
+    <name>py38-rencode</name>
     <name>py39-rencode</name>
+    <name>py310-rencode</name>
+    <name>py311-rencode</name>
     <range><le>1.0.6_1</le></range>
       </package>
     </affects>
@@ -93,7 +97,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -108,11 +112,15 @@ Id:          GHSA-gh8j-2pgf-x458
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="a2e5cee9-cc6a-4f8d-8427-5cbce8302d89">
-    <topic>py39-rencode -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="2f5ebe77-c322-4f7a-a018-b06f1664ada0">
+    <topic>py-rencode -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-rencode</name>
+    <name>py38-rencode</name>
     <name>py39-rencode</name>
+    <name>py310-rencode</name>
+    <name>py311-rencode</name>
     <range><le>1.0.6_1</le></range>
       </package>
     </affects>
@@ -130,7 +138,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -149,11 +157,15 @@ Id:          PYSEC-2012-13
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="e0e77ba3-755c-4445-8816-b74606dd07b3">
-    <topic>py39-Elixir -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="155b53f7-c379-4508-ab1b-ff1b775e49d2">
+    <topic>py-Elixir -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-Elixir</name>
+    <name>py38-Elixir</name>
     <name>py39-Elixir</name>
+    <name>py310-Elixir</name>
+    <name>py311-Elixir</name>
     <range><le>0.7.1_3</le></range>
       </package>
     </affects>
@@ -171,7 +183,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -190,11 +202,15 @@ Id:          PYSEC-2019-238
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="7a6776aa-1c2a-494d-9b5b-c0458437df1d">
-    <topic>py39-lmdb -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="16db1213-c383-40dd-8ef0-0eda61cb93a3">
+    <topic>py-lmdb -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-lmdb</name>
+    <name>py38-lmdb</name>
     <name>py39-lmdb</name>
+    <name>py310-lmdb</name>
+    <name>py311-lmdb</name>
     <range><lt>0.98</lt></range>
       </package>
     </affects>
@@ -202,7 +218,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
       <body xmlns="http://www.w3.org/1999/xhtml">
     <p>INSERT SOURCE NAME HERE reports:</p>
     <blockquote cite="https://osv.dev/vulnerability/PYSEC-2019-238">
-      <p>An issue was discovered in py-lmdb 0.97. mdb_node_del does not validate a memmove in the case of an unexpected node->mn_hi, leading to an invalid write operation. NOTE: this outcome occurs when accessing a data.mdb file supplied by an attacker.</p>
+      <p>An issue was discovered in py-lmdb 0.97. mdb_node_del does not validate a memmove in the case of an unexpected node-&gt;mn_hi, leading to an invalid write operation. NOTE: this outcome occurs when accessing a data.mdb file supplied by an attacker.</p>
     </blockquote>
       </body>
     </description>
@@ -212,7 +228,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -227,11 +243,15 @@ Id:          PYSEC-2019-239
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="12315899-302a-4232-a174-4cd6565cafd4">
-    <topic>py39-lmdb -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="a36d9341-6ec3-4d9d-a697-38d9f6a4d9ad">
+    <topic>py-lmdb -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-lmdb</name>
+    <name>py38-lmdb</name>
     <name>py39-lmdb</name>
+    <name>py310-lmdb</name>
+    <name>py311-lmdb</name>
     <range><lt>0.98</lt></range>
       </package>
     </affects>
@@ -249,7 +269,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -264,11 +284,15 @@ Id:          PYSEC-2019-237
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="c7b7105e-7681-4d67-9ac5-dc17aa15440a">
-    <topic>py39-lmdb -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="1713deb4-906d-4ccd-a8dc-26da14acd2c2">
+    <topic>py-lmdb -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-lmdb</name>
+    <name>py38-lmdb</name>
     <name>py39-lmdb</name>
+    <name>py310-lmdb</name>
+    <name>py311-lmdb</name>
     <range><lt>0.98</lt></range>
       </package>
     </affects>
@@ -276,7 +300,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
       <body xmlns="http://www.w3.org/1999/xhtml">
     <p>INSERT SOURCE NAME HERE reports:</p>
     <blockquote cite="https://osv.dev/vulnerability/PYSEC-2019-237">
-      <p>An issue was discovered in py-lmdb 0.97. For certain values of mp_flags, mdb_page_touch does not properly set up mc->mc_pg[mc->top], leading to an invalid write operation. NOTE: this outcome occurs when accessing a data.mdb file supplied by an attacker.</p>
+      <p>An issue was discovered in py-lmdb 0.97. For certain values of mp_flags, mdb_page_touch does not properly set up mc-&gt;mc_pg[mc-&gt;top], leading to an invalid write operation. NOTE: this outcome occurs when accessing a data.mdb file supplied by an attacker.</p>
     </blockquote>
       </body>
     </description>
@@ -286,7 +310,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -301,11 +325,15 @@ Id:          PYSEC-2019-240
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="5061cfa1-c3c6-41ed-8d12-9dfe1e97b743">
-    <topic>py39-lmdb -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="a9c23493-37e4-422b-96ce-57f98762ea4d">
+    <topic>py-lmdb -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-lmdb</name>
+    <name>py38-lmdb</name>
     <name>py39-lmdb</name>
+    <name>py310-lmdb</name>
+    <name>py311-lmdb</name>
     <range><lt>0.98</lt></range>
       </package>
     </affects>
@@ -323,7 +351,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -338,11 +366,15 @@ Id:          PYSEC-2019-236
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="d55853ae-b447-4121-9aa1-d280b8476142">
-    <topic>py39-lmdb -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="0789eb5f-870a-468f-847f-193d4dabbd35">
+    <topic>py-lmdb -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-lmdb</name>
+    <name>py38-lmdb</name>
     <name>py39-lmdb</name>
+    <name>py310-lmdb</name>
+    <name>py311-lmdb</name>
     <range><lt>0.98</lt></range>
       </package>
     </affects>
@@ -360,7 +392,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -379,11 +411,15 @@ Id:          GHSA-24wv-mv5m-xv4h
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="aeb5cb1b-8d0c-4e8b-bf0d-44486d7f462a">
-    <topic>py39-redis2 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="4474eac2-79a1-4b8d-82a9-67668194b495">
+    <topic>py-redis -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-redis2</name>
+    <name>py38-redis2</name>
     <name>py39-redis2</name>
+    <name>py310-redis2</name>
+    <name>py311-redis2</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -401,7 +437,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -416,11 +452,15 @@ Id:          GHSA-8fww-64cx-x8p5
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="6948958b-09e3-475c-845c-027420c35162">
-    <topic>py39-redis2 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="33f53baa-ca0e-4441-b718-b4b67f264dee">
+    <topic>py-redis -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-redis2</name>
+    <name>py38-redis2</name>
     <name>py39-redis2</name>
+    <name>py310-redis2</name>
+    <name>py311-redis2</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -438,7 +478,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -457,11 +497,15 @@ Id:          GHSA-24wv-mv5m-xv4h
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="7c4901c7-27dd-4362-948a-16956e5869e8">
-    <topic>py39-redis3 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="540a574b-c139-47a5-abb1-cfd6eaa6a435">
+    <topic>py-redis -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-redis3</name>
+    <name>py38-redis3</name>
     <name>py39-redis3</name>
+    <name>py310-redis3</name>
+    <name>py311-redis3</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -479,7 +523,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -494,11 +538,15 @@ Id:          GHSA-8fww-64cx-x8p5
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="fba5bc8d-0663-4aea-a297-7610c22c0715">
-    <topic>py39-redis3 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="30226f39-5220-4961-a561-1bef2c5d9b7d">
+    <topic>py-redis -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-redis3</name>
+    <name>py38-redis3</name>
     <name>py39-redis3</name>
+    <name>py310-redis3</name>
+    <name>py311-redis3</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -516,7 +564,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -535,11 +583,15 @@ Id:          PYSEC-2019-124
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="c9bdb618-8ee3-4bb8-96bd-1dda6596dddb">
-    <topic>py39-sqlalchemy10 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="554ab848-2c68-4259-9735-5058f25ecfa9">
+    <topic>py-sqlalchemy -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-sqlalchemy10</name>
+    <name>py38-sqlalchemy10</name>
     <name>py39-sqlalchemy10</name>
+    <name>py310-sqlalchemy10</name>
+    <name>py311-sqlalchemy10</name>
     <range><lt>1.2.18</lt></range>
       </package>
     </affects>
@@ -557,7 +609,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -572,11 +624,15 @@ Id:          PYSEC-2019-123
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="b6f4ed6e-0f8c-4950-987e-25627c5b7379">
-    <topic>py39-sqlalchemy10 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="599c5ee7-189a-4bf8-8f10-8c85e2ded985">
+    <topic>py-sqlalchemy -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-sqlalchemy10</name>
+    <name>py38-sqlalchemy10</name>
     <name>py39-sqlalchemy10</name>
+    <name>py310-sqlalchemy10</name>
+    <name>py311-sqlalchemy10</name>
     <range><lt>1.2.18</lt></range>
       </package>
     </affects>
@@ -594,7 +650,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -609,11 +665,15 @@ Id:          GHSA-38fc-9xqv-7f7q
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="e7c68f01-dbef-458b-97f5-8c173e1e0891">
-    <topic>py39-sqlalchemy10 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="3d3dc978-821f-44e4-af40-69e0b8adab30">
+    <topic>py-sqlalchemy -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-sqlalchemy10</name>
+    <name>py38-sqlalchemy10</name>
     <name>py39-sqlalchemy10</name>
+    <name>py310-sqlalchemy10</name>
+    <name>py311-sqlalchemy10</name>
     <range><lt>1.3.0</lt></range>
       </package>
     </affects>
@@ -631,7 +691,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -646,11 +706,15 @@ Id:          GHSA-887w-45rq-vxgf
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="c514baf3-019c-472d-8bfe-ae383a4639cf">
-    <topic>py39-sqlalchemy10 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="37e504dc-9623-4a97-b24b-93ed1e5d7087">
+    <topic>py-sqlalchemy -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-sqlalchemy10</name>
+    <name>py38-sqlalchemy10</name>
     <name>py39-sqlalchemy10</name>
+    <name>py310-sqlalchemy10</name>
+    <name>py311-sqlalchemy10</name>
     <range><lt>1.3.0</lt></range>
       </package>
     </affects>
@@ -668,7 +732,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -687,11 +751,15 @@ Id:          PYSEC-2019-124
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="5634c84a-2854-4e6e-a7a6-c25586080bbd">
-    <topic>py39-sqlalchemy11 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="7a851ae8-ecef-469d-af29-5cadeb671fc0">
+    <topic>py-sqlalchemy -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-sqlalchemy11</name>
+    <name>py38-sqlalchemy11</name>
     <name>py39-sqlalchemy11</name>
+    <name>py310-sqlalchemy11</name>
+    <name>py311-sqlalchemy11</name>
     <range><lt>1.2.18</lt></range>
       </package>
     </affects>
@@ -709,7 +777,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -724,11 +792,15 @@ Id:          PYSEC-2019-123
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="41b71d9a-bd8c-492a-848e-61cf24a0c2cb">
-    <topic>py39-sqlalchemy11 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="49c93dab-6b38-4b68-be7b-398461632cbc">
+    <topic>py-sqlalchemy -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-sqlalchemy11</name>
+    <name>py38-sqlalchemy11</name>
     <name>py39-sqlalchemy11</name>
+    <name>py310-sqlalchemy11</name>
+    <name>py311-sqlalchemy11</name>
     <range><lt>1.2.18</lt></range>
       </package>
     </affects>
@@ -746,7 +818,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -761,11 +833,15 @@ Id:          GHSA-38fc-9xqv-7f7q
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="7168a9b1-7038-4f7e-872f-9e3f564939ea">
-    <topic>py39-sqlalchemy11 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="87de2818-4486-44dd-aab0-e172c63d4007">
+    <topic>py-sqlalchemy -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-sqlalchemy11</name>
+    <name>py38-sqlalchemy11</name>
     <name>py39-sqlalchemy11</name>
+    <name>py310-sqlalchemy11</name>
+    <name>py311-sqlalchemy11</name>
     <range><lt>1.3.0</lt></range>
       </package>
     </affects>
@@ -783,7 +859,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -798,11 +874,15 @@ Id:          GHSA-887w-45rq-vxgf
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="ac1b81f3-2b09-4a79-9bab-8d414df4f45c">
-    <topic>py39-sqlalchemy11 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="fdd71ebd-eed6-4f91-8aa1-375614a170a2">
+    <topic>py-sqlalchemy -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-sqlalchemy11</name>
+    <name>py38-sqlalchemy11</name>
     <name>py39-sqlalchemy11</name>
+    <name>py310-sqlalchemy11</name>
+    <name>py311-sqlalchemy11</name>
     <range><lt>1.3.0</lt></range>
       </package>
     </affects>
@@ -820,7 +900,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -839,11 +919,15 @@ Id:          GHSA-38fc-9xqv-7f7q
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="29f73ee8-80d6-4ad9-82ed-0653bb7349c2">
-    <topic>py39-sqlalchemy12 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="84068512-d086-401a-af89-b520e042ca88">
+    <topic>py-sqlalchemy -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-sqlalchemy12</name>
+    <name>py38-sqlalchemy12</name>
     <name>py39-sqlalchemy12</name>
+    <name>py310-sqlalchemy12</name>
+    <name>py311-sqlalchemy12</name>
     <range><lt>1.3.0</lt></range>
       </package>
     </affects>
@@ -861,7 +945,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -876,11 +960,15 @@ Id:          GHSA-887w-45rq-vxgf
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="e650b0f4-e1f5-4616-90cc-5b017ebeac8a">
-    <topic>py39-sqlalchemy12 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="e759c3f2-7740-4d60-b3c4-462c06c46e98">
+    <topic>py-sqlalchemy -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-sqlalchemy12</name>
+    <name>py38-sqlalchemy12</name>
     <name>py39-sqlalchemy12</name>
+    <name>py310-sqlalchemy12</name>
+    <name>py311-sqlalchemy12</name>
     <range><lt>1.3.0</lt></range>
       </package>
     </affects>
@@ -898,7 +986,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -917,11 +1005,15 @@ Id:          PYSEC-2021-858
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="69f924ef-92fe-482a-9340-8644f60334d4">
-    <topic>py39-celery -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="eb342037-58ab-4d47-8a66-8f3d66cd0830">
+    <topic>py-celery -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-celery</name>
+    <name>py38-celery</name>
     <name>py39-celery</name>
+    <name>py310-celery</name>
+    <name>py311-celery</name>
     <range><lt>5.2.2</lt></range>
       </package>
     </affects>
@@ -939,7 +1031,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -954,11 +1046,15 @@ Id:          GHSA-q4xr-rc97-m4xx
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="f369f653-13d0-47f5-b045-7bfe9cebbc35">
-    <topic>py39-celery -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="c6866fa1-d4de-4b07-a829-d8fef4d1881a">
+    <topic>py-celery -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-celery</name>
+    <name>py38-celery</name>
     <name>py39-celery</name>
+    <name>py310-celery</name>
+    <name>py311-celery</name>
     <range><lt>5.2.2</lt></range>
       </package>
     </affects>
@@ -976,12 +1072,12 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
 --------------------------------------------------------------------------------
-Python package 'configobj 5.0.6' / FreeBSD port 'py39-configobj 5.0.6_1' is vulnerable:
+Python package 'configobj 5.0.8' / FreeBSD port 'py39-configobj 5.0.8' is vulnerable:
   Please report to  maintainer 'nivit@FreeBSD.org' for port 'devel/py-configobj'
 --------------------------------------------------------------------------------
 Id:          GHSA-c33w-24p9-8m24
@@ -995,12 +1091,16 @@ Id:          GHSA-c33w-24p9-8m24
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="5063b3a0-c7d3-45d1-b2b6-be79561206bb">
-    <topic>py39-configobj -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="dd6c66d4-6d7a-480e-bdad-fd017da0fc81">
+    <topic>py-configobj -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-configobj</name>
+    <name>py38-configobj</name>
     <name>py39-configobj</name>
-    <range><le>5.0.6_1</le></range>
+    <name>py310-configobj</name>
+    <name>py311-configobj</name>
+    <range><le>5.0.8</le></range>
       </package>
     </affects>
     <description>
@@ -1017,7 +1117,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -1036,11 +1136,15 @@ Id:          GHSA-6hrg-qmvc-2xh8
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="2a8b0348-4243-484c-a078-2ba29b1be081">
-    <topic>py39-joblib -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="f2b8b5fd-0c72-445e-acc0-5f62c2019139">
+    <topic>py-joblib -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-joblib</name>
+    <name>py38-joblib</name>
     <name>py39-joblib</name>
+    <name>py310-joblib</name>
+    <name>py311-joblib</name>
     <range><lt>1.2.0</lt></range>
       </package>
     </affects>
@@ -1058,7 +1162,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -1073,11 +1177,15 @@ Id:          PYSEC-2022-288
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="a9205eb5-9aed-405a-abd1-dba2e20ed614">
-    <topic>py39-joblib -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="fde3f9e3-49d0-4f37-bfc8-0eb0a0c18042">
+    <topic>py-joblib -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-joblib</name>
+    <name>py38-joblib</name>
     <name>py39-joblib</name>
+    <name>py310-joblib</name>
+    <name>py311-joblib</name>
     <range><lt>1.2.0</lt></range>
       </package>
     </affects>
@@ -1095,7 +1203,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -1116,11 +1224,15 @@ The particular codepath in question is the regular expression at `py._path.svnur
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="8ed0c13b-e576-4dcc-aff7-5b6a2c276135">
-    <topic>py39-py -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="921eafb4-460f-4be3-adf4-d326d23c4e3e">
+    <topic>py-py -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-py</name>
+    <name>py38-py</name>
     <name>py39-py</name>
+    <name>py310-py</name>
+    <name>py311-py</name>
     <range><le>1.11.0</le></range>
       </package>
     </affects>
@@ -1140,7 +1252,7 @@ The particular codepath in question is the regular expression at `py._path.svnur
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -1155,11 +1267,15 @@ Id:          PYSEC-2022-42969
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="6afb2279-22a6-4b95-939d-f2560208da7f">
-    <topic>py39-py -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="38f37ed1-4af0-495f-abbe-1a19df7b48ba">
+    <topic>py-py -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-py</name>
+    <name>py38-py</name>
     <name>py39-py</name>
+    <name>py310-py</name>
+    <name>py311-py</name>
     <range><le>1.11.0</le></range>
       </package>
     </affects>
@@ -1177,7 +1293,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -1231,11 +1347,15 @@ If you'd like to handle filtering of these values on the server-side, you can al
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="49e70716-ac17-45c9-89b3-e39e8391ac9d">
-    <topic>py39-sentry-sdk -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="8d34080d-04dc-4e86-ab79-64106dd17348">
+    <topic>py-sentry-sdk -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-sentry-sdk</name>
+    <name>py38-sentry-sdk</name>
     <name>py39-sentry-sdk</name>
+    <name>py310-sentry-sdk</name>
+    <name>py311-sentry-sdk</name>
     <range><lt>1.14.0</lt></range>
       </package>
     </affects>
@@ -1280,12 +1400,12 @@ If you'd like to handle filtering of these values on the server-side, you can al
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
 --------------------------------------------------------------------------------
-Python package 'setuptools 63.1.0' / FreeBSD port 'py38-setuptools 63.1.0' is vulnerable:
+Python package 'setuptools 63.1.0' / FreeBSD port 'py37-setuptools 63.1.0' is vulnerable:
   Please report to  maintainer 'python@FreeBSD.org' for port 'devel/py-setuptools'
 --------------------------------------------------------------------------------
 Id:          GHSA-r9hx-vwmv-q579
@@ -1299,11 +1419,15 @@ Id:          GHSA-r9hx-vwmv-q579
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="5a501754-a544-4ad6-9835-34b33a43eedf">
-    <topic>py38-setuptools -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="7e74a28a-a2ee-4716-bb6f-6dc11c81ad4a">
+    <topic>py-setuptools -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-setuptools</name>
     <name>py38-setuptools</name>
+    <name>py39-setuptools</name>
+    <name>py310-setuptools</name>
+    <name>py311-setuptools</name>
     <range><lt>65.5.1</lt></range>
       </package>
     </affects>
@@ -1321,7 +1445,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -1340,11 +1464,15 @@ Id:          GHSA-r9hx-vwmv-q579
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="36607c80-91e1-413c-a38f-17ef12f367f7">
-    <topic>py27-setuptools44 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="908d3d8b-5b69-4b9f-bc94-ecfb96916b3c">
+    <topic>py-setuptools -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
-    <name>py27-setuptools44</name>
+    <name>py37-setuptools44</name>
+    <name>py38-setuptools44</name>
+    <name>py39-setuptools44</name>
+    <name>py310-setuptools44</name>
+    <name>py311-setuptools44</name>
     <range><lt>65.5.1</lt></range>
       </package>
     </affects>
@@ -1362,12 +1490,12 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
 --------------------------------------------------------------------------------
-Python package 'setuptools 58.5.3' / FreeBSD port 'py37-setuptools58 58.5.3_2' is vulnerable:
+Python package 'setuptools 58.5.3' / FreeBSD port 'py39-setuptools58 58.5.3_2' is vulnerable:
   Please report to  maintainer 'python@FreeBSD.org' for port 'devel/py-setuptools58'
 --------------------------------------------------------------------------------
 Id:          GHSA-r9hx-vwmv-q579
@@ -1381,11 +1509,15 @@ Id:          GHSA-r9hx-vwmv-q579
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="f0ab05ad-d90c-4813-b9af-acd605e3e08e">
-    <topic>py37-setuptools58 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="291b35e6-59d7-4f69-b346-cdefb88d0238">
+    <topic>py-setuptools -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
     <name>py37-setuptools58</name>
+    <name>py38-setuptools58</name>
+    <name>py39-setuptools58</name>
+    <name>py310-setuptools58</name>
+    <name>py311-setuptools58</name>
     <range><lt>65.5.1</lt></range>
       </package>
     </affects>
@@ -1403,7 +1535,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -1429,11 +1561,15 @@ Update to version 4.2.0.
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="5a1f8f84-7dc5-4b11-b80d-26ec77a1b664">
-    <topic>py39-pycares -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="d066b55d-bfc0-4c55-8334-5b244c6ab186">
+    <topic>py-pycares -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-pycares</name>
+    <name>py38-pycares</name>
     <name>py39-pycares</name>
+    <name>py310-pycares</name>
+    <name>py311-pycares</name>
     <range><lt>4.2.0</lt></range>
       </package>
     </affects>
@@ -1443,7 +1579,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     <blockquote cite="https://osv.dev/vulnerability/GHSA-c58j-88f5-h53f">
       <p>### Impact
 
-pycares versions < 4.2.0 are affected by [CVE-2021-3672](https://nvd.nist.gov/vuln/detail/CVE-2021-3672).
+pycares versions &lt; 4.2.0 are affected by [CVE-2021-3672](https://nvd.nist.gov/vuln/detail/CVE-2021-3672).
 
 ### Patches
 
@@ -1457,7 +1593,7 @@ Update to version 4.2.0.
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -1476,11 +1612,15 @@ Id:          PYSEC-2021-868
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="2b659ecb-b2db-491b-9821-e79e2b67f1be">
-    <topic>py39-unicorn -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="6a430e44-e692-4a39-b481-394863d6dfc4">
+    <topic>py-unicorn -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-unicorn</name>
+    <name>py38-unicorn</name>
     <name>py39-unicorn</name>
+    <name>py310-unicorn</name>
+    <name>py311-unicorn</name>
     <range><lt>2.0.0rc1</lt></range>
       </package>
     </affects>
@@ -1498,7 +1638,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -1537,11 +1677,15 @@ etree.set_default_parser(
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="849ae23e-4704-4937-aff7-83486eb1e9e4">
-    <topic>py39-OWSLib -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="78194b47-677c-46fc-b17c-070e571fd508">
+    <topic>py-OWSLib -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-OWSLib</name>
+    <name>py38-OWSLib</name>
     <name>py39-OWSLib</name>
+    <name>py310-OWSLib</name>
+    <name>py311-OWSLib</name>
     <range><lt>0.28.1</lt></range>
       </package>
     </affects>
@@ -1579,7 +1723,7 @@ etree.set_default_parser(
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -1598,11 +1742,15 @@ Id:          PYSEC-2020-228
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="c1e912fc-38dd-4206-a75b-fe278fa7cd27">
-    <topic>py39-cinder -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="f672ce76-f6ae-422d-8601-e302b00a09ff">
+    <topic>py-cinder -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-cinder</name>
+    <name>py38-cinder</name>
     <name>py39-cinder</name>
+    <name>py310-cinder</name>
+    <name>py311-cinder</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -1620,7 +1768,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -1635,11 +1783,15 @@ Id:          GHSA-qhch-g8qr-p497
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="502310d6-f538-4773-98c5-1389355ae801">
-    <topic>py39-cinder -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="d2b5536f-e5d2-423c-acc2-2630a14981e1">
+    <topic>py-cinder -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-cinder</name>
+    <name>py38-cinder</name>
     <name>py39-cinder</name>
+    <name>py310-cinder</name>
+    <name>py311-cinder</name>
     <range><lt>2014.1.3</lt></range>
       </package>
     </affects>
@@ -1657,7 +1809,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -1672,11 +1824,15 @@ Id:          GHSA-7h75-hwxx-qpgc
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="a069100c-c3ac-4ef8-bb7a-38900a6f1b65">
-    <topic>py39-cinder -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="c53173d0-b166-42d2-a945-124f9be22975">
+    <topic>py-cinder -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-cinder</name>
+    <name>py38-cinder</name>
     <name>py39-cinder</name>
+    <name>py310-cinder</name>
+    <name>py311-cinder</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -1694,7 +1850,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -1738,11 +1894,15 @@ This vulnerability has been reported by Yakun Zhang of Baidu Security.
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="77232fed-b8bf-4b08-93e7-87ebe3c0cfe0">
-    <topic>py39-tflite -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="10945aa0-4e9a-4263-8282-3c1fa3ca1364">
+    <topic>py-tflite -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tflite</name>
+    <name>py38-tflite</name>
     <name>py39-tflite</name>
+    <name>py310-tflite</name>
+    <name>py311-tflite</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -1757,9 +1917,9 @@ This is caused by the MLIR optimization of `L2NormalizeReduceAxis` operator. The
 
 ```cc
 bool L2NormalizeReduceAxis(Value sq_op, DenseElementsAttr axis) {
-  if (sq_op.getType().cast<ShapedType>().getRank() - 1 ==
-          *axis.getValues<int>().begin() ||
-      *axis.getValues<int>().begin() == -1) {
+  if (sq_op.getType().cast&lt;ShapedType&gt;().getRank() - 1 ==
+          *axis.getValues&lt;int&gt;().begin() ||
+      *axis.getValues&lt;int&gt;().begin() == -1) {
       // ...
   }
   // ...
@@ -1785,7 +1945,7 @@ This vulnerability has been reported by Yakun Zhang of Baidu Security.</p>
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -1847,11 +2007,15 @@ This vulnerability has been reported by Thibaut Goetghebuer-Planchon, Arm Ltd.
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="deacb056-7d38-435a-9cfc-0138b4b51e44">
-    <topic>py39-tflite -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="47654ac5-f3a5-43f7-b155-2fc6e16bef6d">
+    <topic>py-tflite -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tflite</name>
+    <name>py38-tflite</name>
     <name>py39-tflite</name>
+    <name>py310-tflite</name>
+    <name>py311-tflite</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -1862,7 +2026,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
       <p>### Impact
 The reference kernel of the [`CONV_3D_TRANSPOSE`](https://github.com/tensorflow/tensorflow/blob/091e63f0ea33def7ecad661a5ac01dcafbafa90b/tensorflow/lite/kernels/internal/reference/conv3d_transpose.h#L121) TensorFlow Lite operator wrongly increments the data_ptr when adding the bias to the result.
 
-Instead of `data_ptr += num_channels;` it should be `data_ptr += output_num_channels;` as if the number of input channels is different than the number of output channels, the wrong result will be returned and a buffer overflow will occur if num_channels > output_num_channels.
+Instead of `data_ptr += num_channels;` it should be `data_ptr += output_num_channels;` as if the number of input channels is different than the number of output channels, the wrong result will be returned and a buffer overflow will occur if num_channels &gt; output_num_channels.
 
 An attacker can craft a model with a specific number of input channels in a way similar to the attached example script. It is then possible to write specific values through the bias of the layer outside the bounds of the buffer. This attack only works if the reference kernel resolver is used in the interpreter (i.e. `experimental_op_resolver_type=tf.lite.experimental.OpResolverType.BUILTIN_REF` is used).
 ```python
@@ -1916,7 +2080,7 @@ This vulnerability has been reported by Thibaut Goetghebuer-Planchon, Arm Ltd.
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -1935,11 +2099,15 @@ Id:          PYSEC-2021-17
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="50b8de16-92da-4870-abde-4a4b12f89010">
-    <topic>py39-impacket -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="fdadf502-17c6-4233-a8b7-5c38a6254244">
+    <topic>py-impacket -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-impacket</name>
+    <name>py38-impacket</name>
     <name>py39-impacket</name>
+    <name>py310-impacket</name>
+    <name>py311-impacket</name>
     <range><lt>0.9.23</lt></range>
       </package>
     </affects>
@@ -1957,7 +2125,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -1972,11 +2140,15 @@ Id:          GHSA-mj63-64x7-57xf
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="afd90c44-1874-4280-afca-c49f01e948fb">
-    <topic>py39-impacket -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="14337eaf-d664-4f32-9ed2-a9d04a88b60f">
+    <topic>py-impacket -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-impacket</name>
+    <name>py38-impacket</name>
     <name>py39-impacket</name>
+    <name>py310-impacket</name>
+    <name>py311-impacket</name>
     <range><lt>0.9.23</lt></range>
       </package>
     </affects>
@@ -1994,7 +2166,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -2013,11 +2185,15 @@ Id:          PYSEC-2013-32
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="63259e38-53d0-4ed7-8eee-31e8e0d73192">
-    <topic>py39-suds -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="ccf26a7c-059b-4247-a6b0-777c38176b54">
+    <topic>py-suds -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-suds</name>
+    <name>py38-suds</name>
     <name>py39-suds</name>
+    <name>py310-suds</name>
+    <name>py311-suds</name>
     <range><le>1.1.2</le></range>
       </package>
     </affects>
@@ -2035,7 +2211,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -2054,11 +2230,15 @@ Id:          GHSA-q6cq-m9gm-6q2f
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="32a5cbaa-dfe7-4c9a-b52c-1402b891a829">
-    <topic>py39-slixmpp -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="08382948-cfac-4ebc-b541-d34e8833eda6">
+    <topic>py-slixmpp -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-slixmpp</name>
+    <name>py38-slixmpp</name>
     <name>py39-slixmpp</name>
+    <name>py310-slixmpp</name>
+    <name>py311-slixmpp</name>
     <range><lt>1.8.3</lt></range>
       </package>
     </affects>
@@ -2076,7 +2256,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -2095,11 +2275,15 @@ Id:          GHSA-p4v2-r99v-wjc2
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="43aa94bc-d869-473f-a727-3c04acd39955">
-    <topic>py39-nicotine-plus -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="ca35cd70-0f16-4356-9b09-ca14cc82ddab">
+    <topic>py-nicotine-plus -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-nicotine-plus</name>
+    <name>py38-nicotine-plus</name>
     <name>py39-nicotine-plus</name>
+    <name>py310-nicotine-plus</name>
+    <name>py311-nicotine-plus</name>
     <range><lt>3.2.1</lt></range>
       </package>
     </affects>
@@ -2117,7 +2301,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -2136,11 +2320,15 @@ Id:          GHSA-5jqp-885w-xj32
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="93590451-329d-4482-9510-393a1160a10f">
-    <topic>py39-pymatgen -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="7868a01d-4246-4205-9baf-e94e4bdf108f">
+    <topic>py-pymatgen -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-pymatgen</name>
+    <name>py38-pymatgen</name>
     <name>py39-pymatgen</name>
+    <name>py310-pymatgen</name>
+    <name>py311-pymatgen</name>
     <range><le>2022.7.19</le></range>
       </package>
     </affects>
@@ -2158,7 +2346,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -2204,11 +2392,15 @@ This vulnerability has been reported by Jingyi Shi.
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="4096b8e0-6340-4e80-b843-7685a89cc560">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="07281929-ee5d-4bd1-a773-caa90554cc17">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -2253,7 +2445,7 @@ This vulnerability has been reported by Jingyi Shi.
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -2291,11 +2483,15 @@ This vulnerability has been reported by:
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="7416ea15-49f2-4592-a87e-cc65df633e8e">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="c4675ce7-e373-45ad-b9df-d83b59bdeebb">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -2335,7 +2531,7 @@ This vulnerability has been reported by:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -2374,11 +2570,15 @@ This vulnerability has been reported by Pattarakrit Rattankul
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="c26af5be-7d07-4410-9093-3b5286dd1c53">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="3d66feb3-78e0-4bca-9371-3a367a511aa9">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -2419,7 +2619,7 @@ This vulnerability has been reported by Pattarakrit Rattankul
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -2457,11 +2657,15 @@ This vulnerability has been reported by Tong Liu, ShanghaiTech University
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="1d7bde50-6cfa-458b-878d-d34e9086e813">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="c06d3dea-6f18-41fb-996b-ebb00c074d37">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -2502,7 +2706,7 @@ This vulnerability has been reported by Tong Liu, ShanghaiTech University
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -2541,11 +2745,15 @@ This vulnerability has been reported by Pattarakrit Rattankul
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="2e2ab26e-a673-4e7e-a636-711c9f094013">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="48ddeab6-331b-4ce7-a511-7129f9c9f12a">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -2587,7 +2795,7 @@ This vulnerability has been reported by Pattarakrit Rattankul
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -2626,11 +2834,15 @@ This vulnerability has been reported by Pattarakrit Rattankul.
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="4ed14046-ef57-4028-9638-a9e04cfb3560">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="03cd9ae8-745b-4222-890a-a41632c97fd2">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -2672,7 +2884,7 @@ This vulnerability has been reported by Pattarakrit Rattankul.
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -2710,11 +2922,15 @@ This vulnerability has been reported by Pattarakrit Rattankul.
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="ab98d21e-7b7b-416b-95e6-19a149328870">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="b183770c-b914-44dd-b5a5-c0fb475b95d3">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -2755,7 +2971,7 @@ This vulnerability has been reported by Pattarakrit Rattankul.
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -2795,11 +3011,15 @@ This vulnerability has been reported by Pattarakrit Rattankul.
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="0c3e0276-fca1-4dec-9e03-82873968a959">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="8b49e56e-e112-4891-af31-baf19022264d">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -2842,7 +3062,7 @@ This vulnerability has been reported by Pattarakrit Rattankul.
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -2882,11 +3102,15 @@ This vulnerability has been reported by Neophytos Christou from the Secure Syste
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="efd17f68-e9b8-4828-a7e5-d56b1ec9fa53">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="498b7184-0563-43ad-a657-9305c3b2d84b">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -2929,7 +3153,7 @@ This vulnerability has been reported by Neophytos Christou from the Secure Syste
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -2971,11 +3195,15 @@ This vulnerability has been reported by Vul AI.
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="11e346bb-c96b-402a-8d68-a2bda4738d18">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="b9b34f36-b2ed-48fa-a4df-c9787cd3d00f">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -3020,7 +3248,7 @@ This vulnerability has been reported by Vul AI.
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -3059,11 +3287,15 @@ This vulnerability has been reported by Neophytos Christou from the Secure Syste
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="9644038c-d046-47e7-9350-c9ab5cca1d8f">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="88cb1706-9e29-40d8-ac88-4ecd51ab5ec2">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -3105,7 +3337,7 @@ This vulnerability has been reported by Neophytos Christou from the Secure Syste
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -3147,11 +3379,15 @@ This vulnerability has been reported by Vul AI.
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="3300a4ff-bdfc-4e0d-ad7c-105dd4e7ca74">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="bac8c433-fd29-4fa9-9214-d386c2d39602">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -3196,7 +3432,7 @@ This vulnerability has been reported by Vul AI.
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -3233,11 +3469,15 @@ This vulnerability has been reported by Jiawei Liu, PhD student at University of
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="f597ff7a-831f-47dd-8808-49128014067d">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="f3525e6b-b3b0-487c-b6c9-8f86f35d515c">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -3277,7 +3517,7 @@ This vulnerability has been reported by Jiawei Liu, PhD student at University of
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -3312,11 +3552,15 @@ This vulnerability has been reported by Kang Hong Jin
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="58ff341d-19bd-41a3-abaf-7365f1cb8e07">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="40df77cd-d6c3-4371-b078-7eb65cb9c2b7">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -3354,7 +3598,7 @@ This vulnerability has been reported by Kang Hong Jin
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -3380,11 +3624,15 @@ Please consult [our security guide](https://github.com/tensorflow/tensorflow/blo
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="4262dfae-ff6f-4a73-b12a-c12d0d0dabfb">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="0c8f0a91-f58c-467f-9f08-032a4e84056a">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -3413,7 +3661,7 @@ Please consult [our security guide](https://github.com/tensorflow/tensorflow/blo
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -3441,11 +3689,15 @@ This vulnerability was discovered via internal fuzzing.
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="cd143ab7-a486-40fa-8446-2e7885cab38a">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="4d80478d-f9b6-4d6f-a683-7153794ab770">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -3476,7 +3728,7 @@ This vulnerability was discovered via internal fuzzing.
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -3516,11 +3768,15 @@ This vulnerability has been reported by pattarakritr@smu.edu.sg
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="2d393ba8-a3e6-4b43-bd46-8dd7ff8b0e1d">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="fdf863a5-3f9a-4ccd-a061-3fb740d3cc41">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -3563,7 +3819,7 @@ This vulnerability has been reported by pattarakritr@smu.edu.sg
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -3615,11 +3871,15 @@ This vulnerability has been reported by Zizhuang Deng of IIE, UCAS
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="66e7853b-e98c-4f88-9d7b-760218404945">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="7fc974ee-52ea-403c-910b-0fd72fae25a8">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -3674,7 +3934,7 @@ This vulnerability has been reported by Zizhuang Deng of IIE, UCAS
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -3715,11 +3975,15 @@ Please consult [our security guide](https://github.com/tensorflow/tensorflow/blo
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="65e69f17-e0aa-4b6b-8651-186727a4080e">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="57e77bfb-f515-4fe5-8f5d-aa28527c8d8e">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -3763,7 +4027,7 @@ Please consult [our security guide](https://github.com/tensorflow/tensorflow/blo
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -3800,11 +4064,15 @@ This vulnerability has been reported by Vul AI.
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="2d11e80b-23a5-4ad4-bced-72d040c3f81d">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="e1532a38-999f-4c6b-a08d-a5c73bd61a5b">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -3844,7 +4112,7 @@ This vulnerability has been reported by Vul AI.
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -3870,11 +4138,15 @@ Please consult [our security guide](https://github.com/tensorflow/tensorflow/blo
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="3bb197bd-3277-4982-8ce0-1caa61375bdd">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="746c55cb-bb83-400a-b071-fecef27ebf3e">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -3903,7 +4175,7 @@ Please consult [our security guide](https://github.com/tensorflow/tensorflow/blo
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -3938,11 +4210,15 @@ This vulnerability has been reported by Pattarakrit Rattankul.
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="befa1485-17f0-42cb-9824-c871253677e1">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="c25e1bcc-5b60-48a4-a273-4b92ff549802">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -3980,7 +4256,7 @@ This vulnerability has been reported by Pattarakrit Rattankul.
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -4020,11 +4296,15 @@ This vulnerability has been reported by Yu Tian of Qihoo 360 AIVul Team.
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="26d9c132-6d4e-47db-b68b-d8dadbeccb84">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="c9b09821-9808-448c-abb5-e9aa0bf4a5a3">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -4067,7 +4347,7 @@ This vulnerability has been reported by Yu Tian of Qihoo 360 AIVul Team.
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -4111,11 +4391,15 @@ This vulnerability has been reported by Pattarakrit Rattanukul.
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="affee123-7cfd-4e0c-9313-d20bd0fcb243">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="3c639e59-ce14-4917-b2eb-fcbc57d2f279">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -4162,7 +4446,7 @@ This vulnerability has been reported by Pattarakrit Rattanukul.
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -4202,11 +4486,15 @@ This vulnerability has been reported by pattarakritr@smu.edu.sg
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="32fa0d61-6f53-4427-bb24-7aea898bb677">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="efe7937b-4909-44b3-b64d-582750d2f037">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -4249,7 +4537,7 @@ This vulnerability has been reported by pattarakritr@smu.edu.sg
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -4299,11 +4587,15 @@ This vulnerability has been reported by <evn@google.com>
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="57c4d123-d2ea-450e-959d-4566c5fdf94c">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="a8c345c6-9bd3-4096-810a-2973c744e111">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>2.11.1</lt></range>
       </package>
     </affects>
@@ -4345,7 +4637,7 @@ Please consult [our security guide](https://github.com/tensorflow/tensorflow/blo
 
 
 ### Attribution
-This vulnerability has been reported by <evn@google.com>
+This vulnerability has been reported by &lt;evn@google.com&gt;
 </p>
     </blockquote>
       </body>
@@ -4356,7 +4648,7 @@ This vulnerability has been reported by <evn@google.com>
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -4392,11 +4684,15 @@ This has been reported via Google OSS VRP.
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="da71fbfc-a1cd-40f1-a5f0-7e640ea5904d">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="89406be2-393a-4b7d-965e-1ede7db35425">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>2.11.1</lt></range>
       </package>
     </affects>
@@ -4435,7 +4731,7 @@ This has been reported via Google OSS VRP.</p>
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -4479,11 +4775,15 @@ This vulnerability has been reported by r3pwnx of 360 AIVul Team
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="9bd3297d-f374-429c-a1d1-95a2d2a2d9dc">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="db3723a2-ae94-4b77-be1e-5f3aeca14cb2">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>2.11.1</lt></range>
       </package>
     </affects>
@@ -4530,7 +4830,7 @@ This vulnerability has been reported by r3pwnx of 360 AIVul Team
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -4570,11 +4870,15 @@ This vulnerability has been reported by Yu Tian of Qihoo 360 AIVul Team
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="05bc5cac-2f77-428a-bca4-3e34e3dcec2d">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="4291f59b-311b-4dd8-98e3-c18b2bca877c">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>2.11.1</lt></range>
       </package>
     </affects>
@@ -4583,7 +4887,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     <p>INSERT SOURCE NAME HERE reports:</p>
     <blockquote cite="https://osv.dev/vulnerability/GHSA-qjqc-vqcf-5qvj">
       <p>### Impact
-When the parameter `summarize` of `tf.raw_ops.Print` is zero, the new method `SummarizeArray<bool>` will reference to a nullptr, leading to a seg fault.
+When the parameter `summarize` of `tf.raw_ops.Print` is zero, the new method `SummarizeArray&lt;bool&gt;` will reference to a nullptr, leading to a seg fault.
 
 ```python
 import tensorflow as tf
@@ -4617,7 +4921,7 @@ This vulnerability has been reported by Yu Tian of Qihoo 360 AIVul Team
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -4650,11 +4954,15 @@ This vulnerability has been reported by Yu Tian
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="94b6142a-2c8f-480b-956f-69d74e32b528">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="0d54332b-7aec-447f-8eb7-24b2f4174de0">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>2.11.1</lt></range>
       </package>
     </affects>
@@ -4663,7 +4971,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     <p>INSERT SOURCE NAME HERE reports:</p>
     <blockquote cite="https://osv.dev/vulnerability/GHSA-64jg-wjww-7c5w">
       <p>### Impact
-When ctx->step_containter() is a null ptr, the Lookup function will be executed with a null pointer.
+When ctx-&gt;step_containter() is a null ptr, the Lookup function will be executed with a null pointer.
 ```python
 import tensorflow as tf
 tf.raw_ops.TensorArrayConcatV2(handle=['a', 'b'], flow_in = 0.1, dtype=tf.int32, element_shape_except0=1)
@@ -4690,7 +4998,7 @@ This vulnerability has been reported by Yu Tian</p>
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -4737,11 +5045,15 @@ Please consult [our security guide](https://github.com/tensorflow/tensorflow/blo
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="83c3831a-a5de-4d9d-9fb4-e7906fd1b24c">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="dc1500fc-4b8a-4474-836f-ce2bc645bd90">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>2.11.1</lt></range>
       </package>
     </affects>
@@ -4751,7 +5063,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     <blockquote cite="https://osv.dev/vulnerability/GHSA-gw97-ff7c-9v96">
       <p>### Impact
 Attackers using Tensorflow can exploit the vulnerability. They can access heap memory which is not in the control of user, leading to a crash or RCE.
-When axis is larger than the dim of input, c->Dim(input,axis) goes out of bound.
+When axis is larger than the dim of input, c-&gt;Dim(input,axis) goes out of bound.
 Same problem occurs in the QuantizeAndDequantizeV2/V3/V4/V4Grad operations too.
 ```python
 import tensorflow as tf
@@ -4791,7 +5103,7 @@ Please consult [our security guide](https://github.com/tensorflow/tensorflow/blo
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -4829,11 +5141,15 @@ This vulnerability has been reported by r3pwnx
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="be923259-b11a-4c33-ad58-642b3df71ae4">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="799c447a-9396-46af-9380-8aca9d75e93f">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>2.11.1</lt></range>
       </package>
     </affects>
@@ -4874,7 +5190,7 @@ This vulnerability has been reported by r3pwnx
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -4917,11 +5233,15 @@ This vulnerability has been reported by r3pwnx
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="066d5424-3106-46cb-abbe-58240150b81a">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="4d8ff99c-e387-4559-b3f5-dee6213a3222">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>2.11.1</lt></range>
       </package>
     </affects>
@@ -4967,7 +5287,7 @@ This vulnerability has been reported by r3pwnx
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -5011,11 +5331,15 @@ This vulnerability has been reported by r3pwnx of 360 AIVul Team
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="ad00535d-f680-4645-b5e3-f8440219debb">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="a0695711-7f86-4938-bb32-591dcd2ffe6f">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>2.11.1</lt></range>
       </package>
     </affects>
@@ -5062,7 +5386,7 @@ This vulnerability has been reported by r3pwnx of 360 AIVul Team
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -5098,11 +5422,15 @@ This vulnerability has been reported by r3pwnx
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="42e09860-780f-4956-80c6-3532a3175e72">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="06609d18-3a00-4093-813d-65d1f8f82104">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>2.11.1</lt></range>
       </package>
     </affects>
@@ -5141,7 +5469,7 @@ This vulnerability has been reported by r3pwnx
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -5187,11 +5515,15 @@ This vulnerability has been reported by r3pwnx of 360 AIVul Team
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="d82a47ad-46df-4659-af76-d41c15c83455">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="06e5d73e-2c75-4605-b618-a12f8c4210ed">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>2.11.1</lt></range>
       </package>
     </affects>
@@ -5240,7 +5572,7 @@ This vulnerability has been reported by r3pwnx of 360 AIVul Team
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -5282,11 +5614,15 @@ This vulnerability has been reported by r3pwnx of 360 AIVul Team
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="439ceea9-cc82-4a9b-bcdb-8943d946827d">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="4847cdd5-1463-47b6-9a74-12ac624ddf37">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>2.11.1</lt></range>
       </package>
     </affects>
@@ -5331,7 +5667,7 @@ This vulnerability has been reported by r3pwnx of 360 AIVul Team
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -5375,11 +5711,15 @@ This vulnerability has been reported by r3pwnx
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="520fdbe9-1a53-41f5-a08f-54b81ff2b899">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="3302030c-b5d6-448a-ab2f-ee5ab9bd8ea1">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>2.11.1</lt></range>
       </package>
     </affects>
@@ -5388,9 +5728,9 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     <p>INSERT SOURCE NAME HERE reports:</p>
     <blockquote cite="https://osv.dev/vulnerability/GHSA-7jvm-xxmr-v5cw">
       <p>### Impact
-TFversion 2.11.0 //tensorflow/core/ops/array_ops.cc:1067 const Tensor* hypothesis_shape_t = c->input_tensor(2); std::vector<DimensionHandle> dims(hypothesis_shape_t->NumElements() - 1); for (int i = 0; i < dims.size(); ++i) { dims[i] = c->MakeDim(std::max(h_values(i), t_values(i))); }
+TFversion 2.11.0 //tensorflow/core/ops/array_ops.cc:1067 const Tensor* hypothesis_shape_t = c-&gt;input_tensor(2); std::vector&lt;DimensionHandle&gt; dims(hypothesis_shape_t-&gt;NumElements() - 1); for (int i = 0; i &lt; dims.size(); ++i) { dims[i] = c-&gt;MakeDim(std::max(h_values(i), t_values(i))); }
 
-if hypothesis_shape_t is empty, hypothesis_shape_t->NumElements() - 1 will be integer overflow, and the it will deadlock
+if hypothesis_shape_t is empty, hypothesis_shape_t-&gt;NumElements() - 1 will be integer overflow, and the it will deadlock
 ```python
 import tensorflow as tf
 para={
@@ -5426,7 +5766,7 @@ This vulnerability has been reported by r3pwnx</p>
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -5468,11 +5808,15 @@ This vulnerability has been reported by r3pwnx
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="224ea6a7-2fe6-4a09-9ced-2ec66c1c6b3e">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="a741b7d8-5184-4b2f-99ab-da97281e3123">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>2.11.1</lt></range>
       </package>
     </affects>
@@ -5517,7 +5861,7 @@ This vulnerability has been reported by r3pwnx</p>
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -5561,11 +5905,15 @@ This vulnerability has been reported by r3pwnx.
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="901f0ffe-1a96-44ed-8633-0c3009199f0f">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="fa10917a-c81c-41bb-88a9-2c09b9df10a3">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>2.11.1</lt></range>
       </package>
     </affects>
@@ -5612,7 +5960,7 @@ This vulnerability has been reported by r3pwnx.
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -5642,11 +5990,15 @@ This vulnerability was reported by Wang Xuan of Qihoo 360 AIVul Team.
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="236cf326-856b-4e1b-a9d3-56534fe09168">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="e94fe029-b3f9-4259-98d4-260464644cac">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>2.11.1</lt></range>
       </package>
     </affects>
@@ -5679,7 +6031,7 @@ This vulnerability was reported by Wang Xuan of Qihoo 360 AIVul Team.
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -5730,11 +6082,15 @@ This vulnerability has been reported by r3pwnx
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="fb818151-cb11-42ea-b1ec-393ecc8412b6">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="d515839f-357e-4a31-974b-d549cb93d518">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>2.11.1</lt></range>
       </package>
     </affects>
@@ -5745,11 +6101,11 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
       <p>### Impact
 version:2.11.0 //core/ops/audio_ops.cc:70
 
-Status SpectrogramShapeFn(InferenceContext* c) { ShapeHandle input; TF_RETURN_IF_ERROR(c->WithRank(c->input(0), 2, &input)); int32_t window_size; TF_RETURN_IF_ERROR(c->GetAttr("window_size", &window_size)); int32_t stride; TF_RETURN_IF_ERROR(c->GetAttr("stride", &stride)); .....[1]
+Status SpectrogramShapeFn(InferenceContext* c) { ShapeHandle input; TF_RETURN_IF_ERROR(c-&gt;WithRank(c-&gt;input(0), 2, &input)); int32_t window_size; TF_RETURN_IF_ERROR(c-&gt;GetAttr("window_size", &window_size)); int32_t stride; TF_RETURN_IF_ERROR(c-&gt;GetAttr("stride", &stride)); .....[1]
 
-DimensionHandle input_length = c->Dim(input, 0); DimensionHandle input_channels = c->Dim(input, 1);
+DimensionHandle input_length = c-&gt;Dim(input, 0); DimensionHandle input_channels = c-&gt;Dim(input, 1);
 
-DimensionHandle output_length; if (!c->ValueKnown(input_length)) { output_length = c->UnknownDim(); } else { const int64_t input_length_value = c->Value(input_length); const int64_t length_minus_window = (input_length_value - window_size); int64_t output_length_value; if (length_minus_window < 0) { output_length_value = 0; } else { output_length_value = 1 + (length_minus_window / stride); .....[2] } output_length = c->MakeDim(output_length_value); }
+DimensionHandle output_length; if (!c-&gt;ValueKnown(input_length)) { output_length = c-&gt;UnknownDim(); } else { const int64_t input_length_value = c-&gt;Value(input_length); const int64_t length_minus_window = (input_length_value - window_size); int64_t output_length_value; if (length_minus_window &lt; 0) { output_length_value = 0; } else { output_length_value = 1 + (length_minus_window / stride); .....[2] } output_length = c-&gt;MakeDim(output_length_value); }
 
 Get the value of stride at [1], and the used at [2]
 ```python
@@ -5788,7 +6144,7 @@ This vulnerability has been reported by r3pwnx
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -5829,11 +6185,15 @@ This vulnerability has been reported by Yu Tian of Qihoo 360 AIVul Team
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="6f0546c3-2bd0-4750-9ca9-a4725a1b1a13">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="89ec936f-5c90-4d72-ae6a-81ee8d71be8c">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>2.11.1</lt></range>
       </package>
     </affects>
@@ -5877,7 +6237,7 @@ This vulnerability has been reported by Yu Tian of Qihoo 360 AIVul Team</p>
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -5927,11 +6287,15 @@ This vulnerability was reported by [dmc1778](https://github.com/dmc1778), of [ni
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="96d41b72-03b1-4996-b6e7-24a6536bc060">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="05bf5d9f-afcc-484c-8026-e4d2b59b19ea">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>2.11.1</lt></range>
       </package>
     </affects>
@@ -5984,7 +6348,7 @@ This vulnerability was reported by [dmc1778](https://github.com/dmc1778), of [ni
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -6020,11 +6384,15 @@ This vulnerability has been reported by Andrei
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="f9bc4af2-287b-4d55-b161-b5ecea709cc6">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="76cda61b-0e95-4e81-b001-6aba54faff2b">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>2.11.1</lt></range>
       </package>
     </affects>
@@ -6033,7 +6401,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     <p>INSERT SOURCE NAME HERE reports:</p>
     <blockquote cite="https://osv.dev/vulnerability/GHSA-fqm2-gh8w-gr68">
       <p>### Impact
-Integer overflow occurs when 2^31 <= num_frames * height * width * channels < 2^32, for example Full HD screencast of at least 346 frames.
+Integer overflow occurs when 2^31 &lt;= num_frames * height * width * channels &lt; 2^32, for example Full HD screencast of at least 346 frames.
 ```python
 import urllib.request
 dat = urllib.request.urlopen('https://raw.githubusercontent.com/tensorflow/tensorflow/1c38ad9b78ffe06076745a1ee00cec42f39ff726/tensorflow/core/lib/gif/testdata/3g_multiframe.gif').read()
@@ -6063,7 +6431,7 @@ This vulnerability has been reported by Andrei
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -6111,11 +6479,15 @@ Please consult [Tensor Flow's security guide](https://github.com/tensorflow/tens
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="6a399554-048f-4161-a158-82f536404593">
-    <topic>py39-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="fb51e4de-066f-4930-be08-6867f3747c34">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
     <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
     <range><lt>2.11.1</lt></range>
       </package>
     </affects>
@@ -6166,7 +6538,142 @@ Please consult [Tensor Flow's security guide](https://github.com/tensorflow/tens
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
+    </dates>
+  </vuln>
+
+Id:          GHSA-h6q3-vv32-2cq5
+  Aliases:   ['CVE-2022-41894']
+  Details:   ### Impact
+The reference kernel of the [`CONV_3D_TRANSPOSE`](https://github.com/tensorflow/tensorflow/blob/091e63f0ea33def7ecad661a5ac01dcafbafa90b/tensorflow/lite/kernels/internal/reference/conv3d_transpose.h#L121) TensorFlow Lite operator wrongly increments the data_ptr when adding the bias to the result.
+
+Instead of `data_ptr += num_channels;` it should be `data_ptr += output_num_channels;` as if the number of input channels is different than the number of output channels, the wrong result will be returned and a buffer overflow will occur if num_channels > output_num_channels.
+
+An attacker can craft a model with a specific number of input channels in a way similar to the attached example script. It is then possible to write specific values through the bias of the layer outside the bounds of the buffer. This attack only works if the reference kernel resolver is used in the interpreter (i.e. `experimental_op_resolver_type=tf.lite.experimental.OpResolverType.BUILTIN_REF` is used).
+```python
+import tensorflow as tf
+model = tf.keras.Sequential(
+    [
+        tf.keras.layers.InputLayer(input_shape=(2, 2, 2, 1024), batch_size=1),
+        tf.keras.layers.Conv3DTranspose(
+            filters=8,
+            kernel_size=(2, 2, 2),
+            padding="same",
+            data_format="channels_last",
+        ),
+    ]
+)
+
+converter = tf.lite.TFLiteConverter.from_keras_model(model)
+tflite_model = converter.convert()
+
+interpreter = tf.lite.Interpreter(
+    model_content=tflite_model,
+    experimental_op_resolver_type=tf.lite.experimental.OpResolverType.BUILTIN_REF,
+)
+
+interpreter.allocate_tensors()
+interpreter.set_tensor(
+    interpreter.get_input_details()[0]["index"], tf.zeros(shape=[1, 2, 2, 2, 1024])
+)
+interpreter.invoke()
+```
+
+### Patches
+We have patched the issue in GitHub commit [72c0bdcb25305b0b36842d746cc61d72658d2941](https://github.com/tensorflow/tensorflow/commit/72c0bdcb25305b0b36842d746cc61d72658d2941).
+
+The fix will be included in TensorFlow 2.11. We will also cherrypick this commit on TensorFlow 2.10.1, 2.9.3, and TensorFlow 2.8.4, as these are also affected and still in supported range.
+
+
+### For more information
+Please consult [our security guide](https://github.com/tensorflow/tensorflow/blob/master/SECURITY.md) for more information regarding the security model and how to contact us with issues and questions.
+
+
+### Attribution
+This vulnerability has been reported by Thibaut Goetghebuer-Planchon, Arm Ltd.
+
+  Fixed in:  ['2.8.4', '2.9.3', '2.10.1']
+  Link:      https://osv.dev/vulnerability/GHSA-h6q3-vv32-2cq5
+  Source:    osv
+  Summary:   None
+  Withdrawn: None
+
+Skeleton for this unreported vulnerability in FreeBSD VuXML:
+
+  <vuln vid="05002aff-9b04-489b-aff0-8fe2071abc8e">
+    <topic>py-tensorflow -- INSERT VULNERABILITY SUMMARY HERE</topic>
+    <affects>
+      <package>
+    <name>py37-tensorflow</name>
+    <name>py38-tensorflow</name>
+    <name>py39-tensorflow</name>
+    <name>py310-tensorflow</name>
+    <name>py311-tensorflow</name>
+    <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>INSERT SOURCE NAME HERE reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/GHSA-h6q3-vv32-2cq5">
+      <p>### Impact
+The reference kernel of the [`CONV_3D_TRANSPOSE`](https://github.com/tensorflow/tensorflow/blob/091e63f0ea33def7ecad661a5ac01dcafbafa90b/tensorflow/lite/kernels/internal/reference/conv3d_transpose.h#L121) TensorFlow Lite operator wrongly increments the data_ptr when adding the bias to the result.
+
+Instead of `data_ptr += num_channels;` it should be `data_ptr += output_num_channels;` as if the number of input channels is different than the number of output channels, the wrong result will be returned and a buffer overflow will occur if num_channels &gt; output_num_channels.
+
+An attacker can craft a model with a specific number of input channels in a way similar to the attached example script. It is then possible to write specific values through the bias of the layer outside the bounds of the buffer. This attack only works if the reference kernel resolver is used in the interpreter (i.e. `experimental_op_resolver_type=tf.lite.experimental.OpResolverType.BUILTIN_REF` is used).
+```python
+import tensorflow as tf
+model = tf.keras.Sequential(
+    [
+        tf.keras.layers.InputLayer(input_shape=(2, 2, 2, 1024), batch_size=1),
+        tf.keras.layers.Conv3DTranspose(
+            filters=8,
+            kernel_size=(2, 2, 2),
+            padding="same",
+            data_format="channels_last",
+        ),
+    ]
+)
+
+converter = tf.lite.TFLiteConverter.from_keras_model(model)
+tflite_model = converter.convert()
+
+interpreter = tf.lite.Interpreter(
+    model_content=tflite_model,
+    experimental_op_resolver_type=tf.lite.experimental.OpResolverType.BUILTIN_REF,
+)
+
+interpreter.allocate_tensors()
+interpreter.set_tensor(
+    interpreter.get_input_details()[0]["index"], tf.zeros(shape=[1, 2, 2, 2, 1024])
+)
+interpreter.invoke()
+```
+
+### Patches
+We have patched the issue in GitHub commit [72c0bdcb25305b0b36842d746cc61d72658d2941](https://github.com/tensorflow/tensorflow/commit/72c0bdcb25305b0b36842d746cc61d72658d2941).
+
+The fix will be included in TensorFlow 2.11. We will also cherrypick this commit on TensorFlow 2.10.1, 2.9.3, and TensorFlow 2.8.4, as these are also affected and still in supported range.
+
+
+### For more information
+Please consult [our security guide](https://github.com/tensorflow/tensorflow/blob/master/SECURITY.md) for more information regarding the security model and how to contact us with issues and questions.
+
+
+### Attribution
+This vulnerability has been reported by Thibaut Goetghebuer-Planchon, Arm Ltd.
+</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2022-41894</cvename>
+      <url>https://osv.dev/vulnerability/GHSA-h6q3-vv32-2cq5</url>
+    </references>
+    <dates>
+      <discovery>INSERT YEAR-MONTH-DAY</discovery>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -6200,11 +6707,15 @@ This issue has been present since `update_into` was originally introduced in cry
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="f3a7c11b-99db-4904-a37c-fc25d9950e1a">
-    <topic>py39-cryptography -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="986a495f-713e-40eb-a516-25e5c86168c2">
+    <topic>py-cryptography -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-cryptography</name>
+    <name>py38-cryptography</name>
     <name>py39-cryptography</name>
+    <name>py310-cryptography</name>
+    <name>py311-cryptography</name>
     <range><lt>39.0.1</lt></range>
       </package>
     </affects>
@@ -6215,11 +6726,11 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
       <p>Previously, `Cipher.update_into` would accept Python objects which implement the buffer protocol, but provide only immutable buffers:
 
 ```pycon
->>> outbuf = b"\x00" * 32
->>> c = ciphers.Cipher(AES(b"\x00" * 32), modes.ECB()).encryptor()
->>> c.update_into(b"\x00" * 16, outbuf)
+&gt;&gt;&gt; outbuf = b"\x00" * 32
+&gt;&gt;&gt; c = ciphers.Cipher(AES(b"\x00" * 32), modes.ECB()).encryptor()
+&gt;&gt;&gt; c.update_into(b"\x00" * 16, outbuf)
 16
->>> outbuf
+&gt;&gt;&gt; outbuf
 b'\xdc\x95\xc0x\xa2@\x89\x89\xadH\xa2\x14\x92\x84 \x87\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
 ```
 
@@ -6237,7 +6748,7 @@ This issue has been present since `update_into` was originally introduced in cry
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -6254,13 +6765,38 @@ If you are building cryptography source ("sdist") then you are responsible for u
   Summary:   None
   Withdrawn: None
 
+Vulnerability ID: 648a432c-a71f-11ed-86e9-d4c9ef517024
+  Topic: OpenSSL -- Multiple vulnerabilities
+  Affects:
+    openssl:
+      < 1.1.1t,1 ; 
+    openssl-devel:
+      < 3.0.8 ; 
+    openssl-quictls:
+      < 3.0.8 ; 
+  References:
+    cvename: CVE-2023-0286
+    cvename: CVE-2022-4304
+    cvename: CVE-2022-4203
+    cvename: CVE-2023-0215
+    cvename: CVE-2022-4450
+    cvename: CVE-2023-0216
+    cvename: CVE-2023-0401
+    url: https://www.openssl.org/news/secadv/20230207.txt
+  Discovery date: 2023-02-07
+  Entry date: 2023-02-07
+
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="6621a30b-d328-4073-9e52-d95d48aaa20e">
-    <topic>py39-cryptography -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="8c7afaab-056d-49cf-b508-140ce6e58636">
+    <topic>py-cryptography -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-cryptography</name>
+    <name>py38-cryptography</name>
     <name>py39-cryptography</name>
+    <name>py310-cryptography</name>
+    <name>py311-cryptography</name>
     <range><lt>39.0.1</lt></range>
       </package>
     </affects>
@@ -6282,7 +6818,7 @@ If you are building cryptography source ("sdist") then you are responsible for u
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -6301,11 +6837,15 @@ Id:          PYSEC-2017-49
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="689386ee-5388-4c37-9b08-d202d916b231">
-    <topic>py39-kerberos -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="027d19ff-b01e-4e61-a487-07827fc7e016">
+    <topic>py-kerberos -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-kerberos</name>
+    <name>py38-kerberos</name>
     <name>py39-kerberos</name>
+    <name>py310-kerberos</name>
+    <name>py311-kerberos</name>
     <range><le>1.3.1</le></range>
       </package>
     </affects>
@@ -6323,7 +6863,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -6342,11 +6882,15 @@ Id:          PYSEC-2020-94
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="0266f73a-fe20-4fda-848b-d197a9923b13">
-    <topic>py39-pysaml24 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="34f57fdd-3c89-4148-ab84-d2d63308c223">
+    <topic>py-pysaml2 -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-pysaml24</name>
+    <name>py38-pysaml24</name>
     <name>py39-pysaml24</name>
+    <name>py310-pysaml24</name>
+    <name>py311-pysaml24</name>
     <range><lt>5.0.0</lt></range>
       </package>
     </affects>
@@ -6364,7 +6908,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -6377,13 +6921,37 @@ Id:          PYSEC-2021-48
   Summary:   None
   Withdrawn: None
 
+Vulnerability ID: fb67567a-5d95-11eb-a955-08002728f74c
+  Topic: pysaml2 -- multiple vulnerabilities
+  Affects:
+    py36-pysaml2:
+      < 6.5.0 ; 
+    py37-pysaml2:
+      < 6.5.0 ; 
+    py38-pysaml2:
+      < 6.5.0 ; 
+    py39-pysaml2:
+      < 6.5.0 ; 
+  References:
+    url: https://github.com/IdentityPython/pysaml2/releases
+    url: https://github.com/IdentityPython/pysaml2/security/advisories/GHSA-f4g9-h89h-jgv9
+    url: https://github.com/IdentityPython/pysaml2/security/advisories/GHSA-5p3x-r448-pc62
+    cvename: CVE-2021-21238
+    cvename: CVE-2021-21239
+  Discovery date: 2021-01-20
+  Entry date: 2021-01-26
+
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="8ba5ca1b-c7a6-4621-8d5f-838bd0e7b491">
-    <topic>py39-pysaml24 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="2d8f048f-ccd7-4512-9633-be65503ec02b">
+    <topic>py-pysaml2 -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-pysaml24</name>
+    <name>py38-pysaml24</name>
     <name>py39-pysaml24</name>
+    <name>py310-pysaml24</name>
+    <name>py311-pysaml24</name>
     <range><lt>6.5.0</lt></range>
       </package>
     </affects>
@@ -6401,7 +6969,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -6414,13 +6982,37 @@ Id:          PYSEC-2021-49
   Summary:   None
   Withdrawn: None
 
+Vulnerability ID: fb67567a-5d95-11eb-a955-08002728f74c
+  Topic: pysaml2 -- multiple vulnerabilities
+  Affects:
+    py36-pysaml2:
+      < 6.5.0 ; 
+    py37-pysaml2:
+      < 6.5.0 ; 
+    py38-pysaml2:
+      < 6.5.0 ; 
+    py39-pysaml2:
+      < 6.5.0 ; 
+  References:
+    url: https://github.com/IdentityPython/pysaml2/releases
+    url: https://github.com/IdentityPython/pysaml2/security/advisories/GHSA-f4g9-h89h-jgv9
+    url: https://github.com/IdentityPython/pysaml2/security/advisories/GHSA-5p3x-r448-pc62
+    cvename: CVE-2021-21238
+    cvename: CVE-2021-21239
+  Discovery date: 2021-01-20
+  Entry date: 2021-01-26
+
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="a056cbdb-894b-4816-bf62-89e16ad38398">
-    <topic>py39-pysaml24 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="453c2da0-1d14-4522-8579-312e8f4c5ace">
+    <topic>py-pysaml2 -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-pysaml24</name>
+    <name>py38-pysaml24</name>
     <name>py39-pysaml24</name>
+    <name>py310-pysaml24</name>
+    <name>py311-pysaml24</name>
     <range><lt>6.5.0</lt></range>
       </package>
     </affects>
@@ -6438,7 +7030,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -6453,11 +7045,15 @@ Id:          GHSA-qf7v-8hj3-4xw7
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="3d26058f-0a47-44cc-b3e7-f97ea1e3fc8b">
-    <topic>py39-pysaml24 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="57e67d66-596a-4817-9f69-4dec8f59b206">
+    <topic>py-pysaml2 -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-pysaml24</name>
+    <name>py38-pysaml24</name>
     <name>py39-pysaml24</name>
+    <name>py310-pysaml24</name>
+    <name>py311-pysaml24</name>
     <range><lt>5.0.0</lt></range>
       </package>
     </affects>
@@ -6475,7 +7071,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -6514,13 +7110,37 @@ If you have any questions or comments about this advisory:
   Summary:   None
   Withdrawn: None
 
+Vulnerability ID: fb67567a-5d95-11eb-a955-08002728f74c
+  Topic: pysaml2 -- multiple vulnerabilities
+  Affects:
+    py36-pysaml2:
+      < 6.5.0 ; 
+    py37-pysaml2:
+      < 6.5.0 ; 
+    py38-pysaml2:
+      < 6.5.0 ; 
+    py39-pysaml2:
+      < 6.5.0 ; 
+  References:
+    url: https://github.com/IdentityPython/pysaml2/releases
+    url: https://github.com/IdentityPython/pysaml2/security/advisories/GHSA-f4g9-h89h-jgv9
+    url: https://github.com/IdentityPython/pysaml2/security/advisories/GHSA-5p3x-r448-pc62
+    cvename: CVE-2021-21238
+    cvename: CVE-2021-21239
+  Discovery date: 2021-01-20
+  Entry date: 2021-01-26
+
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="ff351d74-c0d3-448d-9585-b82b40efdf7d">
-    <topic>py39-pysaml24 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="85c54675-c3fb-4f04-b491-9960e9c623cb">
+    <topic>py-pysaml2 -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-pysaml24</name>
+    <name>py38-pysaml24</name>
     <name>py39-pysaml24</name>
+    <name>py310-pysaml24</name>
+    <name>py311-pysaml24</name>
     <range><lt>6.5.0</lt></range>
       </package>
     </affects>
@@ -6530,7 +7150,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     <blockquote cite="https://osv.dev/vulnerability/GHSA-f4g9-h89h-jgv9">
       <p>### Impact
 
-All users of pysaml2 that use the default `CryptoBackendXmlSec1` backend and need to verify signed SAML documents are impacted. `pysaml2 <= 6.4.1` does not validate the SAML document against an XML schema. This allows invalid XML documents to trick the verification process, by presenting elements with a valid signature inside elements whose content has been malformed. The verification is offloaded to `xmlsec1` and `xmlsec1` will not validate every signature in the given document, but only the first it finds in the given scope.
+All users of pysaml2 that use the default `CryptoBackendXmlSec1` backend and need to verify signed SAML documents are impacted. `pysaml2 &lt;= 6.4.1` does not validate the SAML document against an XML schema. This allows invalid XML documents to trick the verification process, by presenting elements with a valid signature inside elements whose content has been malformed. The verification is offloaded to `xmlsec1` and `xmlsec1` will not validate every signature in the given document, but only the first it finds in the given scope.
 
 ### Patches
 
@@ -6564,7 +7184,7 @@ If you have any questions or comments about this advisory:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -6603,13 +7223,37 @@ If you have any questions or comments about this advisory:
   Summary:   None
   Withdrawn: None
 
+Vulnerability ID: fb67567a-5d95-11eb-a955-08002728f74c
+  Topic: pysaml2 -- multiple vulnerabilities
+  Affects:
+    py36-pysaml2:
+      < 6.5.0 ; 
+    py37-pysaml2:
+      < 6.5.0 ; 
+    py38-pysaml2:
+      < 6.5.0 ; 
+    py39-pysaml2:
+      < 6.5.0 ; 
+  References:
+    url: https://github.com/IdentityPython/pysaml2/releases
+    url: https://github.com/IdentityPython/pysaml2/security/advisories/GHSA-f4g9-h89h-jgv9
+    url: https://github.com/IdentityPython/pysaml2/security/advisories/GHSA-5p3x-r448-pc62
+    cvename: CVE-2021-21238
+    cvename: CVE-2021-21239
+  Discovery date: 2021-01-20
+  Entry date: 2021-01-26
+
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="2ce0efc0-d031-4d21-820a-c125dc954d6f">
-    <topic>py39-pysaml24 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="ebdd8cc1-b300-401b-a5a6-f6c6e162ebae">
+    <topic>py-pysaml2 -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-pysaml24</name>
+    <name>py38-pysaml24</name>
     <name>py39-pysaml24</name>
+    <name>py310-pysaml24</name>
+    <name>py311-pysaml24</name>
     <range><lt>6.5.0</lt></range>
       </package>
     </affects>
@@ -6619,7 +7263,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     <blockquote cite="https://osv.dev/vulnerability/GHSA-5p3x-r448-pc62">
       <p>### Impact
 
-All users of pysaml2 that use the default `CryptoBackendXmlSec1` backend and need to verify signed SAML documents are impacted. `pysaml2 <= 6.4.1` does not ensure that a signed SAML document is correctly signed. The default `CryptoBackendXmlSec1` backend is using the `xmlsec1` binary to verify the signature of signed SAML documents, but by default, `xmlsec1` accepts any type of key found within the given document. `xmlsec1` needs to be configured explicitly to only use only _x509 certificates_ for the verification process of the SAML document signature.
+All users of pysaml2 that use the default `CryptoBackendXmlSec1` backend and need to verify signed SAML documents are impacted. `pysaml2 &lt;= 6.4.1` does not ensure that a signed SAML document is correctly signed. The default `CryptoBackendXmlSec1` backend is using the `xmlsec1` binary to verify the signature of signed SAML documents, but by default, `xmlsec1` accepts any type of key found within the given document. `xmlsec1` needs to be configured explicitly to only use only _x509 certificates_ for the verification process of the SAML document signature.
 
 ### Patches
 
@@ -6653,7 +7297,7 @@ If you have any questions or comments about this advisory:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -6672,11 +7316,15 @@ Id:          PYSEC-2020-221
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="cb036732-e5ed-4650-afa8-db9acbc6ea98">
-    <topic>py39-ansible -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="b8432f5d-1f8e-4da8-a7a9-79f6da5ec658">
+    <topic>py-ansible -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-ansible</name>
+    <name>py38-ansible</name>
     <name>py39-ansible</name>
+    <name>py310-ansible</name>
+    <name>py311-ansible</name>
     <range><le>7.1.0</le></range>
       </package>
     </affects>
@@ -6694,7 +7342,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -6709,11 +7357,15 @@ Id:          PYSEC-2020-220
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="1d49c0c1-f922-4e7d-91a1-ea8445e2d3b4">
-    <topic>py39-ansible -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="61a97f73-4336-46bf-8b61-575200e5f6d6">
+    <topic>py-ansible -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-ansible</name>
+    <name>py38-ansible</name>
     <name>py39-ansible</name>
+    <name>py310-ansible</name>
+    <name>py311-ansible</name>
     <range><le>7.1.0</le></range>
       </package>
     </affects>
@@ -6731,7 +7383,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -6746,11 +7398,15 @@ Id:          PYSEC-2021-125
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="371986af-0876-4a85-b1c4-c9e77d7c5898">
-    <topic>py39-ansible -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="924cd9a1-77b8-4f0f-8781-c34c9bfc12fe">
+    <topic>py-ansible -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-ansible</name>
+    <name>py38-ansible</name>
     <name>py39-ansible</name>
+    <name>py310-ansible</name>
+    <name>py311-ansible</name>
     <range><le>7.1.0</le></range>
       </package>
     </affects>
@@ -6768,13 +7424,13 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
 --------------------------------------------------------------------------------
 Python package 'psutil 1.2.1' / FreeBSD port 'py39-psutil121 1.2.1_2' is vulnerable:
-  Please report to  maintainer 'swills@FreeBSD.org' for port 'sysutils/py-psutil121'
+  Please report to  maintainer 'bofh@FreeBSD.org' for port 'sysutils/py-psutil121'
 --------------------------------------------------------------------------------
 Id:          PYSEC-2019-41
   Aliases:   ['CVE-2019-18874', 'GHSA-qfc5-mcwq-26q8']
@@ -6787,11 +7443,15 @@ Id:          PYSEC-2019-41
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="e4ec15dc-6cfb-402d-b8a8-b522f6946c89">
-    <topic>py39-psutil121 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="9dd4dd81-bb0a-466e-bc3e-6ca6fb808d30">
+    <topic>py-psutil -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-psutil121</name>
+    <name>py38-psutil121</name>
     <name>py39-psutil121</name>
+    <name>py310-psutil121</name>
+    <name>py311-psutil121</name>
     <range><lt>5.6.6</lt></range>
       </package>
     </affects>
@@ -6809,7 +7469,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -6824,11 +7484,15 @@ Id:          GHSA-qfc5-mcwq-26q8
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="8825b61f-2403-463a-8170-d2e78fcfb5d4">
-    <topic>py39-psutil121 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="9e85082b-01c7-4cae-a62f-9e01580c7f6b">
+    <topic>py-psutil -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-psutil121</name>
+    <name>py38-psutil121</name>
     <name>py39-psutil121</name>
+    <name>py310-psutil121</name>
+    <name>py311-psutil121</name>
     <range><lt>5.6.6</lt></range>
       </package>
     </affects>
@@ -6846,7 +7510,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -6882,11 +7546,15 @@ If you have any questions or comments about this advisory:
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="aeaa81e0-83c7-45ad-9675-fe1cbacc0b5a">
-    <topic>py39-dparse -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="88e000fd-3fff-487f-bec5-f11e877f6b8e">
+    <topic>py-dparse -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-dparse</name>
+    <name>py38-dparse</name>
     <name>py39-dparse</name>
+    <name>py310-dparse</name>
+    <name>py311-dparse</name>
     <range><lt>0.5.2</lt></range>
       </package>
     </affects>
@@ -6921,7 +7589,7 @@ If you have any questions or comments about this advisory:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -6936,11 +7604,15 @@ Id:          PYSEC-2022-301
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="f1f1a708-3fd5-4d8f-9c28-0adb82c145d1">
-    <topic>py39-dparse -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="83b29e3f-886f-439f-b9a8-72e014479ff9">
+    <topic>py-dparse -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-dparse</name>
+    <name>py38-dparse</name>
     <name>py39-dparse</name>
+    <name>py310-dparse</name>
+    <name>py311-dparse</name>
     <range><lt>0.5.2</lt></range>
       </package>
     </affects>
@@ -6958,7 +7630,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -6977,11 +7649,15 @@ Id:          PYSEC-2021-20
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="bce7938f-122f-464c-8380-68c7c79ac559">
-    <topic>py39-markdown2 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="05feafdb-edda-467d-a7d3-834ab0b2f715">
+    <topic>py-markdown2 -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-markdown2</name>
+    <name>py38-markdown2</name>
     <name>py39-markdown2</name>
+    <name>py310-markdown2</name>
+    <name>py311-markdown2</name>
     <range><lt>2.4.0</lt></range>
       </package>
     </affects>
@@ -6989,7 +7665,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
       <body xmlns="http://www.w3.org/1999/xhtml">
     <p>INSERT SOURCE NAME HERE reports:</p>
     <blockquote cite="https://osv.dev/vulnerability/PYSEC-2021-20">
-      <p>markdown2 >=1.0.1.18, fixed in 2.4.0, is affected by a regular expression denial of service vulnerability. If an attacker provides a malicious string, it can make markdown2 processing difficult or delayed for an extended period of time.</p>
+      <p>markdown2 &gt;=1.0.1.18, fixed in 2.4.0, is affected by a regular expression denial of service vulnerability. If an attacker provides a malicious string, it can make markdown2 processing difficult or delayed for an extended period of time.</p>
     </blockquote>
       </body>
     </description>
@@ -6999,7 +7675,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -7014,11 +7690,15 @@ Id:          PYSEC-2020-65
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="eaaeb228-4cb0-4e5c-8be5-49a2e045697c">
-    <topic>py39-markdown2 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="f5126ca2-5b70-4585-80cd-4b9758bb2fc0">
+    <topic>py-markdown2 -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-markdown2</name>
+    <name>py38-markdown2</name>
     <name>py39-markdown2</name>
+    <name>py310-markdown2</name>
+    <name>py311-markdown2</name>
     <range><lt>2.3.9</lt></range>
       </package>
     </affects>
@@ -7036,7 +7716,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -7051,11 +7731,15 @@ Id:          GHSA-fv3h-8x5j-pvgq
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="76793e30-fc40-473b-937a-fe6048b0cb6f">
-    <topic>py39-markdown2 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="f75a1e78-5b60-470d-be05-301f2d937140">
+    <topic>py-markdown2 -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-markdown2</name>
+    <name>py38-markdown2</name>
     <name>py39-markdown2</name>
+    <name>py310-markdown2</name>
+    <name>py311-markdown2</name>
     <range><lt>2.3.9</lt></range>
       </package>
     </affects>
@@ -7073,7 +7757,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -7088,11 +7772,15 @@ Id:          GHSA-jr9p-r423-9m2r
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="58df514a-e5ef-4c82-9761-3b12072c25ca">
-    <topic>py39-markdown2 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="4114bd3f-267c-4886-a164-74b71805f9fc">
+    <topic>py-markdown2 -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-markdown2</name>
+    <name>py38-markdown2</name>
     <name>py39-markdown2</name>
+    <name>py310-markdown2</name>
+    <name>py311-markdown2</name>
     <range><lt>2.4.0</lt></range>
       </package>
     </affects>
@@ -7100,7 +7788,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
       <body xmlns="http://www.w3.org/1999/xhtml">
     <p>INSERT SOURCE NAME HERE reports:</p>
     <blockquote cite="https://osv.dev/vulnerability/GHSA-jr9p-r423-9m2r">
-      <p>markdown2 >=1.0.1.18, fixed in 2.4.0, is affected by a regular expression denial of service vulnerability. If an attacker provides a malicious string, it can make markdown2 processing difficult or delayed for an extended period of time.</p>
+      <p>markdown2 &gt;=1.0.1.18, fixed in 2.4.0, is affected by a regular expression denial of service vulnerability. If an attacker provides a malicious string, it can make markdown2 processing difficult or delayed for an extended period of time.</p>
     </blockquote>
       </body>
     </description>
@@ -7110,7 +7798,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -7129,11 +7817,15 @@ Id:          PYSEC-2021-140
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="93a4797d-ae9a-4930-a12e-466fa17614e7">
-    <topic>py39-pygments-25 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="839c7bdb-bfef-4023-8797-1059edf82cbe">
+    <topic>py-pygments -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-pygments-25</name>
+    <name>py38-pygments-25</name>
     <name>py39-pygments-25</name>
+    <name>py310-pygments-25</name>
+    <name>py311-pygments-25</name>
     <range><lt>2.7.4</lt></range>
       </package>
     </affects>
@@ -7151,7 +7843,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -7166,11 +7858,15 @@ Id:          PYSEC-2021-141
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="050d81a3-3352-466e-b587-e33dade67ccd">
-    <topic>py39-pygments-25 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="48bf3480-525d-4acb-b284-faaa850d9cd7">
+    <topic>py-pygments -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-pygments-25</name>
+    <name>py38-pygments-25</name>
     <name>py39-pygments-25</name>
+    <name>py310-pygments-25</name>
+    <name>py311-pygments-25</name>
     <range><lt>2.7.4</lt></range>
       </package>
     </affects>
@@ -7188,7 +7884,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -7203,11 +7899,15 @@ Id:          GHSA-pq64-v7f5-gqh8
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="ae8a3cee-4059-403b-8ea5-352c21fd6b32">
-    <topic>py39-pygments-25 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="2b14bd55-8266-46fd-9207-33c0d9119fc6">
+    <topic>py-pygments -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-pygments-25</name>
+    <name>py38-pygments-25</name>
     <name>py39-pygments-25</name>
+    <name>py310-pygments-25</name>
+    <name>py311-pygments-25</name>
     <range><lt>2.7.4</lt></range>
       </package>
     </affects>
@@ -7225,7 +7925,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -7240,11 +7940,15 @@ Id:          GHSA-9w8r-397f-prfh
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="04673d26-b45f-44c7-8724-d7ec35198d3e">
-    <topic>py39-pygments-25 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="52aaab0d-993d-48c2-8bf7-0e1656c7e083">
+    <topic>py-pygments -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-pygments-25</name>
+    <name>py38-pygments-25</name>
     <name>py39-pygments-25</name>
+    <name>py310-pygments-25</name>
+    <name>py311-pygments-25</name>
     <range><lt>2.7.4</lt></range>
       </package>
     </affects>
@@ -7262,7 +7966,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -7281,11 +7985,15 @@ Id:          PYSEC-2020-216
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="a892ccc9-9448-4e2b-b67e-682e1035190d">
-    <topic>py39-beaker -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="901f3fc3-a45a-453c-a01f-d447ca47b602">
+    <topic>py-beaker -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-beaker</name>
+    <name>py38-beaker</name>
     <name>py39-beaker</name>
+    <name>py310-beaker</name>
+    <name>py311-beaker</name>
     <range><le>1.12.1</le></range>
       </package>
     </affects>
@@ -7303,7 +8011,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -7322,11 +8030,15 @@ Id:          GHSA-287q-jfcp-9vhv
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="385ab0b5-a3b1-4a85-8876-0c6f29f774c6">
-    <topic>py39-django-photologue -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="6f73009b-6f90-4982-8b8b-95c6f10588e7">
+    <topic>py-django-photologue -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-django-photologue</name>
+    <name>py38-django-photologue</name>
     <name>py39-django-photologue</name>
+    <name>py310-django-photologue</name>
+    <name>py311-django-photologue</name>
     <range><le>3.15_1</le></range>
       </package>
     </affects>
@@ -7344,7 +8056,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -7363,11 +8075,15 @@ Id:          PYSEC-2021-13
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="e3da8b34-b464-417f-a191-5f36ee1a4390">
-    <topic>py39-flask-caching -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="a543614c-044a-4815-a77c-0d04f7e74af5">
+    <topic>py-flask-caching -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-flask-caching</name>
+    <name>py38-flask-caching</name>
     <name>py39-flask-caching</name>
+    <name>py310-flask-caching</name>
+    <name>py311-flask-caching</name>
     <range><le>1.9.0</le></range>
       </package>
     </affects>
@@ -7385,7 +8101,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -7408,11 +8124,15 @@ Any situation where all 3 of those is true is a situation where the application 
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="190083f9-43bd-4ddd-b575-343912bd3b7a">
-    <topic>py39-flask-caching -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="7b40c47b-53d7-482b-b4e8-a336ba5bf22e">
+    <topic>py-flask-caching -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-flask-caching</name>
+    <name>py38-flask-caching</name>
     <name>py39-flask-caching</name>
+    <name>py310-flask-caching</name>
+    <name>py311-flask-caching</name>
     <range><le>1.9.0</le></range>
       </package>
     </affects>
@@ -7438,7 +8158,7 @@ Any situation where all 3 of those is true is a situation where the application 
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -7457,11 +8177,15 @@ Id:          PYSEC-2020-43
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="b887de83-21c7-4e11-b633-2bc80102c79d">
-    <topic>py39-Flask-Cors -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="554c5913-c1dc-4a80-b474-a102b6dd1159">
+    <topic>py-Flask-Cors -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-Flask-Cors</name>
+    <name>py38-Flask-Cors</name>
     <name>py39-Flask-Cors</name>
+    <name>py310-Flask-Cors</name>
+    <name>py311-Flask-Cors</name>
     <range><lt>3.0.9</lt></range>
       </package>
     </affects>
@@ -7479,7 +8203,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -7494,11 +8218,15 @@ Id:          GHSA-xc3p-ff3m-f46v
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="6874cd43-66cb-44f9-b43f-b8c4b8d0d301">
-    <topic>py39-Flask-Cors -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="0527bdd2-dfe1-4bd8-9cdd-8e3c37cf4068">
+    <topic>py-Flask-Cors -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-Flask-Cors</name>
+    <name>py38-Flask-Cors</name>
     <name>py39-Flask-Cors</name>
+    <name>py310-Flask-Cors</name>
+    <name>py311-Flask-Cors</name>
     <range><lt>3.0.9</lt></range>
       </package>
     </affects>
@@ -7516,7 +8244,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -7537,11 +8265,15 @@ Id:          GHSA-cg8c-gc2j-2wf7
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="6d4cd82d-5236-481c-9efa-9ec0ba93bd99">
-    <topic>py39-flask-security -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="df722252-5a1c-4edb-9cc0-ff96790dc458">
+    <topic>py-flask-security -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-flask-security</name>
+    <name>py38-flask-security</name>
     <name>py39-flask-security</name>
+    <name>py310-flask-security</name>
+    <name>py311-flask-security</name>
     <range><le>3.0.0_1</le></range>
       </package>
     </affects>
@@ -7561,7 +8293,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -7580,11 +8312,15 @@ Id:          PYSEC-2022-34
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="9ead9e6b-b46e-4fd5-8ab8-d40c463793cd">
-    <topic>py39-httpie -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="56aa7eca-f34b-40ef-af61-778faf845796">
+    <topic>py-httpie -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-httpie</name>
+    <name>py38-httpie</name>
     <name>py39-httpie</name>
+    <name>py310-httpie</name>
+    <name>py311-httpie</name>
     <range><lt>3.1.0</lt></range>
       </package>
     </affects>
@@ -7602,7 +8338,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -7617,11 +8353,15 @@ Id:          PYSEC-2022-167
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="afef4ed6-80cc-45ef-96f3-5c3eaa0426e9">
-    <topic>py39-httpie -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="ecc8c1d5-3c30-406f-9f41-e0037c9a4a99">
+    <topic>py-httpie -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-httpie</name>
+    <name>py38-httpie</name>
     <name>py39-httpie</name>
+    <name>py310-httpie</name>
+    <name>py311-httpie</name>
     <range><lt>3.1.0</lt></range>
       </package>
     </affects>
@@ -7639,7 +8379,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -7732,11 +8472,15 @@ If you have any questions or comments about this advisory:
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="704d63f6-9316-4b39-86de-f381c4bc6c17">
-    <topic>py39-httpie -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="07a3cd76-6d4b-4632-93c7-63cde492e628">
+    <topic>py-httpie -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-httpie</name>
+    <name>py38-httpie</name>
     <name>py39-httpie</name>
+    <name>py310-httpie</name>
+    <name>py311-httpie</name>
     <range><lt>3.1.0</lt></range>
       </package>
     </affects>
@@ -7821,7 +8565,7 @@ We suggest users to upgrade their HTTPie version to `3.1.0` or higher, and run `
 If you have any questions or comments about this advisory:
 * Email us: [`security@httpie.io`](mailto:security@httpie.io)
 
-> Please note that this entry is covered by both [CVE-2022-24737](https://www.cvedetails.com/cve/CVE-2022-24737) and [CVE-2022-0430](https://nvd.nist.gov/vuln/detail/CVE-2022-0430).
+&gt; Please note that this entry is covered by both [CVE-2022-24737](https://www.cvedetails.com/cve/CVE-2022-24737) and [CVE-2022-0430](https://nvd.nist.gov/vuln/detail/CVE-2022-0430).
 </p>
     </blockquote>
       </body>
@@ -7832,7 +8576,7 @@ If you have any questions or comments about this advisory:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -7847,11 +8591,15 @@ Id:          GHSA-6pc9-xqrg-wfqw
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="f3ba4083-7757-46c8-8d7c-255756178388">
-    <topic>py39-httpie -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="772979de-91ff-4e11-ad18-5b788717b5a6">
+    <topic>py-httpie -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-httpie</name>
+    <name>py38-httpie</name>
     <name>py39-httpie</name>
+    <name>py310-httpie</name>
+    <name>py311-httpie</name>
     <range><lt>3.1.0</lt></range>
       </package>
     </affects>
@@ -7869,7 +8617,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -7888,11 +8636,15 @@ Id:          PYSEC-2022-183
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="79c776a3-338b-46c1-9499-f6cc591219d0">
-    <topic>py39-httpx013 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="4c35c0f9-b866-49df-849c-ee257818ac19">
+    <topic>py-httpx -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-httpx013</name>
+    <name>py38-httpx013</name>
     <name>py39-httpx013</name>
+    <name>py310-httpx013</name>
+    <name>py311-httpx013</name>
     <range><lt>0.20.0</lt></range>
       </package>
     </affects>
@@ -7900,7 +8652,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
       <body xmlns="http://www.w3.org/1999/xhtml">
     <p>INSERT SOURCE NAME HERE reports:</p>
     <blockquote cite="https://osv.dev/vulnerability/PYSEC-2022-183">
-      <p>Encode OSS httpx <=1.0.0.beta0 is affected by improper input validation in `httpx.URL`, `httpx.Client` and some functions using `httpx.URL.copy_with`.</p>
+      <p>Encode OSS httpx &lt;=1.0.0.beta0 is affected by improper input validation in `httpx.URL`, `httpx.Client` and some functions using `httpx.URL.copy_with`.</p>
     </blockquote>
       </body>
     </description>
@@ -7910,7 +8662,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -7925,11 +8677,15 @@ Id:          GHSA-h8pj-cxx2-jfg2
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="a1ffd808-bc6d-4fb4-9d69-9d267843a182">
-    <topic>py39-httpx013 -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="3dea8141-6885-408e-9e14-8f46f96931fc">
+    <topic>py-httpx -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-httpx013</name>
+    <name>py38-httpx013</name>
     <name>py39-httpx013</name>
+    <name>py310-httpx013</name>
+    <name>py311-httpx013</name>
     <range><lt>0.23.0</lt></range>
       </package>
     </affects>
@@ -7937,7 +8693,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
       <body xmlns="http://www.w3.org/1999/xhtml">
     <p>INSERT SOURCE NAME HERE reports:</p>
     <blockquote cite="https://osv.dev/vulnerability/GHSA-h8pj-cxx2-jfg2">
-      <p>Encode OSS httpx <=1.0.0.beta0 is affected by improper input validation in `httpx.URL`, `httpx.Client` and some functions using `httpx.URL.copy_with`.</p>
+      <p>Encode OSS httpx &lt;=1.0.0.beta0 is affected by improper input validation in `httpx.URL`, `httpx.Client` and some functions using `httpx.URL.copy_with`.</p>
     </blockquote>
       </body>
     </description>
@@ -7947,7 +8703,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -7966,11 +8722,15 @@ Id:          PYSEC-2017-83
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="7416e789-ffb7-4c78-be2e-241af5df8a27">
-    <topic>py39-Scrapy -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="b1a2b871-46c2-4cfc-8980-b797fc2ee6fa">
+    <topic>py-Scrapy -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-Scrapy</name>
+    <name>py38-Scrapy</name>
     <name>py39-Scrapy</name>
+    <name>py310-Scrapy</name>
+    <name>py311-Scrapy</name>
     <range><le>2.5.1</le></range>
       </package>
     </affects>
@@ -7988,7 +8748,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -8003,11 +8763,15 @@ Id:          PYSEC-2022-159
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="58954cdb-e44b-4f0e-83f4-7df995b025d1">
-    <topic>py39-Scrapy -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="191b9b66-3604-4988-99e8-82b356cb66fd">
+    <topic>py-Scrapy -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-Scrapy</name>
+    <name>py38-Scrapy</name>
     <name>py39-Scrapy</name>
+    <name>py310-Scrapy</name>
+    <name>py311-Scrapy</name>
     <range><lt>2.6.1</lt></range>
       </package>
     </affects>
@@ -8025,7 +8789,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -8062,11 +8826,15 @@ If you have any questions or comments about this advisory:
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="eac6f0ed-95c2-4c1c-b247-c0bdbf13cc3e">
-    <topic>py39-Scrapy -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="3da0779c-8491-495c-a62f-5dac69648bea">
+    <topic>py-Scrapy -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-Scrapy</name>
+    <name>py38-Scrapy</name>
     <name>py39-Scrapy</name>
+    <name>py310-Scrapy</name>
+    <name>py311-Scrapy</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -8105,7 +8873,7 @@ If you have any questions or comments about this advisory:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -8147,11 +8915,15 @@ If you have any questions or comments about this advisory:
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="4f45d2a8-b083-46f3-9055-aa1be4023179">
-    <topic>py39-Scrapy -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="bfcc9131-46b4-405d-b1a8-3bf4aa728be2">
+    <topic>py-Scrapy -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-Scrapy</name>
+    <name>py38-Scrapy</name>
     <name>py39-Scrapy</name>
+    <name>py310-Scrapy</name>
+    <name>py311-Scrapy</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -8196,7 +8968,7 @@ If you have any questions or comments about this advisory:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -8211,11 +8983,15 @@ Id:          GHSA-h7wm-ph43-c39p
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="1d193f5c-300a-4b2a-ac1e-3874b8ccaae9">
-    <topic>py39-Scrapy -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="acad4924-038b-4df8-b8da-c1f35cbaec2b">
+    <topic>py-Scrapy -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-Scrapy</name>
+    <name>py38-Scrapy</name>
     <name>py39-Scrapy</name>
+    <name>py310-Scrapy</name>
+    <name>py311-Scrapy</name>
     <range><le>2.5.1</le></range>
       </package>
     </affects>
@@ -8233,7 +9009,7 @@ Skeleton for this unreported vulnerability in FreeBSD VuXML:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -8275,11 +9051,15 @@ If you have any questions or comments about this advisory:
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="22fa3072-5ec8-4162-968c-07b2b45656f5">
-    <topic>py39-Scrapy -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="142d32cf-c5b7-40cd-b606-fbe3f554e414">
+    <topic>py-Scrapy -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-Scrapy</name>
+    <name>py38-Scrapy</name>
     <name>py39-Scrapy</name>
+    <name>py310-Scrapy</name>
+    <name>py311-Scrapy</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -8323,7 +9103,7 @@ If you have any questions or comments about this advisory:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -8380,11 +9160,15 @@ client.get('https://example.com/')
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="9c895b7d-7b70-431e-bf54-af2a76d2c88c">
-    <topic>py39-treq -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="efe671e7-e8d7-4c78-8a6b-862277030ed7">
+    <topic>py-treq -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-treq</name>
+    <name>py38-treq</name>
     <name>py39-treq</name>
+    <name>py310-treq</name>
+    <name>py311-treq</name>
     <range><lt>22.1.0</lt></range>
       </package>
     </affects>
@@ -8440,7 +9224,7 @@ client.get('https://example.com/')
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -8549,11 +9333,15 @@ class PatchedInspectView(InspectView):
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="fc3b6047-a8d1-4936-b852-9fcc2ed69a21">
-    <topic>py39-wagtail -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="e9b674b5-f480-447e-ad0c-1fe552b3c3ce">
+    <topic>py-wagtail -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-wagtail</name>
+    <name>py38-wagtail</name>
     <name>py39-wagtail</name>
+    <name>py310-wagtail</name>
+    <name>py311-wagtail</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -8644,7 +9432,7 @@ class PatchedInspectView(InspectView):
         document = getattr(self.instance, field_name)
         if document:
             return format_html(
-                '<a href="{}">{} <span class="meta">({}, {})</span></a>',
+                '&lt;a href="{}"&gt;{} &lt;span class="meta"&gt;({}, {})&lt;/span&gt;&lt;/a&gt;',
                 document.url,
                 document.title,
                 document.file_extension.upper(),
@@ -8661,7 +9449,7 @@ class PatchedInspectView(InspectView):
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -8698,11 +9486,15 @@ The changes themselves are deep inside Wagtail, making patching incredibly diffi
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="b1ee86ec-853f-41fa-9456-47056a250604">
-    <topic>py39-wagtail -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="4b177075-c3cf-4d77-9e64-d851127a364c">
+    <topic>py-wagtail -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-wagtail</name>
+    <name>py38-wagtail</name>
     <name>py39-wagtail</name>
+    <name>py310-wagtail</name>
+    <name>py311-wagtail</name>
     <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>
       </package>
     </affects>
@@ -8742,7 +9534,7 @@ The changes themselves are deep inside Wagtail, making patching incredibly diffi
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
@@ -8788,11 +9580,15 @@ If you have any questions or comments about this advisory:
 
 Skeleton for this unreported vulnerability in FreeBSD VuXML:
 
-  <vuln vid="0fe182a9-122a-4620-bb50-764d45b9331f">
-    <topic>py39-WsgiDAV -- INSERT VULNERABILITY SUMMARY HERE</topic>
+  <vuln vid="b76df905-e476-40f6-bfd3-d13dfb3b91ff">
+    <topic>py-WsgiDAV -- INSERT VULNERABILITY SUMMARY HERE</topic>
     <affects>
       <package>
+    <name>py37-WsgiDAV</name>
+    <name>py38-WsgiDAV</name>
     <name>py39-WsgiDAV</name>
+    <name>py310-WsgiDAV</name>
+    <name>py311-WsgiDAV</name>
     <range><lt>4.1.0</lt></range>
       </package>
     </affects>
@@ -8837,7 +9633,7 @@ If you have any questions or comments about this advisory:
     </references>
     <dates>
       <discovery>INSERT YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-10</entry>
+      <entry>2023-04-12</entry>
     </dates>
   </vuln>
 
