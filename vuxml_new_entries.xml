@@ -1,3 +1,37 @@
+  <vuln vid="83b29e3f-886f-439f-b9a8-72e014479ff9">
+    <topic>py-dparse -- REDoS vulnerability</topic>
+    <affects>
+      <package>
+    <name>py37-dparse</name>
+    <name>py38-dparse</name>
+    <name>py39-dparse</name>
+    <name>py310-dparse</name>
+    <name>py311-dparse</name>
+    <range><lt>0.5.2</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>yeisonvargasf reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2022-301">
+      <p>dparse is a parser for Python dependency files.</p>
+      <p>dparse in versions before 0.5.2 contain a regular expression that is vulnerable to a Regular Expression Denial of Service.</p>
+      <p>All the users parsing index server URLs with dparse are impacted by this vulnerability.</p>
+      <p>Users unable to upgrade should avoid passing index server URLs in the source file to be parsed.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2022-39280</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2022-301</url>
+      <url>https://osv.dev/vulnerability/GHSA-8fg9-p83m-x5pq</url>
+    </references>
+    <dates>
+      <discovery>2022-10-06</discovery>
+      <entry>2023-04-12</entry>
+    </dates>
+  </vuln>
+
 <!-- Vulnerabilities below reported at https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=270744 -->
 <!-- Vulnerabilities below updated at https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=270795 -->
 
