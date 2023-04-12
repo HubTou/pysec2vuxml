@@ -15,8 +15,9 @@
 ```
 
 ## New features
-* **Fetching the discovery date from the CVE published date** 
+* Fetching the discovery date from the CVE published date for given entry at [CVE Details](https://www.cvedetails.com/)
 
 ## Other possible features
 * Downloading the latest version of the Ports index instead of relying on an up-to-date ports tree:
   * [https://download.freebsd.org/ftp/ports/index/INDEX-13](https://download.freebsd.org/ftp/ports/index/INDEX-13)
+  * However, this wouldn't help having up to date Makefiles for the ports...
