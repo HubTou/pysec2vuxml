@@ -5,14 +5,20 @@ Author: Hubert Tournier
 """
 
 import datetime
+import json
 import os
 import re
 import sys
+import urllib.request
 import uuid
 
 import pipinfo  # pip install pnu-pipinfo
 import vuxml    # pip install pnu-vuxml
 
+# Flavours range for generated VuXML entries:
+major_version=3
+first_minor_version=7
+last_minor_version=11
 
 ####################################################################################################
 def get_freebsd_ports_list():
@@ -112,6 +118,76 @@ def get_ignored_vulnerabilities():
 
     # Return all non empty lines not starting with a '#' comment character
     return [line for line in lines if line and not line.startswith('#')]
+
+
+####################################################################################################
+def get_caching_directory(name):
+    """ Find and create a directory to save cached files """
+    directory = ''
+
+    if os.name == 'nt':
+        if 'LOCALAPPDATA' in os.environ:
+            directory = os.environ['LOCALAPPDATA'] + os.sep + "cache" + os.sep + name
+        elif 'TMP' in os.environ:
+            directory = os.environ['TMP'] + os.sep + "cache" + os.sep + name
+
+    else: # os.name == 'posix':
+        if 'HOME' in os.environ:
+            directory = os.environ['HOME'] + os.sep + ".cache" + os.sep + name
+        elif 'TMPDIR' in os.environ:
+            directory = os.environ['TMPDIR'] + os.sep + ".cache" + os.sep + name
+        elif 'TMP' in os.environ:
+            directory = os.environ['TMP'] + os.sep + ".cache" + os.sep + name
+
+    if directory:
+        try:
+            os.makedirs(directory, exist_ok=True)
+        except OSError:
+            directory = ''
+
+    return directory
+
+
+####################################################################################################
+def get_cve_publication_date(cve):
+    """ Get the publication date for a given CVE """
+    publication_date = ''
+
+    caching_dir = get_caching_directory('cve')
+    caching_file = ''
+    if caching_dir:
+        caching_file = f"{caching_dir}" + os.sep + f"{cve}.json"
+
+    # If there's a caching file, read it instead of using the Web service
+    if os.path.isfile(caching_file):
+        with open(caching_file, "rb") as file:
+            json_data = file.read()
+    else:
+        # Using the new Mitre CVE API
+        url = f'https://cveawg.mitre.org/api/cve/{cve}'
+        try:
+            with urllib.request.urlopen(url) as http:
+                json_data = http.read()
+        except urllib.error.HTTPError as error:
+            logging.warning("Error while fetching '%s': %s", url, error)
+            if error == 'HTTP Error 404: Not Found':
+                # Let's write an empty file to avoid retrying later...
+                if caching_file:
+                    with open(caching_file, "wb") as file:
+                        pass
+            return ''
+
+        if caching_file:
+            with open(caching_file, "wb") as file:
+                file.write(json_data)
+
+    data = json.loads(json_data)
+    if 'cveMetadata' in data:
+        if 'datePublished' in data['cveMetadata']:
+            publication_date = re.sub(r"T.*$", "", data['cveMetadata']['datePublished'])
+    
+
+    return publication_date
 
 
 ####################################################################################################
@@ -215,8 +291,8 @@ def print_table_of_contents(python_ports, vulnerable_ports, ignored_vulns, vuxml
         vulnerabilities_count += content['vulnerabilities']
     print("=" * (longuest_vulnerabilities + longuest_package + longuest_subdir + longuest_name + longuest_version + longuest_maintainer + 5))
     print(f"Python packages's FreeBSD ports = {len(python_ports)}")
-    print(f"  vulnerable packages           = {len(vulnerable_ports) - false_positive}")
-    print(f"  vulnerable ports              = {len(contents)}")
+    print(f"  vulnerable ports              = {len(vulnerable_ports) - false_positive}")
+    print(f"  vulnerable ports/version      = {len(contents)}")
     print(f"    vulnerabilities             = {vulnerabilities_count}")
     print("-" * (longuest_vulnerabilities + longuest_package + longuest_subdir + longuest_name + longuest_version + longuest_maintainer + 5))
 
@@ -258,6 +334,12 @@ def print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, vuxml_d
             print(f"Python package '{package_name} {package_version}' / FreeBSD port '{port_name} {port_version}' is vulnerable:")
             print(f"  Please report to  maintainer '{port_maintainer}' for port '{port_subdir}'")
             print("-" * 80)
+            print("Existing flavours and versions, plus similar names:")
+            for port in python_ports:
+                if re.match(r'py[23][0-9]+-' + package_name, port['vname']) is not None:
+                    print(f"  {port['vname']}")
+            print("-" * 80)
+            print()
 
             for vulnerability in package_vulns:
                 ignore_vuln = False
@@ -271,7 +353,8 @@ def print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, vuxml_d
                     print("Package ignored (vulnerability doesn't apply to FreeBSD)\n")
                     continue
 
-                print(f"Id:          {vulnerability['id']}")
+                print("PYSEC vulnerability:")
+                print(f"  Id:        {vulnerability['id']}")
                 print(f"  Aliases:   {vulnerability['aliases']}")
                 print(f"  Details:   {vulnerability['details']}")
                 print(f"  Fixed in:  {vulnerability['fixed_in']}")
@@ -295,23 +378,22 @@ def print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, vuxml_d
                         cve_list.append(alias)
                         no_cve = False
 
-                # Is this vulnerability already reported to FreeBSD VuXML?
-                # If there's no CVE we won't know!
-                vulns = vuxml.search_vulns_by_package(vuxml_data, package_name, package_version)
+                # Has this vulnerability already been reported to FreeBSD VuXML for THIS port?
                 something_found = False
-                for vid in vulns:
-                    if 'references' in vuxml_data[vid]:
-                        for reference in vuxml_data[vid]['references']:
-                            for key, value in reference.items():
-                                if key == "cvename":
-                                    if value in cve_list:
-                                        if not something_found:
-                                            print("Vulnerability reported to FreeBSD VuXML:")
-                                            something_found = true
-                                        vuxml.print_vuln(vid, vuxml_data[vid])
-                                        cve_list.remove(value)
-                if len(cve_list):
-                    vulns = vuxml.search_vulns_by_package(vuxml_data, package_name, '')
+                if no_cve:
+                    # We'll search for a mention of the vulnerability link in references/url
+                    vid_list = []
+                    vulns = vuxml.search_vulns_by_reference(vuxml_data, 'url', vulnerability['link'])
+                    for vid in vulns:
+                        if vid not in vid_list:
+                            if not something_found:
+                                print("FreeBSD VuXML vulnerability for THIS port:")
+                                something_found = true
+                            vuxml.print_vuln(vid, vuxml_data[vid])
+                            vid_list.append(vid)
+                else:
+                    # We search for the CVE gathered in references/cvename
+                    vulns = vuxml.search_vulns_by_package(vuxml_data, package_name, package_version)
                     for vid in vulns:
                         if 'references' in vuxml_data[vid]:
                             for reference in vuxml_data[vid]['references']:
@@ -319,45 +401,82 @@ def print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, vuxml_d
                                     if key == "cvename":
                                         if value in cve_list:
                                             if not something_found:
-                                                print("Vulnerability reported to FreeBSD VuXML:")
+                                                print("FreeBSD VuXML vulnerability for THIS port:")
                                                 something_found = true
                                             vuxml.print_vuln(vid, vuxml_data[vid])
                                             cve_list.remove(value)
+                    if len(cve_list):
+                        vulns = vuxml.search_vulns_by_package(vuxml_data, package_name, '')
+                        for vid in vulns:
+                            if 'references' in vuxml_data[vid]:
+                                for reference in vuxml_data[vid]['references']:
+                                    for key, value in reference.items():
+                                        if key == "cvename":
+                                            if value in cve_list:
+                                                if not something_found:
+                                                    print("FreeBSD VuXML vulnerability for THIS port:")
+                                                    something_found = true
+                                                vuxml.print_vuln(vid, vuxml_data[vid])
+                                                cve_list.remove(value)
+
+                # Have the remaining CVE been reported to FreeBSD VuXML for ANOTHER port name?
+                something_found = False
+                vid_list = []
+                for cve in cve_list:
+                    vulns = vuxml.search_vulns_by_reference(vuxml_data, 'cvename', cve)
+                    for vid in vulns:
+                        if vid not in vid_list:
+                            if not something_found:
+                                print("FreeBSD VuXML vulnerability for ANOTHER port:")
+                                something_found = True
+                            vuxml.print_vuln(vid, vuxml_data[vid])
+                            vid_list.append(vid)
 
                 # Here is a skeleton entry for the unreported CVE vulnerability
                 if len(cve_list) or no_cve:
-                    print("Skeleton for this unreported vulnerability in FreeBSD VuXML:\n")
+                    root_port_name = re.sub(r"^py[0-9]+-", "", port_name)
+                    details = vulnerability["details"].replace(">", "&gt;").replace("<", "&lt;")
+                    print("UNREPORTED FreeBSD VuXML vulnerability skeleton:")
                     print(f'  <vuln vid="{str(uuid.uuid4())}">')
                     if vulnerability['summary'] is None:
-                        print(f'    <topic>{port_name} -- INSERT VULNERABILITY SUMMARY HERE</topic>')
+                        print(f'    <topic>py-{package_name} -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>')
                     else:
-                        print(f'    <topic>{port_name} -- {vulnerability["summary"]}</topic>')
+                        print(f'    <topic>py-{package_name} -- {vulnerability["summary"]}</topic>')
                     print( '    <affects>')
                     print( '      <package>')
-                    print(f'    <name>{port_name}</name>')
+                    for minor_version in range(first_minor_version, last_minor_version + 1):
+                        print(f'    <name>py{major_version}{minor_version}-{root_port_name}</name>')
                     if len(vulnerability['fixed_in']) == 0:
                         print(f'    <range><le>{port_version}</le></range>')
                     elif len(vulnerability['fixed_in']) == 1:
                         print(f'    <range><lt>{vulnerability["fixed_in"][0]}</lt></range>')
                     else:
-                        print( '    <range><lt>INSERT VULNERABLE VERSION HERE</lt></range>')
+                        print( '    <range><lt>INSERT_VULNERABLE_VERSION_HERE</lt></range>')
                     print( '      </package>')
                     print( '    </affects>')
                     print( '    <description>')
                     print( '      <body xmlns="http://www.w3.org/1999/xhtml">')
-                    print( '    <p>INSERT SOURCE NAME HERE reports:</p>')
+                    print( '    <p>INSERT_SOURCE_NAME_HERE reports:</p>')
                     print(f'    <blockquote cite="{vulnerability["link"]}">')
-                    print(f'      <p>{vulnerability["details"]}</p>')
+                    print(f'      <p>{details}</p>')
                     print( '    </blockquote>')
                     print( '      </body>')
                     print( '    </description>')
                     print( '    <references>')
+                    first_publication_date = ''
                     for cve in cve_list:
                         print(f'      <cvename>{cve}</cvename>')
+                        publication_date = get_cve_publication_date(cve)
+                        if not first_publication_date \
+                        or datetime.datetime.strptime(publication_date, "%Y-%m-%d") < datetime.datetime.strptime(first_publication_date, "%Y-%m-%d"):
+                            first_publication_date = publication_date
                     print(f'      <url>{vulnerability["link"]}</url>')
                     print( '    </references>')
                     print( '    <dates>')
-                    print( '      <discovery>INSERT YEAR-MONTH-DAY</discovery>')
+                    if first_publication_date:
+                        print(f'      <discovery>{first_publication_date}</discovery>')
+                    else:
+                        print( '      <discovery>INSERT_YEAR-MONTH-DAY</discovery>')
                     print(f'      <entry>{today_string}</entry>')
                     print( '    </dates>')
                     print( '  </vuln>\n')
