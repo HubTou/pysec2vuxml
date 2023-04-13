@@ -1,24 +1,14 @@
 # pysec2vuxml
-## Improvements
-* Writing some label to indicate when a reported vulnerability is for another port name
 
 ## Bugs to correct
 * In [pipinfo](https://github.com/HubTou/pipinfo):
   * Caching empty json files for "HTTP 404: Not Found" errors does not work
 
 ## Limitations to be removed
-* Noticing a vulnerability is already reported to VuXML when there is no associated CVE
-  * Use the URL tags:
-```XML
-<references>
-  <url>URL</url>
-</references>
-```
 * In [pipinfo](https://github.com/HubTou/pipinfo):
   * Understanding why some packages/versions are not found with the PyPI API
 
 ## New features
-* Fetching the discovery date from the CVE published date for given entry at [CVE Details](https://www.cvedetails.com/)
 * Listing the existing flavours for each package
 * In [pipinfo](https://github.com/HubTou/pipinfo):
   * A way to suppress warnings for "HTTP 404: Not Found" errors would be useful
