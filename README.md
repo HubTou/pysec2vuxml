@@ -16,7 +16,7 @@ chmod a+x pysec2vuxml.py
 Then launch the script:
 ```
 portsnap fetch update # You need superuser rights to update the ports index and the port tree
-pysec2vuxml.py
+pysec2vuxml.py | tee results.txt
 ```
 
 The execution will take some time in order to call the [Python Packaging Authority's web service for checking vulnerabilities](https://warehouse.pypa.io/api-reference/json.html#known-vulnerabilities) for each of the 4.000+ FreeBSD Python packages ports.
@@ -68,7 +68,7 @@ The structure that needs to be filled for each vulnerability is:
 
 **pysec2vuxml** will automatically generate most of this structure for each vulnerability that is not withdrawn, ignored (if its ID is present in the [ignore.txt](https://github.com/HubTou/pysec2vuxml/blob/main/ignore.txt) file) or already reported in FreeBSD VuXML.
 
-**You**'ll have to complete a few remaining fields (vuln summary, vuln discover, discovery date), check some of them (affected versions and port name) and verify all the vulnerabilities for a given port to see if they can be factored.
+**You**'ll have to complete a few remaining fields (vuln summary, vuln discoverer), check some of them (affected versions and port name) and verify all the vulnerabilities for a given port to see if they can be factored (check vuln vid "e4181981-ccf1-11ed-956f-7054d21a9e2a" in [vuxml_new_entries.xml](https://github.com/HubTou/pysec2vuxml/blob/main/vuxml_new_entries.xml) for a good example).
 
 Then, if you have superuser access, put your new or modified entries into **/usr/ports/security/vuxml/vuln** and use the [vuxml](https://www.freshports.org/security/vuxml/) FreeBSD port to [verify if everything is correct](https://docs.freebsd.org/en/books/porters-handbook/security/#security-notify-vuxml-testing):
 ```Shell
