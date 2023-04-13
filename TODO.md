@@ -9,7 +9,6 @@
   * Understanding why some packages/versions are not found with the PyPI API
 
 ## New features
-* Listing the existing flavours for each package
 * In [pipinfo](https://github.com/HubTou/pipinfo):
   * A way to suppress warnings for "HTTP 404: Not Found" errors would be useful
 
