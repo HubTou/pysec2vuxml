@@ -66,9 +66,9 @@ The structure that needs to be filled for each vulnerability is:
   </vuln>
 ```
 
-pysec2vuxml will automatically generate most of this structure for each vulnerability that is not withdrawn, ignored (if its ID is present in the [ignore.txt](https://github.com/HubTou/pysec2vuxml/blob/main/ignore.txt) file) or already reported in FreeBSD VuXML.
+**pysec2vuxml** will automatically generate most of this structure for each vulnerability that is not withdrawn, ignored (if its ID is present in the [ignore.txt](https://github.com/HubTou/pysec2vuxml/blob/main/ignore.txt) file) or already reported in FreeBSD VuXML.
 
-Check all the vulnerabilities for a given port to see if they can be factored.
+**You**'ll have to complete a few remaining fields (vuln summary, vuln discover, discovery date), check some of them (affected versions and port name) and verify all the vulnerabilities for a given port to see if they can be factored.
 
 Then, if you have superuser access, put your new or modified entries into **/usr/ports/security/vuxml/vuln** and use the [vuxml](https://www.freshports.org/security/vuxml/) FreeBSD port to [verify if everything is correct](https://docs.freebsd.org/en/books/porters-handbook/security/#security-notify-vuxml-testing):
 ```Shell
