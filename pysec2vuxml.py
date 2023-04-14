@@ -388,7 +388,7 @@ def print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, vuxml_d
                         if vid not in vid_list:
                             if not something_found:
                                 print("FreeBSD VuXML vulnerability for THIS port:")
-                                something_found = true
+                                something_found = True
                             vuxml.print_vuln(vid, vuxml_data[vid])
                             vid_list.append(vid)
                 else:
@@ -402,7 +402,7 @@ def print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, vuxml_d
                                         if value in cve_list:
                                             if not something_found:
                                                 print("FreeBSD VuXML vulnerability for THIS port:")
-                                                something_found = true
+                                                something_found = True
                                             vuxml.print_vuln(vid, vuxml_data[vid])
                                             cve_list.remove(value)
                     if len(cve_list):
@@ -415,7 +415,7 @@ def print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, vuxml_d
                                             if value in cve_list:
                                                 if not something_found:
                                                     print("FreeBSD VuXML vulnerability for THIS port:")
-                                                    something_found = true
+                                                    something_found = True
                                                 vuxml.print_vuln(vid, vuxml_data[vid])
                                                 cve_list.remove(value)
 
