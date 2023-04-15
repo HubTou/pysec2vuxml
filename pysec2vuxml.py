@@ -16,13 +16,13 @@ import pipinfo  # pip install pnu-pipinfo
 import vuxml    # pip install pnu-vuxml
 
 # Flavours range for generated VuXML entries:
-major_version=3
-first_minor_version=7
-last_minor_version=11
+MAJOR_VERSION=3
+FIRST_MINOR_VERSION=7
+LAST_MINOR_VERSION=11
 
 ####################################################################################################
 def get_freebsd_ports_list():
-    """ Returns a dictionary of FreeBSD ports """
+    """ Returns a list of FreeBSD ports """
     ports_list = []
 
     # The FreeBSD ports list
@@ -41,7 +41,7 @@ def get_freebsd_ports_list():
         # The file format is described at: https://wiki.freebsd.org/Ports/INDEX
         fields = line.split('|')
         if len(fields) != 13:
-            print(f"WARNING: line '{line}' from '{ports_list}' doesn't have 13 fields", file=sys.stderr)
+            print(f"WARNING: line '{line}' from '{ports_index}' doesn't have 13 fields", file=sys.stderr)
         else:
             # {"vname": versioned_name, "dir": port_directory}
             ports_list.append({"vname": fields[0], "dir": fields[1]})
@@ -159,7 +159,7 @@ def get_cve_publication_date(cve):
     caching_dir = get_caching_directory('cve')
     caching_file = ''
     if caching_dir:
-        caching_file = f"{caching_dir}" + os.sep + f"{cve}.json"
+        caching_file = caching_dir + os.sep + f"{cve}.json"
 
     # If there's a caching file, read it instead of using the Web service
     # As we only need the publication date which should never change, there's no need to refresh the cached file
@@ -173,7 +173,7 @@ def get_cve_publication_date(cve):
             with urllib.request.urlopen(url) as http:
                 json_data = http.read()
         except urllib.error.HTTPError as error:
-            logging.warning("Error while fetching '%s': %s", url, error)
+            print(f"Error while fetching '{url}': {error}", file=sys.stderr)
             if error == 'HTTP Error 404: Not Found':
                 # Let's write an empty file to avoid retrying later...
                 if caching_file:
@@ -189,13 +189,12 @@ def get_cve_publication_date(cve):
     if 'cveMetadata' in data:
         if 'datePublished' in data['cveMetadata']:
             publication_date = re.sub(r"T.*$", "", data['cveMetadata']['datePublished'])
-    
 
     return publication_date
 
 
 ####################################################################################################
-def print_table_of_contents(python_ports, vulnerable_ports, ignored_vulns, vuxml_data):
+def print_table_of_contents(python_ports, vulnerable_ports, ignored_vulns):
     """ Print a table of contents to stdout """
     contents = []
     longuest_package = len('Package')
@@ -409,7 +408,7 @@ def print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, vuxml_d
                                                 something_found = True
                                             vuxml.print_vuln(vid, vuxml_data[vid])
                                             cve_list.remove(value)
-                    if len(cve_list):
+                    if len(cve_list) > 0:
                         vulns = vuxml.search_vulns_by_package(vuxml_data, port_name, '')
                         for vid in vulns:
                             if 'references' in vuxml_data[vid]:
@@ -437,7 +436,7 @@ def print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, vuxml_d
                             vid_list.append(vid)
 
                 # Here is a skeleton entry for the unreported CVE vulnerability
-                if len(cve_list) or no_cve:
+                if len(cve_list) > 0 or no_cve:
                     root_port_name = re.sub(r"^py[0-9]+-", "", port_name)
                     details = vulnerability["details"].replace(">", "&gt;").replace("<", "&lt;")
                     print("UNREPORTED FreeBSD VuXML vulnerability skeleton:")
@@ -448,8 +447,8 @@ def print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, vuxml_d
                         print(f'    <topic>py-{package_name} -- {vulnerability["summary"]}</topic>')
                     print( '    <affects>')
                     print( '      <package>')
-                    for minor_version in range(first_minor_version, last_minor_version + 1):
-                        print(f'    <name>py{major_version}{minor_version}-{root_port_name}</name>')
+                    for minor_version in range(FIRST_MINOR_VERSION, LAST_MINOR_VERSION + 1):
+                        print(f'    <name>py{MAJOR_VERSION}{minor_version}-{root_port_name}</name>')
                     if len(vulnerability['fixed_in']) == 0:
                         print(f'    <range><le>{port_version}</le></range>')
                     elif len(vulnerability['fixed_in']) == 1:
@@ -504,7 +503,7 @@ def main():
     vuxml_data = vuxml.load_vuxml()
 
     # Printing identified vulnerabilities
-    print_table_of_contents(python_ports, vulnerable_ports, ignored_vulns, vuxml_data)
+    print_table_of_contents(python_ports, vulnerable_ports, ignored_vulns)
     print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, vuxml_data)
 
     sys.exit(0)
