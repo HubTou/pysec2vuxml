@@ -26,7 +26,6 @@ def get_freebsd_ports_list():
     ports_list = []
 
     # The FreeBSD ports list
-    # Its file format is described at: https://wiki.freebsd.org/Ports/INDEX
     ports_index = "/usr/ports/INDEX-13"
 
     # Is the ports list installed?
@@ -39,6 +38,7 @@ def get_freebsd_ports_list():
         lines = file.read().splitlines()
 
     for line in lines:
+        # The file format is described at: https://wiki.freebsd.org/Ports/INDEX
         fields = line.split('|')
         if len(fields) != 13:
             print(f"WARNING: line '{line}' from '{ports_list}' doesn't have 13 fields", file=sys.stderr)
@@ -69,8 +69,11 @@ def enrich_ports_list(ports_list):
     for port in ports_list:
         # Loading the port makefile:
         port_makefile = port["dir"] + os.sep + 'Makefile'
-        with open(port_makefile, encoding='utf-8', errors='ignore') as file:
-            lines = file.read().splitlines()
+        if os.path.isfile(port_makefile):
+            with open(port_makefile, encoding='utf-8', errors='ignore') as file:
+                lines = file.read().splitlines()
+        else:
+            lines = []
 
         # Searching for PORTNAME=, PORTVERSION= or DISTVERSION= lines:
         name = ''
@@ -88,9 +91,9 @@ def enrich_ports_list(ports_list):
                 maintainer = re.sub(r'^MAINTAINER=[ 	]*', '', line)
 
         if not name or not version or "$" in name or "$" in version:
-            simplified_vname = re.sub(r",[0-9]*$", "", port["vname"])
-            simplified_vname = re.sub(r"_[0-9]*$", "", simplified_vname)
-            name = re.sub(r"-[0-9.pg+]+", "", simplified_vname)
+            simplified_vname = re.sub(r",[0-9]*$", "", port["vname"]) # remove ,PORTEPOCH
+            simplified_vname = re.sub(r"_[0-9]*$", "", simplified_vname) # remove _PORTREVISION
+            name = re.sub(r"-[0-9.pg+]+$", "", simplified_vname)
             version = re.sub(r"" + name + "-", "", simplified_vname)
             name = re.sub(r"^py[0-9]+-", "", name)
 
@@ -150,7 +153,7 @@ def get_caching_directory(name):
 
 ####################################################################################################
 def get_cve_publication_date(cve):
-    """ Get the publication date for a given CVE """
+    """ Get the publication date for a given CVE from the Mitre web service """
     publication_date = ''
 
     caching_dir = get_caching_directory('cve')
@@ -159,6 +162,7 @@ def get_cve_publication_date(cve):
         caching_file = f"{caching_dir}" + os.sep + f"{cve}.json"
 
     # If there's a caching file, read it instead of using the Web service
+    # As we only need the publication date which should never change, there's no need to refresh the cached file
     if os.path.isfile(caching_file):
         with open(caching_file, "rb") as file:
             json_data = file.read()
@@ -350,7 +354,7 @@ def print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, vuxml_d
                         ignore_vuln = True
                         break
                 if ignore_vuln:
-                    print("Package ignored (vulnerability doesn't apply to FreeBSD)\n")
+                    print("Package ignored (this vulnerability doesn't apply to FreeBSD)\n")
                     continue
 
                 print("PYSEC vulnerability:")
@@ -393,7 +397,7 @@ def print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, vuxml_d
                             vid_list.append(vid)
                 else:
                     # We search for the CVE gathered in references/cvename
-                    vulns = vuxml.search_vulns_by_package(vuxml_data, package_name, package_version)
+                    vulns = vuxml.search_vulns_by_package(vuxml_data, port_name, package_version)
                     for vid in vulns:
                         if 'references' in vuxml_data[vid]:
                             for reference in vuxml_data[vid]['references']:
@@ -406,7 +410,7 @@ def print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, vuxml_d
                                             vuxml.print_vuln(vid, vuxml_data[vid])
                                             cve_list.remove(value)
                     if len(cve_list):
-                        vulns = vuxml.search_vulns_by_package(vuxml_data, package_name, '')
+                        vulns = vuxml.search_vulns_by_package(vuxml_data, port_name, '')
                         for vid in vulns:
                             if 'references' in vuxml_data[vid]:
                                 for reference in vuxml_data[vid]['references']:
