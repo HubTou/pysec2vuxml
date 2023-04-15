@@ -14,7 +14,10 @@
 
 ## Other possible features
 * Command line options. For example:
-  * To print either the summary, the vulnerabilities found with/without the VuXML skeleton entries 
+  * To print a summary of vulnerable ports (with their latest available version in FreeBSD)
+  * To print a summary of unreported vulnerable ports
+  * To print details about vulnerabilities found with or without the VuXML skeleton entries
+  * To clear caches 
 * Downloading the [latest version of the Ports index](https://download.freebsd.org/ftp/ports/index/INDEX-13) instead of relying on an up-to-date ports tree:
   * This wouldn't help having up to date Makefiles for the ports...
   * But it would be a first step in helping pysec2vuxml to run on non FreeBSD systems
