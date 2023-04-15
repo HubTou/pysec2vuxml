@@ -16,9 +16,9 @@ Vulns Package           Port path                 Port name              Port ve
 2     joblib            devel/py-joblib           py39-joblib            1.1.0        skreuzer@FreeBSD.org   
 2     py                devel/py-py               py39-py                1.11.0       python@FreeBSD.org     
 1     sentry-sdk        devel/py-sentry-sdk       py39-sentry-sdk        1.5.12       0mp@FreeBSD.org        
-1     setuptools        devel/py-setuptools       py37-setuptools        63.1.0       python@FreeBSD.org     
+1     setuptools        devel/py-setuptools       py39-setuptools        63.1.0       python@FreeBSD.org     
 1     setuptools        devel/py-setuptools44     py27-setuptools44      44.1.1       python@FreeBSD.org     
-1     setuptools        devel/py-setuptools58     py39-setuptools58      58.5.3_2     python@FreeBSD.org     
+1     setuptools        devel/py-setuptools58     py38-setuptools58      58.5.3_2     python@FreeBSD.org     
 1     pycares           dns/py-pycares            py39-pycares           4.1.2        demon@FreeBSD.org      
 1     unicorn           emulators/py-unicorn      py39-unicorn           1.0.2        antoine@FreeBSD.org    
 1     OWSLib            graphics/py-OWSLib        py39-OWSLib            0.28.0       lbartoletti@FreeBSD.org
@@ -74,36 +74,19 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="2f9ca20d-47a5-4948-992e-753df8edbc6a">
-    <topic>py-rencode -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-rencode</name>
-    <name>py38-rencode</name>
-    <name>py39-rencode</name>
-    <name>py310-rencode</name>
-    <name>py311-rencode</name>
-    <range><le>1.0.6_1</le></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2021-345">
-      <p>The rencode package through 1.0.6 for Python allows an infinite loop in typecode decoding (such as via ;\x2f\x7f), enabling a remote attack that consumes CPU and memory.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2021-40839</cvename>
-      <url>https://osv.dev/vulnerability/PYSEC-2021-345</url>
-    </references>
-    <dates>
-      <discovery>2021-09-10</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: 70d0d2ec-cb62-11ed-956f-7054d21a9e2a
+  Topic: py39-rencode -- infinite loop that could lead to Denial of Service
+  Affects:
+    py39-rencode:
+      <= 1.0.6_1 ; 
+  References:
+    cvename: CVE-2021-40839
+    url: https://osv.dev/vulnerability/PYSEC-2021-345
+    url: https://osv.dev/vulnerability/GHSA-gh8j-2pgf-x458
+  Discovery date: 2021-09-09
+  Entry date: 2023-03-25
+  Modified date: 2023-03-26
 
 PYSEC vulnerability:
   Id:        GHSA-gh8j-2pgf-x458
@@ -115,36 +98,19 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="3e2faa8d-f7bc-4527-aa5f-e78c1ab7a115">
-    <topic>py-rencode -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-rencode</name>
-    <name>py38-rencode</name>
-    <name>py39-rencode</name>
-    <name>py310-rencode</name>
-    <name>py311-rencode</name>
-    <range><le>1.0.6_1</le></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-gh8j-2pgf-x458">
-      <p>The rencode package through 1.0.6 for Python allows an infinite loop in typecode decoding (such as via ;\x2f\x7f), enabling a remote attack that consumes CPU and memory.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2021-40839</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-gh8j-2pgf-x458</url>
-    </references>
-    <dates>
-      <discovery>2021-09-10</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: 70d0d2ec-cb62-11ed-956f-7054d21a9e2a
+  Topic: py39-rencode -- infinite loop that could lead to Denial of Service
+  Affects:
+    py39-rencode:
+      <= 1.0.6_1 ; 
+  References:
+    cvename: CVE-2021-40839
+    url: https://osv.dev/vulnerability/PYSEC-2021-345
+    url: https://osv.dev/vulnerability/GHSA-gh8j-2pgf-x458
+  Discovery date: 2021-09-09
+  Entry date: 2023-03-25
+  Modified date: 2023-03-26
 
 --------------------------------------------------------------------------------
 Python package 'Elixir 0.7.1' / FreeBSD port 'py39-Elixir 0.7.1_3' is vulnerable:
@@ -164,36 +130,17 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="40849a3f-c10a-4e85-8c13-9c042ef74649">
-    <topic>py-Elixir -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-Elixir</name>
-    <name>py38-Elixir</name>
-    <name>py39-Elixir</name>
-    <name>py310-Elixir</name>
-    <name>py311-Elixir</name>
-    <range><le>0.7.1_3</le></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2012-13">
-      <p>Elixir 0.8.0 uses Blowfish in CFB mode without constructing a unique initialization vector (IV), which makes it easier for context-dependent users to obtain sensitive information and decrypt the database.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2012-2146</cvename>
-      <url>https://osv.dev/vulnerability/PYSEC-2012-13</url>
-    </references>
-    <dates>
-      <discovery>2012-08-26</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: 2991178f-cbe8-11ed-956f-7054d21a9e2a
+  Topic: py39-Elixir -- weak use of cryptography
+  Affects:
+    py39-Elixir:
+      <= 0.8.0 ; 
+  References:
+    cvename: CVE-2012-2146
+    url: https://osv.dev/vulnerability/PYSEC-2012-13
+  Discovery date: 2012-08-26
+  Entry date: 2023-03-26
 
 --------------------------------------------------------------------------------
 Python package 'lmdb 0.97' / FreeBSD port 'py39-lmdb 0.97' is vulnerable:
@@ -213,36 +160,25 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="a5449d7b-f86e-493c-8230-df4e33b0597e">
-    <topic>py-lmdb -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-lmdb</name>
-    <name>py38-lmdb</name>
-    <name>py39-lmdb</name>
-    <name>py310-lmdb</name>
-    <name>py311-lmdb</name>
-    <range><lt>0.98</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2019-238">
-      <p>An issue was discovered in py-lmdb 0.97. mdb_node_del does not validate a memmove in the case of an unexpected node-&gt;mn_hi, leading to an invalid write operation. NOTE: this outcome occurs when accessing a data.mdb file supplied by an attacker.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2019-16226</cvename>
-      <url>https://osv.dev/vulnerability/PYSEC-2019-238</url>
-    </references>
-    <dates>
-      <discovery>2019-09-11</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: c13a8c17-cbeb-11ed-956f-7054d21a9e2a
+  Topic: py39-lmdb -- multiple vulnerabilities
+  Affects:
+    py39-lmdb:
+      < 0.98 ; 
+  References:
+    cvename: CVE-2019-16224
+    url: https://osv.dev/vulnerability/PYSEC-2019-236
+    cvename: CVE-2019-16225
+    url: https://osv.dev/vulnerability/PYSEC-2019-237
+    cvename: CVE-2019-16226
+    url: https://osv.dev/vulnerability/PYSEC-2019-238
+    cvename: CVE-2019-16227
+    url: https://osv.dev/vulnerability/PYSEC-2019-239
+    cvename: CVE-2019-16228
+    url: https://osv.dev/vulnerability/PYSEC-2019-240
+  Discovery date: 2019-09-11
+  Entry date: 2023-03-26
 
 PYSEC vulnerability:
   Id:        PYSEC-2019-239
@@ -254,36 +190,25 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="96749fa5-c41a-486a-9fdc-5bf3ce247076">
-    <topic>py-lmdb -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-lmdb</name>
-    <name>py38-lmdb</name>
-    <name>py39-lmdb</name>
-    <name>py310-lmdb</name>
-    <name>py311-lmdb</name>
-    <range><lt>0.98</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2019-239">
-      <p>An issue was discovered in py-lmdb 0.97. For certain values of mn_flags, mdb_cursor_set triggers a memcpy with an invalid write operation within mdb_xcursor_init1. NOTE: this outcome occurs when accessing a data.mdb file supplied by an attacker.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2019-16227</cvename>
-      <url>https://osv.dev/vulnerability/PYSEC-2019-239</url>
-    </references>
-    <dates>
-      <discovery>2019-09-11</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: c13a8c17-cbeb-11ed-956f-7054d21a9e2a
+  Topic: py39-lmdb -- multiple vulnerabilities
+  Affects:
+    py39-lmdb:
+      < 0.98 ; 
+  References:
+    cvename: CVE-2019-16224
+    url: https://osv.dev/vulnerability/PYSEC-2019-236
+    cvename: CVE-2019-16225
+    url: https://osv.dev/vulnerability/PYSEC-2019-237
+    cvename: CVE-2019-16226
+    url: https://osv.dev/vulnerability/PYSEC-2019-238
+    cvename: CVE-2019-16227
+    url: https://osv.dev/vulnerability/PYSEC-2019-239
+    cvename: CVE-2019-16228
+    url: https://osv.dev/vulnerability/PYSEC-2019-240
+  Discovery date: 2019-09-11
+  Entry date: 2023-03-26
 
 PYSEC vulnerability:
   Id:        PYSEC-2019-237
@@ -295,36 +220,25 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="4ad0369b-727e-4bdc-81b8-08fc6ac4fd09">
-    <topic>py-lmdb -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-lmdb</name>
-    <name>py38-lmdb</name>
-    <name>py39-lmdb</name>
-    <name>py310-lmdb</name>
-    <name>py311-lmdb</name>
-    <range><lt>0.98</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2019-237">
-      <p>An issue was discovered in py-lmdb 0.97. For certain values of mp_flags, mdb_page_touch does not properly set up mc-&gt;mc_pg[mc-&gt;top], leading to an invalid write operation. NOTE: this outcome occurs when accessing a data.mdb file supplied by an attacker.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2019-16225</cvename>
-      <url>https://osv.dev/vulnerability/PYSEC-2019-237</url>
-    </references>
-    <dates>
-      <discovery>2019-09-11</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: c13a8c17-cbeb-11ed-956f-7054d21a9e2a
+  Topic: py39-lmdb -- multiple vulnerabilities
+  Affects:
+    py39-lmdb:
+      < 0.98 ; 
+  References:
+    cvename: CVE-2019-16224
+    url: https://osv.dev/vulnerability/PYSEC-2019-236
+    cvename: CVE-2019-16225
+    url: https://osv.dev/vulnerability/PYSEC-2019-237
+    cvename: CVE-2019-16226
+    url: https://osv.dev/vulnerability/PYSEC-2019-238
+    cvename: CVE-2019-16227
+    url: https://osv.dev/vulnerability/PYSEC-2019-239
+    cvename: CVE-2019-16228
+    url: https://osv.dev/vulnerability/PYSEC-2019-240
+  Discovery date: 2019-09-11
+  Entry date: 2023-03-26
 
 PYSEC vulnerability:
   Id:        PYSEC-2019-240
@@ -336,36 +250,25 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="608ffd7d-adf8-4b9c-8944-a27cd94745ae">
-    <topic>py-lmdb -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-lmdb</name>
-    <name>py38-lmdb</name>
-    <name>py39-lmdb</name>
-    <name>py310-lmdb</name>
-    <name>py311-lmdb</name>
-    <range><lt>0.98</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2019-240">
-      <p>An issue was discovered in py-lmdb 0.97. There is a divide-by-zero error in the function mdb_env_open2 if mdb_env_read_header obtains a zero value for a certain size field. NOTE: this outcome occurs when accessing a data.mdb file supplied by an attacker.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2019-16228</cvename>
-      <url>https://osv.dev/vulnerability/PYSEC-2019-240</url>
-    </references>
-    <dates>
-      <discovery>2019-09-11</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: c13a8c17-cbeb-11ed-956f-7054d21a9e2a
+  Topic: py39-lmdb -- multiple vulnerabilities
+  Affects:
+    py39-lmdb:
+      < 0.98 ; 
+  References:
+    cvename: CVE-2019-16224
+    url: https://osv.dev/vulnerability/PYSEC-2019-236
+    cvename: CVE-2019-16225
+    url: https://osv.dev/vulnerability/PYSEC-2019-237
+    cvename: CVE-2019-16226
+    url: https://osv.dev/vulnerability/PYSEC-2019-238
+    cvename: CVE-2019-16227
+    url: https://osv.dev/vulnerability/PYSEC-2019-239
+    cvename: CVE-2019-16228
+    url: https://osv.dev/vulnerability/PYSEC-2019-240
+  Discovery date: 2019-09-11
+  Entry date: 2023-03-26
 
 PYSEC vulnerability:
   Id:        PYSEC-2019-236
@@ -377,36 +280,25 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="fa9f1fef-a425-45e1-8340-bc0a49f6ab0b">
-    <topic>py-lmdb -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-lmdb</name>
-    <name>py38-lmdb</name>
-    <name>py39-lmdb</name>
-    <name>py310-lmdb</name>
-    <name>py311-lmdb</name>
-    <range><lt>0.98</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2019-236">
-      <p>An issue was discovered in py-lmdb 0.97. For certain values of md_flags, mdb_node_add does not properly set up a memcpy destination, leading to an invalid write operation. NOTE: this outcome occurs when accessing a data.mdb file supplied by an attacker.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2019-16224</cvename>
-      <url>https://osv.dev/vulnerability/PYSEC-2019-236</url>
-    </references>
-    <dates>
-      <discovery>2019-09-11</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: c13a8c17-cbeb-11ed-956f-7054d21a9e2a
+  Topic: py39-lmdb -- multiple vulnerabilities
+  Affects:
+    py39-lmdb:
+      < 0.98 ; 
+  References:
+    cvename: CVE-2019-16224
+    url: https://osv.dev/vulnerability/PYSEC-2019-236
+    cvename: CVE-2019-16225
+    url: https://osv.dev/vulnerability/PYSEC-2019-237
+    cvename: CVE-2019-16226
+    url: https://osv.dev/vulnerability/PYSEC-2019-238
+    cvename: CVE-2019-16227
+    url: https://osv.dev/vulnerability/PYSEC-2019-239
+    cvename: CVE-2019-16228
+    url: https://osv.dev/vulnerability/PYSEC-2019-240
+  Discovery date: 2019-09-11
+  Entry date: 2023-03-26
 
 --------------------------------------------------------------------------------
 Python package 'redis 2.10.6' / FreeBSD port 'py39-redis2 2.10.6_2' is vulnerable:
@@ -428,8 +320,22 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
+FreeBSD VuXML vulnerability for ANOTHER port:
+Vulnerability ID: 3f6d6181-79b2-4d33-bb1e-5d3f9df0c1d1
+  Topic: py39-redis -- can send response data to the client of an unrelated request
+  Affects:
+    py39-redis:
+      < 4.3.6 ; 
+      >= 4.4.0 ; < 4.4.3 ; 
+      >= 4.5.0 ; < 4.5.3 ; 
+  References:
+    cvename: CVE-2023-28858
+    url: https://osv.dev/vulnerability/GHSA-24wv-mv5m-xv4h
+  Discovery date: 2023-03-26
+  Entry date: 2023-04-09
+
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="157870b0-ce31-4f6d-a5f7-97fdc83ab33f">
+  <vuln vid="e7649028-22ec-4f72-9161-d698c90be46c">
     <topic>py-redis -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -455,7 +361,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2023-03-26</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -469,8 +375,21 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
+FreeBSD VuXML vulnerability for ANOTHER port:
+Vulnerability ID: 8aa6340d-e7c6-41e0-b2a3-3c9e9930312a
+  Topic: py39-redis -- can send response data to the client of an unrelated request
+  Affects:
+    py39-redis:
+      >= 4.4.0 ; < 4.4.4 ; 
+      >= 4.5.0 ; < 4.5.4 ; 
+  References:
+    cvename: CVE-2023-28859
+    url: https://osv.dev/vulnerability/GHSA-8fww-64cx-x8p5
+  Discovery date: 2023-03-26
+  Entry date: 2023-04-09
+
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="7153b741-9547-4e6b-bb5d-2932c451338c">
+  <vuln vid="1b6a77b5-3819-4f9c-96cd-e3ffecc47771">
     <topic>py-redis -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -496,7 +415,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2023-03-26</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -520,8 +439,22 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
+FreeBSD VuXML vulnerability for ANOTHER port:
+Vulnerability ID: 3f6d6181-79b2-4d33-bb1e-5d3f9df0c1d1
+  Topic: py39-redis -- can send response data to the client of an unrelated request
+  Affects:
+    py39-redis:
+      < 4.3.6 ; 
+      >= 4.4.0 ; < 4.4.3 ; 
+      >= 4.5.0 ; < 4.5.3 ; 
+  References:
+    cvename: CVE-2023-28858
+    url: https://osv.dev/vulnerability/GHSA-24wv-mv5m-xv4h
+  Discovery date: 2023-03-26
+  Entry date: 2023-04-09
+
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="f3bb424a-afed-47b0-b7ab-a56d337d21c9">
+  <vuln vid="2eb97891-cb4e-4238-9eeb-1799143ac708">
     <topic>py-redis -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -547,7 +480,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2023-03-26</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -561,8 +494,21 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
+FreeBSD VuXML vulnerability for ANOTHER port:
+Vulnerability ID: 8aa6340d-e7c6-41e0-b2a3-3c9e9930312a
+  Topic: py39-redis -- can send response data to the client of an unrelated request
+  Affects:
+    py39-redis:
+      >= 4.4.0 ; < 4.4.4 ; 
+      >= 4.5.0 ; < 4.5.4 ; 
+  References:
+    cvename: CVE-2023-28859
+    url: https://osv.dev/vulnerability/GHSA-8fww-64cx-x8p5
+  Discovery date: 2023-03-26
+  Entry date: 2023-04-09
+
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="3ddacede-9b00-4a6c-9dd2-fecdb45d5863">
+  <vuln vid="50ce7ab9-9198-4708-8d68-70e5f3cb5416">
     <topic>py-redis -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -588,7 +534,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2023-03-26</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -618,36 +564,21 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="b63c1881-26ae-401f-b31c-cc908a455a18">
-    <topic>py-sqlalchemy -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-sqlalchemy10</name>
-    <name>py38-sqlalchemy10</name>
-    <name>py39-sqlalchemy10</name>
-    <name>py310-sqlalchemy10</name>
-    <name>py311-sqlalchemy10</name>
-    <range><lt>1.2.18</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2019-124">
-      <p>SQLAlchemy 1.2.17 has SQL Injection when the group_by parameter can be controlled.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2019-7548</cvename>
-      <url>https://osv.dev/vulnerability/PYSEC-2019-124</url>
-    </references>
-    <dates>
-      <discovery>2019-02-06</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: e4181981-ccf1-11ed-956f-7054d21a9e2a
+  Topic: py39-sqlalchemy10 -- multiple SQL Injection vulnerabilities
+  Affects:
+    py39-sqlalchemy10:
+      < 1.3.0 ; 
+  References:
+    cvename: CVE-2019-7164
+    cvename: CVE-2019-7548
+    url: https://osv.dev/vulnerability/PYSEC-2019-123
+    url: https://osv.dev/vulnerability/PYSEC-2019-124
+    url: https://osv.dev/vulnerability/GHSA-887w-45rq-vxgf
+    url: https://osv.dev/vulnerability/GHSA-38fc-9xqv-7f7q
+  Discovery date: 2019-02-06
+  Entry date: 2023-03-28
 
 PYSEC vulnerability:
   Id:        PYSEC-2019-123
@@ -659,36 +590,21 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="fb95370e-3741-4c6e-a7f9-8fe87fd5dc13">
-    <topic>py-sqlalchemy -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-sqlalchemy10</name>
-    <name>py38-sqlalchemy10</name>
-    <name>py39-sqlalchemy10</name>
-    <name>py310-sqlalchemy10</name>
-    <name>py311-sqlalchemy10</name>
-    <range><lt>1.2.18</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2019-123">
-      <p>SQLAlchemy through 1.2.17 and 1.3.x through 1.3.0b2 allows SQL Injection via the order_by parameter.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2019-7164</cvename>
-      <url>https://osv.dev/vulnerability/PYSEC-2019-123</url>
-    </references>
-    <dates>
-      <discovery>2019-02-20</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: e4181981-ccf1-11ed-956f-7054d21a9e2a
+  Topic: py39-sqlalchemy10 -- multiple SQL Injection vulnerabilities
+  Affects:
+    py39-sqlalchemy10:
+      < 1.3.0 ; 
+  References:
+    cvename: CVE-2019-7164
+    cvename: CVE-2019-7548
+    url: https://osv.dev/vulnerability/PYSEC-2019-123
+    url: https://osv.dev/vulnerability/PYSEC-2019-124
+    url: https://osv.dev/vulnerability/GHSA-887w-45rq-vxgf
+    url: https://osv.dev/vulnerability/GHSA-38fc-9xqv-7f7q
+  Discovery date: 2019-02-06
+  Entry date: 2023-03-28
 
 PYSEC vulnerability:
   Id:        GHSA-38fc-9xqv-7f7q
@@ -700,36 +616,21 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="847860c1-6952-4cc9-a11c-cc6653b5d498">
-    <topic>py-sqlalchemy -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-sqlalchemy10</name>
-    <name>py38-sqlalchemy10</name>
-    <name>py39-sqlalchemy10</name>
-    <name>py310-sqlalchemy10</name>
-    <name>py311-sqlalchemy10</name>
-    <range><lt>1.3.0</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-38fc-9xqv-7f7q">
-      <p>SQLAlchemy 1.2.17 has SQL Injection when the group_by parameter can be controlled.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2019-7548</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-38fc-9xqv-7f7q</url>
-    </references>
-    <dates>
-      <discovery>2019-02-06</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: e4181981-ccf1-11ed-956f-7054d21a9e2a
+  Topic: py39-sqlalchemy10 -- multiple SQL Injection vulnerabilities
+  Affects:
+    py39-sqlalchemy10:
+      < 1.3.0 ; 
+  References:
+    cvename: CVE-2019-7164
+    cvename: CVE-2019-7548
+    url: https://osv.dev/vulnerability/PYSEC-2019-123
+    url: https://osv.dev/vulnerability/PYSEC-2019-124
+    url: https://osv.dev/vulnerability/GHSA-887w-45rq-vxgf
+    url: https://osv.dev/vulnerability/GHSA-38fc-9xqv-7f7q
+  Discovery date: 2019-02-06
+  Entry date: 2023-03-28
 
 PYSEC vulnerability:
   Id:        GHSA-887w-45rq-vxgf
@@ -741,36 +642,21 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="bbe8fbce-b544-4a08-ad84-8822ba408914">
-    <topic>py-sqlalchemy -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-sqlalchemy10</name>
-    <name>py38-sqlalchemy10</name>
-    <name>py39-sqlalchemy10</name>
-    <name>py310-sqlalchemy10</name>
-    <name>py311-sqlalchemy10</name>
-    <range><lt>1.3.0</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-887w-45rq-vxgf">
-      <p>SQLAlchemy through 1.2.17 and 1.3.x through 1.3.0b2 allows SQL Injection via the order_by parameter.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2019-7164</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-887w-45rq-vxgf</url>
-    </references>
-    <dates>
-      <discovery>2019-02-20</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: e4181981-ccf1-11ed-956f-7054d21a9e2a
+  Topic: py39-sqlalchemy10 -- multiple SQL Injection vulnerabilities
+  Affects:
+    py39-sqlalchemy10:
+      < 1.3.0 ; 
+  References:
+    cvename: CVE-2019-7164
+    cvename: CVE-2019-7548
+    url: https://osv.dev/vulnerability/PYSEC-2019-123
+    url: https://osv.dev/vulnerability/PYSEC-2019-124
+    url: https://osv.dev/vulnerability/GHSA-887w-45rq-vxgf
+    url: https://osv.dev/vulnerability/GHSA-38fc-9xqv-7f7q
+  Discovery date: 2019-02-06
+  Entry date: 2023-03-28
 
 --------------------------------------------------------------------------------
 Python package 'sqlalchemy 1.1.18' / FreeBSD port 'py39-sqlalchemy11 1.1.18' is vulnerable:
@@ -798,36 +684,21 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="cfb5cd9d-4207-4c9e-80ce-c04708c4d5c7">
-    <topic>py-sqlalchemy -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-sqlalchemy11</name>
-    <name>py38-sqlalchemy11</name>
-    <name>py39-sqlalchemy11</name>
-    <name>py310-sqlalchemy11</name>
-    <name>py311-sqlalchemy11</name>
-    <range><lt>1.2.18</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2019-124">
-      <p>SQLAlchemy 1.2.17 has SQL Injection when the group_by parameter can be controlled.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2019-7548</cvename>
-      <url>https://osv.dev/vulnerability/PYSEC-2019-124</url>
-    </references>
-    <dates>
-      <discovery>2019-02-06</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: 8ccff771-ceca-43a0-85ad-3e595e73b425
+  Topic: py39-sqlalchemy11 -- multiple SQL Injection vulnerabilities
+  Affects:
+    py39-sqlalchemy11:
+      < 1.3.0 ; 
+  References:
+    cvename: CVE-2019-7164
+    cvename: CVE-2019-7548
+    url: https://osv.dev/vulnerability/PYSEC-2019-123
+    url: https://osv.dev/vulnerability/PYSEC-2019-124
+    url: https://osv.dev/vulnerability/GHSA-38fc-9xqv-7f7q
+    url: https://osv.dev/vulnerability/GHSA-887w-45rq-vxgf
+  Discovery date: 2019-02-06
+  Entry date: 2023-04-09
 
 PYSEC vulnerability:
   Id:        PYSEC-2019-123
@@ -839,36 +710,21 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="51b2326b-bf86-4462-92c2-76c82284eb84">
-    <topic>py-sqlalchemy -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-sqlalchemy11</name>
-    <name>py38-sqlalchemy11</name>
-    <name>py39-sqlalchemy11</name>
-    <name>py310-sqlalchemy11</name>
-    <name>py311-sqlalchemy11</name>
-    <range><lt>1.2.18</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2019-123">
-      <p>SQLAlchemy through 1.2.17 and 1.3.x through 1.3.0b2 allows SQL Injection via the order_by parameter.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2019-7164</cvename>
-      <url>https://osv.dev/vulnerability/PYSEC-2019-123</url>
-    </references>
-    <dates>
-      <discovery>2019-02-20</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: 8ccff771-ceca-43a0-85ad-3e595e73b425
+  Topic: py39-sqlalchemy11 -- multiple SQL Injection vulnerabilities
+  Affects:
+    py39-sqlalchemy11:
+      < 1.3.0 ; 
+  References:
+    cvename: CVE-2019-7164
+    cvename: CVE-2019-7548
+    url: https://osv.dev/vulnerability/PYSEC-2019-123
+    url: https://osv.dev/vulnerability/PYSEC-2019-124
+    url: https://osv.dev/vulnerability/GHSA-38fc-9xqv-7f7q
+    url: https://osv.dev/vulnerability/GHSA-887w-45rq-vxgf
+  Discovery date: 2019-02-06
+  Entry date: 2023-04-09
 
 PYSEC vulnerability:
   Id:        GHSA-38fc-9xqv-7f7q
@@ -880,36 +736,21 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="81fcca73-c4ac-4f3f-be97-0c3d643b1e09">
-    <topic>py-sqlalchemy -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-sqlalchemy11</name>
-    <name>py38-sqlalchemy11</name>
-    <name>py39-sqlalchemy11</name>
-    <name>py310-sqlalchemy11</name>
-    <name>py311-sqlalchemy11</name>
-    <range><lt>1.3.0</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-38fc-9xqv-7f7q">
-      <p>SQLAlchemy 1.2.17 has SQL Injection when the group_by parameter can be controlled.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2019-7548</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-38fc-9xqv-7f7q</url>
-    </references>
-    <dates>
-      <discovery>2019-02-06</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: 8ccff771-ceca-43a0-85ad-3e595e73b425
+  Topic: py39-sqlalchemy11 -- multiple SQL Injection vulnerabilities
+  Affects:
+    py39-sqlalchemy11:
+      < 1.3.0 ; 
+  References:
+    cvename: CVE-2019-7164
+    cvename: CVE-2019-7548
+    url: https://osv.dev/vulnerability/PYSEC-2019-123
+    url: https://osv.dev/vulnerability/PYSEC-2019-124
+    url: https://osv.dev/vulnerability/GHSA-38fc-9xqv-7f7q
+    url: https://osv.dev/vulnerability/GHSA-887w-45rq-vxgf
+  Discovery date: 2019-02-06
+  Entry date: 2023-04-09
 
 PYSEC vulnerability:
   Id:        GHSA-887w-45rq-vxgf
@@ -921,36 +762,21 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="58aed7be-f308-4623-90fa-93f2188f448c">
-    <topic>py-sqlalchemy -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-sqlalchemy11</name>
-    <name>py38-sqlalchemy11</name>
-    <name>py39-sqlalchemy11</name>
-    <name>py310-sqlalchemy11</name>
-    <name>py311-sqlalchemy11</name>
-    <range><lt>1.3.0</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-887w-45rq-vxgf">
-      <p>SQLAlchemy through 1.2.17 and 1.3.x through 1.3.0b2 allows SQL Injection via the order_by parameter.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2019-7164</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-887w-45rq-vxgf</url>
-    </references>
-    <dates>
-      <discovery>2019-02-20</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: 8ccff771-ceca-43a0-85ad-3e595e73b425
+  Topic: py39-sqlalchemy11 -- multiple SQL Injection vulnerabilities
+  Affects:
+    py39-sqlalchemy11:
+      < 1.3.0 ; 
+  References:
+    cvename: CVE-2019-7164
+    cvename: CVE-2019-7548
+    url: https://osv.dev/vulnerability/PYSEC-2019-123
+    url: https://osv.dev/vulnerability/PYSEC-2019-124
+    url: https://osv.dev/vulnerability/GHSA-38fc-9xqv-7f7q
+    url: https://osv.dev/vulnerability/GHSA-887w-45rq-vxgf
+  Discovery date: 2019-02-06
+  Entry date: 2023-04-09
 
 --------------------------------------------------------------------------------
 Python package 'sqlalchemy 1.2.19' / FreeBSD port 'py39-sqlalchemy12 1.2.19' is vulnerable:
@@ -978,36 +804,21 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="a5a07449-0990-4238-aaa5-b79697a0f283">
-    <topic>py-sqlalchemy -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-sqlalchemy12</name>
-    <name>py38-sqlalchemy12</name>
-    <name>py39-sqlalchemy12</name>
-    <name>py310-sqlalchemy12</name>
-    <name>py311-sqlalchemy12</name>
-    <range><lt>1.3.0</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-38fc-9xqv-7f7q">
-      <p>SQLAlchemy 1.2.17 has SQL Injection when the group_by parameter can be controlled.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2019-7548</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-38fc-9xqv-7f7q</url>
-    </references>
-    <dates>
-      <discovery>2019-02-06</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: d2293e22-4390-42c2-a323-34cca2066000
+  Topic: py39-sqlalchemy12 -- multiple SQL Injection vulnerabilities
+  Affects:
+    py39-sqlalchemy12:
+      < 1.3.0 ; 
+  References:
+    cvename: CVE-2019-7548
+    cvename: CVE-2019-7164
+    url: https://osv.dev/vulnerability/PYSEC-2019-123
+    url: https://osv.dev/vulnerability/PYSEC-2019-124
+    url: https://osv.dev/vulnerability/GHSA-38fc-9xqv-7f7q
+    url: https://osv.dev/vulnerability/GHSA-887w-45rq-vxgf
+  Discovery date: 2019-02-06
+  Entry date: 2023-04-09
 
 PYSEC vulnerability:
   Id:        GHSA-887w-45rq-vxgf
@@ -1019,36 +830,21 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="830e6ce3-e1ea-4390-867d-ae5714c20580">
-    <topic>py-sqlalchemy -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-sqlalchemy12</name>
-    <name>py38-sqlalchemy12</name>
-    <name>py39-sqlalchemy12</name>
-    <name>py310-sqlalchemy12</name>
-    <name>py311-sqlalchemy12</name>
-    <range><lt>1.3.0</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-887w-45rq-vxgf">
-      <p>SQLAlchemy through 1.2.17 and 1.3.x through 1.3.0b2 allows SQL Injection via the order_by parameter.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2019-7164</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-887w-45rq-vxgf</url>
-    </references>
-    <dates>
-      <discovery>2019-02-20</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: d2293e22-4390-42c2-a323-34cca2066000
+  Topic: py39-sqlalchemy12 -- multiple SQL Injection vulnerabilities
+  Affects:
+    py39-sqlalchemy12:
+      < 1.3.0 ; 
+  References:
+    cvename: CVE-2019-7548
+    cvename: CVE-2019-7164
+    url: https://osv.dev/vulnerability/PYSEC-2019-123
+    url: https://osv.dev/vulnerability/PYSEC-2019-124
+    url: https://osv.dev/vulnerability/GHSA-38fc-9xqv-7f7q
+    url: https://osv.dev/vulnerability/GHSA-887w-45rq-vxgf
+  Discovery date: 2019-02-06
+  Entry date: 2023-04-09
 
 --------------------------------------------------------------------------------
 Python package 'celery 4.4.7' / FreeBSD port 'py39-celery 4.4.7' is vulnerable:
@@ -1069,36 +865,18 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="1255a466-5354-434d-ab80-86cc286b38db">
-    <topic>py-celery -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-celery</name>
-    <name>py38-celery</name>
-    <name>py39-celery</name>
-    <name>py310-celery</name>
-    <name>py311-celery</name>
-    <range><lt>5.2.2</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2021-858">
-      <p>This affects the package celery before 5.2.2. It by default trusts the messages and metadata stored in backends (result stores). When reading task metadata from the backend, the data is deserialized. Given that an attacker can gain access to, or somehow manipulate the metadata within a celery backend, they could trigger a stored command injection vulnerability and potentially gain further access to the system.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2021-23727</cvename>
-      <url>https://osv.dev/vulnerability/PYSEC-2021-858</url>
-    </references>
-    <dates>
-      <discovery>2021-12-29</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: 0a38a0d9-757f-4ac3-9561-b439e933dfa9
+  Topic: py39-celery -- command injection vulnerability
+  Affects:
+    py39-celery:
+      < 5.2.2 ; 
+  References:
+    cvename: CVE-2021-23727
+    url: https://osv.dev/vulnerability/PYSEC-2021-858
+    url: https://osv.dev/vulnerability/GHSA-q4xr-rc97-m4xx
+  Discovery date: 2021-12-09
+  Entry date: 2023-04-09
 
 PYSEC vulnerability:
   Id:        GHSA-q4xr-rc97-m4xx
@@ -1110,36 +888,18 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="1e380ef4-e2e1-45b6-9024-6da76bbb4d1f">
-    <topic>py-celery -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-celery</name>
-    <name>py38-celery</name>
-    <name>py39-celery</name>
-    <name>py310-celery</name>
-    <name>py311-celery</name>
-    <range><lt>5.2.2</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-q4xr-rc97-m4xx">
-      <p>This affects the package celery before 5.2.2. It by default trusts the messages and metadata stored in backends (result stores). When reading task metadata from the backend, the data is deserialized. Given that an attacker can gain access to, or somehow manipulate the metadata within a celery backend, they could trigger a stored command injection vulnerability and potentially gain further access to the system.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2021-23727</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-q4xr-rc97-m4xx</url>
-    </references>
-    <dates>
-      <discovery>2021-12-29</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: 0a38a0d9-757f-4ac3-9561-b439e933dfa9
+  Topic: py39-celery -- command injection vulnerability
+  Affects:
+    py39-celery:
+      < 5.2.2 ; 
+  References:
+    cvename: CVE-2021-23727
+    url: https://osv.dev/vulnerability/PYSEC-2021-858
+    url: https://osv.dev/vulnerability/GHSA-q4xr-rc97-m4xx
+  Discovery date: 2021-12-09
+  Entry date: 2023-04-09
 
 --------------------------------------------------------------------------------
 Python package 'configobj 5.0.8' / FreeBSD port 'py39-configobj 5.0.8' is vulnerable:
@@ -1159,36 +919,17 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="840bd0e6-1b93-4d6f-8fcf-ac7517dcc38d">
-    <topic>py-configobj -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-configobj</name>
-    <name>py38-configobj</name>
-    <name>py39-configobj</name>
-    <name>py310-configobj</name>
-    <name>py311-configobj</name>
-    <range><le>5.0.8</le></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-c33w-24p9-8m24">
-      <p>All versions of the package configobj are vulnerable to Regular Expression Denial of Service (ReDoS) via the validate function, using (.+?)\((.*)\). **Note:** This is only exploitable in the case of a developer, putting the offending value in a server side configuration file.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2023-26112</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-c33w-24p9-8m24</url>
-    </references>
-    <dates>
-      <discovery>2023-04-03</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: de970aef-d60e-466b-8e30-1ae945a047f1
+  Topic: py39-configobj -- vulnerable to Regular Expression Denial of Service
+  Affects:
+    py39-configobj:
+      <= 5.0.6_1 ; 
+  References:
+    cvename: CVE-2023-26112
+    url: https://osv.dev/vulnerability/GHSA-c33w-24p9-8m24
+  Discovery date: 2023-04-03
+  Entry date: 2023-04-09
 
 --------------------------------------------------------------------------------
 Python package 'joblib 1.1.0' / FreeBSD port 'py39-joblib 1.1.0' is vulnerable:
@@ -1208,36 +949,18 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="898bd47e-2c6e-43a6-9a4a-3c3702fdb4e4">
-    <topic>py-joblib -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-joblib</name>
-    <name>py38-joblib</name>
-    <name>py39-joblib</name>
-    <name>py310-joblib</name>
-    <name>py311-joblib</name>
-    <range><lt>1.2.0</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-6hrg-qmvc-2xh8">
-      <p>The package joblib from 0 and before 1.2.0 is vulnerable to Arbitrary Code Execution via the `pre_dispatch` flag in `Parallel()` class due to the `eval()` statement.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2022-21797</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-6hrg-qmvc-2xh8</url>
-    </references>
-    <dates>
-      <discovery>2022-09-26</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: 845f8430-d0ee-4134-ae35-480a3e139b8a
+  Topic: py39-joblib -- arbitrary code execution
+  Affects:
+    py39-joblib:
+      < 1.2.0 ; 
+  References:
+    cvename: CVE-2022-21797
+    url: https://osv.dev/vulnerability/PYSEC-2022-288
+    url: https://osv.dev/vulnerability/GHSA-6hrg-qmvc-2xh8
+  Discovery date: 2022-09-26
+  Entry date: 2023-04-09
 
 PYSEC vulnerability:
   Id:        PYSEC-2022-288
@@ -1249,36 +972,18 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="01028918-d9f3-4e9f-9a24-d9a27b3b6eb7">
-    <topic>py-joblib -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-joblib</name>
-    <name>py38-joblib</name>
-    <name>py39-joblib</name>
-    <name>py310-joblib</name>
-    <name>py311-joblib</name>
-    <range><lt>1.2.0</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2022-288">
-      <p>The package joblib from 0 and before 1.2.0 are vulnerable to Arbitrary Code Execution via the pre_dispatch flag in Parallel() class due to the eval() statement.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2022-21797</cvename>
-      <url>https://osv.dev/vulnerability/PYSEC-2022-288</url>
-    </references>
-    <dates>
-      <discovery>2022-09-26</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: 845f8430-d0ee-4134-ae35-480a3e139b8a
+  Topic: py39-joblib -- arbitrary code execution
+  Affects:
+    py39-joblib:
+      < 1.2.0 ; 
+  References:
+    cvename: CVE-2022-21797
+    url: https://osv.dev/vulnerability/PYSEC-2022-288
+    url: https://osv.dev/vulnerability/GHSA-6hrg-qmvc-2xh8
+  Discovery date: 2022-09-26
+  Entry date: 2023-04-09
 
 --------------------------------------------------------------------------------
 Python package 'py 1.11.0' / FreeBSD port 'py39-py 1.11.0' is vulnerable:
@@ -1406,10 +1111,10 @@ Existing flavours and versions, plus similar names:
   py39-pyproject-fmt-0.9.2
   py39-pyproject-metadata-0.7.1
   py39-pyproject_hooks-1.0.0_2
-  py311-pyproject_hooks-1.0.0_2
-  py310-pyproject_hooks-1.0.0_2
   py38-pyproject_hooks-1.0.0_2
   py37-pyproject_hooks-1.0.0_2
+  py310-pyproject_hooks-1.0.0_2
+  py311-pyproject_hooks-1.0.0_2
   py39-pypugjs-5.9.12
   py39-pyqtree-0.24
   py39-pyquery-2.0.0
@@ -1692,7 +1397,7 @@ Existing flavours and versions, plus similar names:
   py39-pytoport-0.4.1.4
   py39-pycups-2.0.1
   py39-pydyf-0.5.0_1
-  py39-pypdf-3.7.0
+  py39-pypdf-3.7.1
   py39-pypdf2-1.27.12
   py39-pypdf3-1.0.6
   py39-python-ly-0.9.6
@@ -1843,38 +1548,18 @@ The particular codepath in question is the regular expression at `py._path.svnur
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="a4e31817-4301-4890-b461-31ee6694ee56">
-    <topic>py-py -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-py</name>
-    <name>py38-py</name>
-    <name>py39-py</name>
-    <name>py310-py</name>
-    <name>py311-py</name>
-    <range><le>1.11.0</le></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-w596-4wvx-j9j6">
-      <p>The py library through 1.11.0 for Python allows remote attackers to conduct a ReDoS (Regular expression Denial of Service) attack via a Subversion repository with crafted info data, because the InfoSvnCommand argument is mishandled.
-
-The particular codepath in question is the regular expression at `py._path.svnurl.InfoSvnCommand.lspattern` and is only relevant when dealing with subversion (svn) projects. Notably the codepath is not used in the popular pytest project. The developers of the pytest package have released version `7.2.0` which removes their dependency on `py`. Users of `pytest` seeing alerts relating to this advisory may update to version `7.2.0` of `pytest` to resolve this issue. See https://github.com/pytest-dev/py/issues/287#issuecomment-1290407715 for additional context.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2022-42969</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-w596-4wvx-j9j6</url>
-    </references>
-    <dates>
-      <discovery>2022-10-16</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: 28a37df6-ba1a-4eed-bb64-623fc8e8dfd0
+  Topic: py39-py -- Regular expression Denial of Service vulnerability
+  Affects:
+    py39-py:
+      <= 1.11.0 ; 
+  References:
+    cvename: CVE-2022-42969
+    url: https://osv.dev/vulnerability/PYSEC-2022-42969
+    url: https://osv.dev/vulnerability/GHSA-w596-4wvx-j9j6
+  Discovery date: 2022-11-04
+  Entry date: 2023-04-09
 
 PYSEC vulnerability:
   Id:        PYSEC-2022-42969
@@ -1886,36 +1571,18 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="cab80a4a-dca0-4ac4-8483-00e88ac3397d">
-    <topic>py-py -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-py</name>
-    <name>py38-py</name>
-    <name>py39-py</name>
-    <name>py310-py</name>
-    <name>py311-py</name>
-    <range><le>1.11.0</le></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2022-42969">
-      <p>The py library through 1.11.0 for Python allows remote attackers to conduct a ReDoS (Regular expression Denial of Service) attack via a Subversion repository with crafted info data, because the InfoSvnCommand argument is mishandled.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2022-42969</cvename>
-      <url>https://osv.dev/vulnerability/PYSEC-2022-42969</url>
-    </references>
-    <dates>
-      <discovery>2022-10-16</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: 28a37df6-ba1a-4eed-bb64-623fc8e8dfd0
+  Topic: py39-py -- Regular expression Denial of Service vulnerability
+  Affects:
+    py39-py:
+      <= 1.11.0 ; 
+  References:
+    cvename: CVE-2022-42969
+    url: https://osv.dev/vulnerability/PYSEC-2022-42969
+    url: https://osv.dev/vulnerability/GHSA-w596-4wvx-j9j6
+  Discovery date: 2022-11-04
+  Entry date: 2023-04-09
 
 --------------------------------------------------------------------------------
 Python package 'pyinstaller 3.5' / FreeBSD port 'py39-pyinstaller 3.5_1' is vulnerable:
@@ -1925,9 +1592,9 @@ Existing flavours and versions, plus similar names:
   py39-pyinstaller-3.5_1
 --------------------------------------------------------------------------------
 
-Package ignored (vulnerability doesn't apply to FreeBSD)
+Package ignored (this vulnerability doesn't apply to FreeBSD)
 
-Package ignored (vulnerability doesn't apply to FreeBSD)
+Package ignored (this vulnerability doesn't apply to FreeBSD)
 
 --------------------------------------------------------------------------------
 Python package 'sentry-sdk 1.5.12' / FreeBSD port 'py39-sentry-sdk 1.5.12' is vulnerable:
@@ -1974,84 +1641,38 @@ If you'd like to handle filtering of these values on the server-side, you can al
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="32c0a03c-8f33-4a28-98f9-4136aec661f3">
-    <topic>py-sentry-sdk -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-sentry-sdk</name>
-    <name>py38-sentry-sdk</name>
-    <name>py39-sentry-sdk</name>
-    <name>py310-sentry-sdk</name>
-    <name>py311-sentry-sdk</name>
-    <range><lt>1.14.0</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-29pr-6jr8-q5jm">
-      <p>### Impact
-
-When using the [Django integration](https://docs.sentry.io/platforms/python/guides/django/) of the Sentry SDK in a specific configuration it is possible to leak sensitive cookies values, including the session cookie to Sentry. These sensitive cookies could then be used by someone with access to your Sentry issues to impersonate or escalate their privileges within your application.
-
-The below must be true in order for these sensitive values to be leaked:
-1. Your Sentry SDK configuration has `sendDefaultPII` set to `True`
-2. You are using a custom name for either of the cookies below in your Django settings.
-  - [`SESSION_COOKIE_NAME`](https://docs.djangoproject.com/en/4.1/ref/settings/#std-setting-SESSION_COOKIE_NAME) or 
-  - [`CSRF_COOKIE_NAME`](https://docs.djangoproject.com/en/4.1/ref/settings/#std-setting-CSRF_COOKIE_NAME) Django settings
-3. You are not configured in your organization or project settings to use [our data scrubbing features](https://docs.sentry.io/product/data-management-settings/scrubbing/) to account for the custom cookie names
-
-### Patches
-As of version `1.14.0`, the Django integration of the `sentry-sdk` will detect the custom cookie names based on your Django settings and will remove the values from the payload _before_ sending the data to Sentry.
-
-### Workarounds
-
-If you can not update your `sentry-sdk` to a patched version than you can use the SDKs filtering mechanism to remove the cookies from the payload that is sent to Sentry. For error events this can be done with the [before_send](https://docs.sentry.io/platforms/python/configuration/filtering/#using-platformidentifier-namebefore-send-) callback method and for performance related events (transactions) you can use the [before_send_transaction](https://docs.sentry.io/platforms/python/configuration/filtering/#using-platformidentifier-namebefore-send-transaction-) callback method.
-
-If you'd like to handle filtering of these values on the server-side, you can also use our [advanced data scrubbing feature](https://docs.sentry.io/product/data-management-settings/scrubbing/advanced-datascrubbing/) to account for the custom cookie names. Look for the `$http.cookies`, `$http.headers`, `$request.cookies`, or `$request.headers` fields to target with your scrubbing rule.
-
-### References
-- [Using Your Tools Against You (Chapter8 Blog Post)](https://medium.com/@tomwolters/using-your-tools-against-you-cea4d2482ebb)
-- [Sentry Python SDK Filtering](https://docs.sentry.io/platforms/python/configuration/filtering/)
-- [Sentry Data Scrubbing](https://docs.sentry.io/product/data-management-settings/scrubbing/advanced-datascrubbing/)
-
-### Credits
-- [Tom Wolters (Chapter8)](https://chapter8.com)
-</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2023-28117</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-29pr-6jr8-q5jm</url>
-    </references>
-    <dates>
-      <discovery>2023-03-22</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: 15dae5cc-9ee6-4577-a93e-2ab57780e707
+  Topic: py39-sentry-sdk -- sensitive cookies leak
+  Affects:
+    py39-sentry-sdk:
+      < 1.14.0 ; 
+  References:
+    cvename: CVE-2023-28117
+    url: https://osv.dev/vulnerability/GHSA-29pr-6jr8-q5jm
+  Discovery date: 2023-03-21
+  Entry date: 2023-04-09
 
 --------------------------------------------------------------------------------
-Python package 'setuptools 63.1.0' / FreeBSD port 'py37-setuptools 63.1.0' is vulnerable:
+Python package 'setuptools 63.1.0' / FreeBSD port 'py39-setuptools 63.1.0' is vulnerable:
   Please report to  maintainer 'python@FreeBSD.org' for port 'devel/py-setuptools'
 --------------------------------------------------------------------------------
 Existing flavours and versions, plus similar names:
-  py37-setuptools-63.1.0
-  py310-setuptools-63.1.0
   py39-setuptools-63.1.0
+  py310-setuptools-63.1.0
   py38-setuptools-63.1.0
+  py37-setuptools-63.1.0
   py311-setuptools-63.1.0
   py39-setuptools-declarative-requirements-1.3.0_1
   py39-setuptools-git-1.2
   py39-setuptools-pkg-0.9
   py39-setuptools-rust-1.5.2
   py27-setuptools44-44.1.1
-  py39-setuptools58-58.5.3_2
   py38-setuptools58-58.5.3_2
-  py37-setuptools58-58.5.3_2
   py311-setuptools58-58.5.3_2
   py310-setuptools58-58.5.3_2
+  py37-setuptools58-58.5.3_2
+  py39-setuptools58-58.5.3_2
   py39-setuptools_git_ls_files-0.1.2
   py39-setuptools_hg-0.4_1
   py39-setuptools_scm-6.4.2
@@ -2068,57 +1689,38 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="5caf7c14-2454-4998-88b9-e60afbf45970">
-    <topic>py-setuptools -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-setuptools</name>
-    <name>py38-setuptools</name>
-    <name>py39-setuptools</name>
-    <name>py310-setuptools</name>
-    <name>py311-setuptools</name>
-    <range><lt>65.5.1</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-r9hx-vwmv-q579">
-      <p>Python Packaging Authority (PyPA)'s setuptools is a library designed to facilitate packaging Python projects. Setuptools version 65.5.0 and earlier could allow remote attackers to cause a denial of service by fetching malicious HTML from a PyPI package or custom PackageIndex page due to a vulnerable Regular Expression in `package_index`. This has been patched in version 65.5.1.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2022-40897</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-r9hx-vwmv-q579</url>
-    </references>
-    <dates>
-      <discovery>2022-12-22</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: 1b38aec4-4149-4c7d-851c-3c4de3a1fbd0
+  Topic: py39-setuptools -- denial of service vulnerability
+  Affects:
+    py39-setuptools:
+      < 65.5.1 ; 
+  References:
+    cvename: CVE-2022-40897
+    url: https://osv.dev/vulnerability/GHSA-r9hx-vwmv-q579
+  Discovery date: 2022-12-23
+  Entry date: 2023-04-09
 
 --------------------------------------------------------------------------------
 Python package 'setuptools 44.1.1' / FreeBSD port 'py27-setuptools44 44.1.1' is vulnerable:
   Please report to  maintainer 'python@FreeBSD.org' for port 'devel/py-setuptools44'
 --------------------------------------------------------------------------------
 Existing flavours and versions, plus similar names:
-  py37-setuptools-63.1.0
-  py310-setuptools-63.1.0
   py39-setuptools-63.1.0
+  py310-setuptools-63.1.0
   py38-setuptools-63.1.0
+  py37-setuptools-63.1.0
   py311-setuptools-63.1.0
   py39-setuptools-declarative-requirements-1.3.0_1
   py39-setuptools-git-1.2
   py39-setuptools-pkg-0.9
   py39-setuptools-rust-1.5.2
   py27-setuptools44-44.1.1
-  py39-setuptools58-58.5.3_2
   py38-setuptools58-58.5.3_2
-  py37-setuptools58-58.5.3_2
   py311-setuptools58-58.5.3_2
   py310-setuptools58-58.5.3_2
+  py37-setuptools58-58.5.3_2
+  py39-setuptools58-58.5.3_2
   py39-setuptools_git_ls_files-0.1.2
   py39-setuptools_hg-0.4_1
   py39-setuptools_scm-6.4.2
@@ -2135,57 +1737,38 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="896c89aa-daea-40af-a9d6-b6cfa2bec7af">
-    <topic>py-setuptools -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-setuptools44</name>
-    <name>py38-setuptools44</name>
-    <name>py39-setuptools44</name>
-    <name>py310-setuptools44</name>
-    <name>py311-setuptools44</name>
-    <range><lt>65.5.1</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-r9hx-vwmv-q579">
-      <p>Python Packaging Authority (PyPA)'s setuptools is a library designed to facilitate packaging Python projects. Setuptools version 65.5.0 and earlier could allow remote attackers to cause a denial of service by fetching malicious HTML from a PyPI package or custom PackageIndex page due to a vulnerable Regular Expression in `package_index`. This has been patched in version 65.5.1.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2022-40897</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-r9hx-vwmv-q579</url>
-    </references>
-    <dates>
-      <discovery>2022-12-22</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: 187ab98e-2953-4495-b379-4060bd4b75ee
+  Topic: py27-setuptools44 -- denial of service vulnerability
+  Affects:
+    py27-setuptools44:
+      < 65.5.1 ; 
+  References:
+    cvename: CVE-2022-40897
+    url: https://osv.dev/vulnerability/GHSA-r9hx-vwmv-q579
+  Discovery date: 2022-12-23
+  Entry date: 2023-04-09
 
 --------------------------------------------------------------------------------
-Python package 'setuptools 58.5.3' / FreeBSD port 'py39-setuptools58 58.5.3_2' is vulnerable:
+Python package 'setuptools 58.5.3' / FreeBSD port 'py38-setuptools58 58.5.3_2' is vulnerable:
   Please report to  maintainer 'python@FreeBSD.org' for port 'devel/py-setuptools58'
 --------------------------------------------------------------------------------
 Existing flavours and versions, plus similar names:
-  py37-setuptools-63.1.0
-  py310-setuptools-63.1.0
   py39-setuptools-63.1.0
+  py310-setuptools-63.1.0
   py38-setuptools-63.1.0
+  py37-setuptools-63.1.0
   py311-setuptools-63.1.0
   py39-setuptools-declarative-requirements-1.3.0_1
   py39-setuptools-git-1.2
   py39-setuptools-pkg-0.9
   py39-setuptools-rust-1.5.2
   py27-setuptools44-44.1.1
-  py39-setuptools58-58.5.3_2
   py38-setuptools58-58.5.3_2
-  py37-setuptools58-58.5.3_2
   py311-setuptools58-58.5.3_2
   py310-setuptools58-58.5.3_2
+  py37-setuptools58-58.5.3_2
+  py39-setuptools58-58.5.3_2
   py39-setuptools_git_ls_files-0.1.2
   py39-setuptools_hg-0.4_1
   py39-setuptools_scm-6.4.2
@@ -2202,8 +1785,42 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
+FreeBSD VuXML vulnerability for ANOTHER port:
+Vulnerability ID: 1b38aec4-4149-4c7d-851c-3c4de3a1fbd0
+  Topic: py39-setuptools -- denial of service vulnerability
+  Affects:
+    py39-setuptools:
+      < 65.5.1 ; 
+  References:
+    cvename: CVE-2022-40897
+    url: https://osv.dev/vulnerability/GHSA-r9hx-vwmv-q579
+  Discovery date: 2022-12-23
+  Entry date: 2023-04-09
+
+Vulnerability ID: 187ab98e-2953-4495-b379-4060bd4b75ee
+  Topic: py27-setuptools44 -- denial of service vulnerability
+  Affects:
+    py27-setuptools44:
+      < 65.5.1 ; 
+  References:
+    cvename: CVE-2022-40897
+    url: https://osv.dev/vulnerability/GHSA-r9hx-vwmv-q579
+  Discovery date: 2022-12-23
+  Entry date: 2023-04-09
+
+Vulnerability ID: 24da150a-33e0-4fee-b4ee-2c6b377d3395
+  Topic: py39-setuptools58 -- denial of service vulnerability
+  Affects:
+    py39-setuptools58:
+      < 65.5.1 ; 
+  References:
+    cvename: CVE-2022-40897
+    url: https://osv.dev/vulnerability/GHSA-r9hx-vwmv-q579
+  Discovery date: 2022-12-23
+  Entry date: 2023-04-09
+
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="ecbb65ca-cfb3-4cc3-a4eb-8d83c6a46a09">
+  <vuln vid="3a29daab-098c-47ef-acac-3230cb9ea7c8">
     <topic>py-setuptools -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -2229,7 +1846,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2022-12-22</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -2258,8 +1875,20 @@ Update to version 4.2.0.
   Summary:   None
   Withdrawn: None
 
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: 43e9ffd4-d6e0-11ed-956f-7054d21a9e2a
+  Topic: py39-pycares -- domain hijacking vulnerability
+  Affects:
+    py39-pycares:
+      < 4.2.0 ; 
+  References:
+    cvename: CVE-2021-3672
+    url: https://osv.dev/vulnerability/GHSA-c58j-88f5-h53f
+  Discovery date: 2021-06-11
+  Entry date: 2023-04-09
+
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="de8e5586-fa2a-4af5-ae08-c22c3594ef70">
+  <vuln vid="1439e11e-f429-4d14-989a-a7b916b8d194">
     <topic>py-pycares -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -2291,7 +1920,7 @@ Update to version 4.2.0.
     </references>
     <dates>
       <discovery>INSERT_YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -2313,36 +1942,17 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="3e371a71-1f2c-4c98-937b-3f4aac2e0c6a">
-    <topic>py-unicorn -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-unicorn</name>
-    <name>py38-unicorn</name>
-    <name>py39-unicorn</name>
-    <name>py310-unicorn</name>
-    <name>py311-unicorn</name>
-    <range><lt>2.0.0rc1</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2021-868">
-      <p>An issue was discovered in split_region in uc.c in Unicorn Engine before 2.0.0-rc5. It allows local attackers to escape the sandbox. An attacker must first obtain the ability to execute crafted code in the target sandbox in order to exploit this vulnerability. The specific flaw exists within the virtual memory manager. The issue results from the faulty comparison of GVA and GPA while calling uc_mem_map_ptr to free part of a claimed memory block. An attacker can leverage this vulnerability to escape the sandbox and execute arbitrary code on the host machine.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2021-44078</cvename>
-      <url>https://osv.dev/vulnerability/PYSEC-2021-868</url>
-    </references>
-    <dates>
-      <discovery>2021-12-26</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: 17083017-d993-43eb-8aaf-7138f4486d1c
+  Topic: py39-unicorn -- sandbox escape and arbitrary code execution vulnerability
+  Affects:
+    py39-unicorn:
+      < 2.0.0rc1 ; 
+  References:
+    cvename: CVE-2021-44078
+    url: https://osv.dev/vulnerability/PYSEC-2021-868
+  Discovery date: 2021-12-26
+  Entry date: 2023-04-09
 
 --------------------------------------------------------------------------------
 Python package 'OWSLib 0.28.0' / FreeBSD port 'py39-OWSLib 0.28.0' is vulnerable:
@@ -2382,56 +1992,17 @@ etree.set_default_parser(
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="27e43708-ba52-42bf-a87d-3552c625cdf9">
-    <topic>py-OWSLib -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-OWSLib</name>
-    <name>py38-OWSLib</name>
-    <name>py39-OWSLib</name>
-    <name>py310-OWSLib</name>
-    <name>py311-OWSLib</name>
-    <range><lt>0.28.1</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-8h9c-r582-mggc">
-      <p>### Impact
-
-OWSLib's XML parser (which supports both `lxml` and `xml.etree`) does not disable entity resolution for `lxml`, and could lead to arbitrary file reads from an attacker-controlled XML payload. This affects all XML parsing in the codebase.
-
-### Patches
-
-- Use only lxml for XML handling, adding `resolve_entities=False` to `lxml`'s parser: https://github.com/geopython/OWSLib/pull/863
-
-### Workarounds
-
-```python
-patch_well_known_namespaces(etree)
-etree.set_default_parser(
-    parser=etree.XMLParser(resolve_entities=False)
-)
-```
-
-### References
-
-- [`GHSL-2022-131`](https://securitylab.github.com/advisories/GHSL-2022-131_OWSLib/)
-</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2023-27476</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-8h9c-r582-mggc</url>
-    </references>
-    <dates>
-      <discovery>2023-03-07</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: e5d117b3-2153-4129-81ed-42b0221afa78
+  Topic: py39-OWSLib -- arbitrary file read vulnerability
+  Affects:
+    py39-OWSLib:
+      < 0.28.1 ; 
+  References:
+    cvename: CVE-2023-27476
+    url: https://osv.dev/vulnerability/GHSA-8h9c-r582-mggc
+  Discovery date: 2023-03-07
+  Entry date: 2023-04-09
 
 --------------------------------------------------------------------------------
 Python package 'cinder 12.0.10' / FreeBSD port 'py39-cinder 12.0.10_22' is vulnerable:
@@ -2451,36 +2022,19 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="4d321ab0-3532-44d0-b3b9-04b70badc450">
-    <topic>py-cinder -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-cinder</name>
-    <name>py38-cinder</name>
-    <name>py39-cinder</name>
-    <name>py310-cinder</name>
-    <name>py311-cinder</name>
-    <range><lt>INSERT_VULNERABLE_VERSION_HERE</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2020-228">
-      <p>An insecure-credentials flaw was found in all openstack-cinder versions before openstack-cinder 14.1.0, all openstack-cinder 15.x.x versions before openstack-cinder 15.2.0 and all openstack-cinder 16.x.x versions before openstack-cinder 16.1.0. When using openstack-cinder with the Dell EMC ScaleIO or VxFlex OS backend storage driver, credentials for the entire backend are exposed in the ``connection_info`` element in all Block Storage v3 Attachments API calls containing that element. This flaw enables an end-user to create a volume, make an API call to show the attachment detail information, and retrieve a username and password that may be used to connect to another user's volume. Additionally, these credentials are valid for the ScaleIO or VxFlex OS Management API, should an attacker discover the Management API endpoint. Source: OpenStack project</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2020-10755</cvename>
-      <url>https://osv.dev/vulnerability/PYSEC-2020-228</url>
-    </references>
-    <dates>
-      <discovery>2020-06-10</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: f767d615-01db-47e9-b4ab-07bb8d3409fd
+  Topic: py39-cinder -- insecure-credentials flaw
+  Affects:
+    py39-cinder:
+      < 14.1.0 ; 
+      >= 15.0.0 ; < 15.2.0 ; 
+      >= 16.0.0 ; < 15.1.0 ; 
+  References:
+    cvename: CVE-2020-10755
+    url: https://osv.dev/vulnerability/PYSEC-2020-228
+  Discovery date: 2020-06-10
+  Entry date: 2023-04-09
 
 PYSEC vulnerability:
   Id:        GHSA-qhch-g8qr-p497
@@ -2492,36 +2046,75 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="8ae714e0-ce67-4ae7-8d71-1172477d9208">
-    <topic>py-cinder -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-cinder</name>
-    <name>py38-cinder</name>
-    <name>py39-cinder</name>
-    <name>py310-cinder</name>
-    <name>py311-cinder</name>
-    <range><lt>2014.1.3</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-qhch-g8qr-p497">
-      <p>The (1) GlusterFS and (2) Linux Smbfs drivers in OpenStack Cinder before 2014.1.3 allows remote authenticated users to obtain file data from the Cinder-volume host by cloning and attaching a volume with a crafted qcow2 header.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2014-3641</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-qhch-g8qr-p497</url>
-    </references>
-    <dates>
-      <discovery>2014-10-08</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: f4a94232-7864-4afb-bbf9-ff2dc8e288d1
+  Topic: py-cinder -- data leak
+  Affects:
+    py37-cinder:
+      <= 12.0.9 ; 
+      >= 13.0.0 ; <= 13.0.9 ; 
+      >= 14.0.0 ; <= 14.3.1 ; 
+      >= 15.0.0 ; <= 15.6.0 ; 
+      >= 16.0.0 ; <= 16.4.2 ; 
+      >= 17.0.0 ; <= 17.4.0 ; 
+      >= 18.0.0 ; <= 18.2.1 ; 
+      >= 19.0.0 ; <= 19.2.0 ; 
+      >= 20.0.0 ; <= 20.1.0 ; 
+      >= 21.0.0 ; <= 21.1.0 ; 
+      >= 22.0.0 ; <= 22.0.0.0rc2 ; 
+    py38-cinder:
+      <= 12.0.9 ; 
+      >= 13.0.0 ; <= 13.0.9 ; 
+      >= 14.0.0 ; <= 14.3.1 ; 
+      >= 15.0.0 ; <= 15.6.0 ; 
+      >= 16.0.0 ; <= 16.4.2 ; 
+      >= 17.0.0 ; <= 17.4.0 ; 
+      >= 18.0.0 ; <= 18.2.1 ; 
+      >= 19.0.0 ; <= 19.2.0 ; 
+      >= 20.0.0 ; <= 20.1.0 ; 
+      >= 21.0.0 ; <= 21.1.0 ; 
+      >= 22.0.0 ; <= 22.0.0.0rc2 ; 
+    py39-cinder:
+      <= 12.0.9 ; 
+      >= 13.0.0 ; <= 13.0.9 ; 
+      >= 14.0.0 ; <= 14.3.1 ; 
+      >= 15.0.0 ; <= 15.6.0 ; 
+      >= 16.0.0 ; <= 16.4.2 ; 
+      >= 17.0.0 ; <= 17.4.0 ; 
+      >= 18.0.0 ; <= 18.2.1 ; 
+      >= 19.0.0 ; <= 19.2.0 ; 
+      >= 20.0.0 ; <= 20.1.0 ; 
+      >= 21.0.0 ; <= 21.1.0 ; 
+      >= 22.0.0 ; <= 22.0.0.0rc2 ; 
+    py310-cinder:
+      <= 12.0.9 ; 
+      >= 13.0.0 ; <= 13.0.9 ; 
+      >= 14.0.0 ; <= 14.3.1 ; 
+      >= 15.0.0 ; <= 15.6.0 ; 
+      >= 16.0.0 ; <= 16.4.2 ; 
+      >= 17.0.0 ; <= 17.4.0 ; 
+      >= 18.0.0 ; <= 18.2.1 ; 
+      >= 19.0.0 ; <= 19.2.0 ; 
+      >= 20.0.0 ; <= 20.1.0 ; 
+      >= 21.0.0 ; <= 21.1.0 ; 
+      >= 22.0.0 ; <= 22.0.0.0rc2 ; 
+    py311-cinder:
+      <= 12.0.9 ; 
+      >= 13.0.0 ; <= 13.0.9 ; 
+      >= 14.0.0 ; <= 14.3.1 ; 
+      >= 15.0.0 ; <= 15.6.0 ; 
+      >= 16.0.0 ; <= 16.4.2 ; 
+      >= 17.0.0 ; <= 17.4.0 ; 
+      >= 18.0.0 ; <= 18.2.1 ; 
+      >= 19.0.0 ; <= 19.2.0 ; 
+      >= 20.0.0 ; <= 20.1.0 ; 
+      >= 21.0.0 ; <= 21.1.0 ; 
+      >= 22.0.0 ; <= 22.0.0.0rc2 ; 
+  References:
+    cvename: CVE-2014-3641
+    url: https://osv.dev/vulnerability/GHSA-qhch-g8qr-p497
+  Discovery date: 2022-05-17
+  Entry date: 2023-04-09
 
 PYSEC vulnerability:
   Id:        GHSA-7h75-hwxx-qpgc
@@ -2533,36 +2126,30 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="7eed4e38-5d74-41a3-9650-aa93b028313f">
-    <topic>py-cinder -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-cinder</name>
-    <name>py38-cinder</name>
-    <name>py39-cinder</name>
-    <name>py310-cinder</name>
-    <name>py311-cinder</name>
-    <range><lt>INSERT_VULNERABLE_VERSION_HERE</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-7h75-hwxx-qpgc">
-      <p>An issue was discovered in OpenStack Cinder before 19.1.2, 20.x before 20.0.2, and 21.0.0; Glance before 23.0.1, 24.x before 24.1.1, and 25.0.0; and Nova before 24.1.2, 25.x before 25.0.2, and 26.0.0. By supplying a specially created VMDK flat image that references a specific backing file path, an authenticated user may convince systems to return a copy of that file's contents from the server, resulting in unauthorized access to potentially sensitive data.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2022-47951</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-7h75-hwxx-qpgc</url>
-    </references>
-    <dates>
-      <discovery>2023-01-26</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: a0509648-65ce-4a1b-855e-520a75bd2549
+  Topic: py-cinder -- unauthorized data access
+  Affects:
+    py37-cinder:
+      < 19.1.2 ; 
+      >= 20.0.0 ; < 20.0.2 ; 
+    py38-cinder:
+      < 19.1.2 ; 
+      >= 20.0.0 ; < 20.0.2 ; 
+    py39-cinder:
+      < 19.1.2 ; 
+      >= 20.0.0 ; < 20.0.2 ; 
+    py310-cinder:
+      < 19.1.2 ; 
+      >= 20.0.0 ; < 20.0.2 ; 
+    py311-cinder:
+      < 19.1.2 ; 
+      >= 20.0.0 ; < 20.0.2 ; 
+  References:
+    cvename: CVE-2022-47951
+    url: https://osv.dev/vulnerability/GHSA-7h75-hwxx-qpgc
+  Discovery date: 2023-01-27
+  Entry date: 2023-04-09
 
 --------------------------------------------------------------------------------
 Python package 'tflite 2.3.0' / FreeBSD port 'py39-tflite 2.3.0' is vulnerable:
@@ -2608,61 +2195,35 @@ This vulnerability has been reported by Yakun Zhang of Baidu Security.
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="1cf5f9f9-2e25-4128-9a0b-f05fc0cbb0e5">
-    <topic>py-tflite -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-tflite</name>
-    <name>py38-tflite</name>
-    <name>py39-tflite</name>
-    <name>py310-tflite</name>
-    <name>py311-tflite</name>
-    <range><lt>INSERT_VULNERABLE_VERSION_HERE</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-wf5p-c75w-w3wh">
-      <p>### Impact
-An attacker can craft a TFLite model that would trigger a null pointer dereference, which would result in a crash and denial of service:
-
-This is caused by the MLIR optimization of `L2NormalizeReduceAxis` operator. The [implementation](https://github.com/tensorflow/tensorflow/blob/149562d49faa709ea80df1d99fc41d005b81082a/tensorflow/compiler/mlir/lite/transforms/optimize.cc#L67-L70) unconditionally dereferences a pointer to an iterator to a vector without checking that the vector has elements:
-
-```cc
-bool L2NormalizeReduceAxis(Value sq_op, DenseElementsAttr axis) {
-  if (sq_op.getType().cast&lt;ShapedType&gt;().getRank() - 1 ==
-          *axis.getValues&lt;int&gt;().begin() ||
-      *axis.getValues&lt;int&gt;().begin() == -1) {
-      // ...
-  }
-  // ...
-}
-```
-
-### Patches
-We have patched the issue in GitHub commit [d6b57f461b39fd1aa8c1b870f1b974aac3554955](https://github.com/tensorflow/tensorflow/commit/d6b57f461b39fd1aa8c1b870f1b974aac3554955).
-
-The fix will be included in TensorFlow 2.6.0. We will also cherrypick this commit on TensorFlow 2.5.1, TensorFlow 2.4.3, and TensorFlow 2.3.4, as these are also affected and still in supported range.
-  
-### For more information
-Please consult [our security guide](https://github.com/tensorflow/tensorflow/blob/master/SECURITY.md) for more information regarding the security model and how to contact us with issues and questions.
-          
-### Attribution              
-This vulnerability has been reported by Yakun Zhang of Baidu Security.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2021-37689</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-wf5p-c75w-w3wh</url>
-    </references>
-    <dates>
-      <discovery>2021-08-12</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: d82bcd2b-5cd6-421c-8179-b3ff0231029f
+  Topic: py-tflite -- denial of service vulnerability
+  Affects:
+    py37-tflite:
+      < 2.3.4 ; 
+      >= 2.4.0 ; < 2.4.3 ; 
+      >= 2.5.0 ; < 2.5.1 ; 
+    py38-tflite:
+      < 2.3.4 ; 
+      >= 2.4.0 ; < 2.4.3 ; 
+      >= 2.5.0 ; < 2.5.1 ; 
+    py39-tflite:
+      < 2.3.4 ; 
+      >= 2.4.0 ; < 2.4.3 ; 
+      >= 2.5.0 ; < 2.5.1 ; 
+    py310-tflite:
+      < 2.3.4 ; 
+      >= 2.4.0 ; < 2.4.3 ; 
+      >= 2.5.0 ; < 2.5.1 ; 
+    py311-tflite:
+      < 2.3.4 ; 
+      >= 2.4.0 ; < 2.4.3 ; 
+      >= 2.5.0 ; < 2.5.1 ; 
+  References:
+    cvename: CVE-2021-37689
+    url: https://osv.dev/vulnerability/GHSA-wf5p-c75w-w3wh
+  Discovery date: 2021-08-25
+  Entry date: 2023-04-09
 
 PYSEC vulnerability:
   Id:        GHSA-h6q3-vv32-2cq5
@@ -2721,83 +2282,35 @@ This vulnerability has been reported by Thibaut Goetghebuer-Planchon, Arm Ltd.
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="507ae386-448d-4577-ac97-0afdeac4bfd3">
-    <topic>py-tflite -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-tflite</name>
-    <name>py38-tflite</name>
-    <name>py39-tflite</name>
-    <name>py310-tflite</name>
-    <name>py311-tflite</name>
-    <range><lt>INSERT_VULNERABLE_VERSION_HERE</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-h6q3-vv32-2cq5">
-      <p>### Impact
-The reference kernel of the [`CONV_3D_TRANSPOSE`](https://github.com/tensorflow/tensorflow/blob/091e63f0ea33def7ecad661a5ac01dcafbafa90b/tensorflow/lite/kernels/internal/reference/conv3d_transpose.h#L121) TensorFlow Lite operator wrongly increments the data_ptr when adding the bias to the result.
-
-Instead of `data_ptr += num_channels;` it should be `data_ptr += output_num_channels;` as if the number of input channels is different than the number of output channels, the wrong result will be returned and a buffer overflow will occur if num_channels &gt; output_num_channels.
-
-An attacker can craft a model with a specific number of input channels in a way similar to the attached example script. It is then possible to write specific values through the bias of the layer outside the bounds of the buffer. This attack only works if the reference kernel resolver is used in the interpreter (i.e. `experimental_op_resolver_type=tf.lite.experimental.OpResolverType.BUILTIN_REF` is used).
-```python
-import tensorflow as tf
-model = tf.keras.Sequential(
-    [
-        tf.keras.layers.InputLayer(input_shape=(2, 2, 2, 1024), batch_size=1),
-        tf.keras.layers.Conv3DTranspose(
-            filters=8,
-            kernel_size=(2, 2, 2),
-            padding="same",
-            data_format="channels_last",
-        ),
-    ]
-)
-
-converter = tf.lite.TFLiteConverter.from_keras_model(model)
-tflite_model = converter.convert()
-
-interpreter = tf.lite.Interpreter(
-    model_content=tflite_model,
-    experimental_op_resolver_type=tf.lite.experimental.OpResolverType.BUILTIN_REF,
-)
-
-interpreter.allocate_tensors()
-interpreter.set_tensor(
-    interpreter.get_input_details()[0]["index"], tf.zeros(shape=[1, 2, 2, 2, 1024])
-)
-interpreter.invoke()
-```
-
-### Patches
-We have patched the issue in GitHub commit [72c0bdcb25305b0b36842d746cc61d72658d2941](https://github.com/tensorflow/tensorflow/commit/72c0bdcb25305b0b36842d746cc61d72658d2941).
-
-The fix will be included in TensorFlow 2.11. We will also cherrypick this commit on TensorFlow 2.10.1, 2.9.3, and TensorFlow 2.8.4, as these are also affected and still in supported range.
-
-
-### For more information
-Please consult [our security guide](https://github.com/tensorflow/tensorflow/blob/master/SECURITY.md) for more information regarding the security model and how to contact us with issues and questions.
-
-
-### Attribution
-This vulnerability has been reported by Thibaut Goetghebuer-Planchon, Arm Ltd.
-</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2022-41894</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-h6q3-vv32-2cq5</url>
-    </references>
-    <dates>
-      <discovery>2022-11-18</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: 326b2f3e-6fc7-4661-955d-a772760db9cf
+  Topic: py-tflite -- buffer overflow vulnerability
+  Affects:
+    py37-tflite:
+      < 2.8.4 ; 
+      >= 2.9.0 ; < 2.9.3 ; 
+      >= 2.10.0 ; < 2.10.1 ; 
+    py38-tflite:
+      < 2.8.4 ; 
+      >= 2.9.0 ; < 2.9.3 ; 
+      >= 2.10.0 ; < 2.10.1 ; 
+    py39-tflite:
+      < 2.8.4 ; 
+      >= 2.9.0 ; < 2.9.3 ; 
+      >= 2.10.0 ; < 2.10.1 ; 
+    py310-tflite:
+      < 2.8.4 ; 
+      >= 2.9.0 ; < 2.9.3 ; 
+      >= 2.10.0 ; < 2.10.1 ; 
+    py311-tflite:
+      < 2.8.4 ; 
+      >= 2.9.0 ; < 2.9.3 ; 
+      >= 2.10.0 ; < 2.10.1 ; 
+  References:
+    cvename: CVE-2022-41894
+    url: https://osv.dev/vulnerability/GHSA-h6q3-vv32-2cq5
+  Discovery date: 2022-11-21
+  Entry date: 2023-04-09
 
 --------------------------------------------------------------------------------
 Python package 'impacket 0.9.17' / FreeBSD port 'py39-impacket 0.9.17_1' is vulnerable:
@@ -2817,36 +2330,26 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="d5fb0fa8-924e-4675-9859-7e3dfbecd51d">
-    <topic>py-impacket -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-impacket</name>
-    <name>py38-impacket</name>
-    <name>py39-impacket</name>
-    <name>py310-impacket</name>
-    <name>py311-impacket</name>
-    <range><lt>0.9.23</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2021-17">
-      <p>Multiple path traversal vulnerabilities exist in smbserver.py in Impacket through 0.9.22. An attacker that connects to a running smbserver instance can list and write to arbitrary files via ../ directory traversal. This could potentially be abused to achieve arbitrary code execution by replacing /etc/shadow or an SSH authorized key.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2021-31800</cvename>
-      <url>https://osv.dev/vulnerability/PYSEC-2021-17</url>
-    </references>
-    <dates>
-      <discovery>2021-05-05</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: b692a49c-9ae7-4958-af21-cbf8f5b819ea
+  Topic: py-impacket -- multiple path traversal vulnerabilities
+  Affects:
+    py37-impacket:
+      >= 0.9.10 ; < 0.9.23 ; 
+    py38-impacket:
+      >= 0.9.10 ; < 0.9.23 ; 
+    py39-impacket:
+      >= 0.9.10 ; < 0.9.23 ; 
+    py310-impacket:
+      >= 0.9.10 ; < 0.9.23 ; 
+    py311-impacket:
+      >= 0.9.10 ; < 0.9.23 ; 
+  References:
+    cvename: CVE-2021-31800
+    url: https://osv.dev/vulnerability/PYSEC-2021-17
+    url: https://osv.dev/vulnerability/GHSA-mj63-64x7-57xf
+  Discovery date: 2021-05-05
+  Entry date: 2023-04-09
 
 PYSEC vulnerability:
   Id:        GHSA-mj63-64x7-57xf
@@ -2858,36 +2361,26 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="cd0e2b5e-edc5-477b-8a24-d717af7b7c4f">
-    <topic>py-impacket -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-impacket</name>
-    <name>py38-impacket</name>
-    <name>py39-impacket</name>
-    <name>py310-impacket</name>
-    <name>py311-impacket</name>
-    <range><lt>0.9.23</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-mj63-64x7-57xf">
-      <p>Multiple path traversal vulnerabilities exist in smbserver.py in Impacket before 0.9.23. An attacker that connects to a running smbserver instance can list and write to arbitrary files via ../ directory traversal. This could potentially be abused to achieve arbitrary code execution by replacing /etc/shadow or an SSH authorized key.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2021-31800</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-mj63-64x7-57xf</url>
-    </references>
-    <dates>
-      <discovery>2021-05-05</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: b692a49c-9ae7-4958-af21-cbf8f5b819ea
+  Topic: py-impacket -- multiple path traversal vulnerabilities
+  Affects:
+    py37-impacket:
+      >= 0.9.10 ; < 0.9.23 ; 
+    py38-impacket:
+      >= 0.9.10 ; < 0.9.23 ; 
+    py39-impacket:
+      >= 0.9.10 ; < 0.9.23 ; 
+    py310-impacket:
+      >= 0.9.10 ; < 0.9.23 ; 
+    py311-impacket:
+      >= 0.9.10 ; < 0.9.23 ; 
+  References:
+    cvename: CVE-2021-31800
+    url: https://osv.dev/vulnerability/PYSEC-2021-17
+    url: https://osv.dev/vulnerability/GHSA-mj63-64x7-57xf
+  Discovery date: 2021-05-05
+  Entry date: 2023-04-09
 
 --------------------------------------------------------------------------------
 Python package 'suds 1.1.2' / FreeBSD port 'py39-suds 1.1.2' is vulnerable:
@@ -2907,36 +2400,25 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="21f661d7-1c22-4a51-97c6-c16bb0f2efd5">
-    <topic>py-suds -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-suds</name>
-    <name>py38-suds</name>
-    <name>py39-suds</name>
-    <name>py310-suds</name>
-    <name>py311-suds</name>
-    <range><le>1.1.2</le></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2013-32">
-      <p>cache.py in Suds 0.4, when tempdir is set to None, allows local users to redirect SOAP queries and possibly have other unspecified impact via a symlink attack on a cache file with a predictable name in /tmp/suds/.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2013-2217</cvename>
-      <url>https://osv.dev/vulnerability/PYSEC-2013-32</url>
-    </references>
-    <dates>
-      <discovery>2013-09-23</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: b31f7029-817c-4c1f-b7d3-252de5283393
+  Topic: py-suds -- vulnerable to symlink attacks
+  Affects:
+    py37-suds:
+      <= 1.1.2 ; 
+    py38-suds:
+      <= 1.1.2 ; 
+    py39-suds:
+      <= 1.1.2 ; 
+    py310-suds:
+      <= 1.1.2 ; 
+    py311-suds:
+      <= 1.1.2 ; 
+  References:
+    cvename: CVE-2013-2217
+    url: https://osv.dev/vulnerability/PYSEC-2013-32
+  Discovery date: 2013-09-23
+  Entry date: 2023-04-09
 
 --------------------------------------------------------------------------------
 Python package 'slixmpp 1.7.1' / FreeBSD port 'py39-slixmpp 1.7.1' is vulnerable:
@@ -2956,36 +2438,25 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="c4d0073d-eaa4-406f-ac39-dedb26022f5c">
-    <topic>py-slixmpp -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-slixmpp</name>
-    <name>py38-slixmpp</name>
-    <name>py39-slixmpp</name>
-    <name>py310-slixmpp</name>
-    <name>py311-slixmpp</name>
-    <range><lt>1.8.3</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-q6cq-m9gm-6q2f">
-      <p>Slixmpp before 1.8.3 lacks SSL Certificate hostname validation in XMLStream, allowing an attacker to pose as any server in the eyes of Slixmpp.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2022-45197</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-q6cq-m9gm-6q2f</url>
-    </references>
-    <dates>
-      <discovery>2022-12-25</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: 93db4f92-9997-4f4f-8614-3963d9e2b0ec
+  Topic: py-slixmpp -- incomplete SSL certificate validation
+  Affects:
+    py37-slixmpp:
+      < 1.8.3 ; 
+    py38-slixmpp:
+      < 1.8.3 ; 
+    py39-slixmpp:
+      < 1.8.3 ; 
+    py310-slixmpp:
+      < 1.8.3 ; 
+    py311-slixmpp:
+      < 1.8.3 ; 
+  References:
+    cvename: CVE-2022-45197
+    url: https://osv.dev/vulnerability/GHSA-q6cq-m9gm-6q2f
+  Discovery date: 2022-12-25
+  Entry date: 2023-04-09
 
 --------------------------------------------------------------------------------
 Python package 'nicotine-plus 3.2.0' / FreeBSD port 'py39-nicotine-plus 3.2.0_1' is vulnerable:
@@ -3005,36 +2476,25 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="30f9e5c2-6101-47ab-9003-7aa18b4d891c">
-    <topic>py-nicotine-plus -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-nicotine-plus</name>
-    <name>py38-nicotine-plus</name>
-    <name>py39-nicotine-plus</name>
-    <name>py310-nicotine-plus</name>
-    <name>py311-nicotine-plus</name>
-    <range><lt>3.2.1</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-p4v2-r99v-wjc2">
-      <p>Denial of service (DoS) vulnerability in Nicotine+ starting with version 3.0.3 and prior to version 3.2.1 allows a user with a modified Soulseek client to crash Nicotine+ by sending a file download request with a file path containing a null character.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2021-45848</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-p4v2-r99v-wjc2</url>
-    </references>
-    <dates>
-      <discovery>2022-03-15</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: e87a9326-dd35-49fc-b20b-f57cbebaae87
+  Topic: py-nicotine-plus -- Denial of service vulnerability
+  Affects:
+    py37-nicotine-plus:
+      < 3.2.1 ; 
+    py38-nicotine-plus:
+      < 3.2.1 ; 
+    py39-nicotine-plus:
+      < 3.2.1 ; 
+    py310-nicotine-plus:
+      < 3.2.1 ; 
+    py311-nicotine-plus:
+      < 3.2.1 ; 
+  References:
+    cvename: CVE-2021-45848
+    url: https://osv.dev/vulnerability/GHSA-p4v2-r99v-wjc2
+  Discovery date: 2022-03-16
+  Entry date: 2023-04-09
 
 --------------------------------------------------------------------------------
 Python package 'pymatgen 2022.7.19' / FreeBSD port 'py39-pymatgen 2022.7.19' is vulnerable:
@@ -3054,36 +2514,25 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="81609e4b-a48d-4d3f-864e-1c9862cf1409">
-    <topic>py-pymatgen -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-pymatgen</name>
-    <name>py38-pymatgen</name>
-    <name>py39-pymatgen</name>
-    <name>py310-pymatgen</name>
-    <name>py311-pymatgen</name>
-    <range><le>2022.7.19</le></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-5jqp-885w-xj32">
-      <p>An exponential ReDoS (Regular Expression Denial of Service) can be triggered in the pymatgen PyPI package, when an attacker is able to supply arbitrary input to the GaussianInput.from_string method.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2022-42964</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-5jqp-885w-xj32</url>
-    </references>
-    <dates>
-      <discovery>2022-11-09</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: 951b513a-9f42-436d-888d-2162615d0fe4
+  Topic: py-pymatgen -- regular expression denial of service
+  Affects:
+    py37-pymatgen:
+      <= 2022.9.21 ; 
+    py38-pymatgen:
+      <= 2022.9.21 ; 
+    py39-pymatgen:
+      <= 2022.9.21 ; 
+    py310-pymatgen:
+      <= 2022.9.21 ; 
+    py311-pymatgen:
+      <= 2022.9.21 ; 
+  References:
+    cvename: CVE-2022-42964
+    url: https://osv.dev/vulnerability/GHSA-5jqp-885w-xj32
+  Discovery date: 2022-11-10
+  Entry date: 2023-04-09
 
 --------------------------------------------------------------------------------
 Python package 'tensorflow 2.9.1' / FreeBSD port 'py39-tensorflow 2.9.1_6' is vulnerable:
@@ -3130,63 +2579,35 @@ This vulnerability has been reported by Jingyi Shi.
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="43057e28-2a33-4bdb-8175-1c66b0e0357a">
-    <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-tensorflow</name>
-    <name>py38-tensorflow</name>
-    <name>py39-tensorflow</name>
-    <name>py310-tensorflow</name>
-    <name>py311-tensorflow</name>
-    <range><lt>INSERT_VULNERABLE_VERSION_HERE</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-mgmh-g2v6-mqw5">
-      <p>### Impact
-The [`AvgPoolOp`](https://github.com/tensorflow/tensorflow/blob/8d72537c6abf5a44103b57b9c2e22c14f5f49698/tensorflow/core/kernels/avgpooling_op.cc#L56-L98) function takes an argument `ksize` that must be positive but is not checked. A negative `ksize` can trigger a `CHECK` failure and crash the program.
-```python
-import tensorflow as tf
-import numpy as np
-
-value = np.ones([1, 1, 1, 1])
-ksize = [1, 1e20, 1, 1]
-strides = [1, 1, 1, 1]
-padding = 'SAME'
-data_format = 'NHWC'
-
-tf.raw_ops.AvgPool(value=value, ksize=ksize, strides=strides, padding=padding, data_format=data_format)
-```
-
-### Patches
-We have patched the issue in GitHub commit [3a6ac52664c6c095aa2b114e742b0aa17fdce78f](https://github.com/tensorflow/tensorflow/commit/3a6ac52664c6c095aa2b114e742b0aa17fdce78f).
-
-The fix will be included in TensorFlow 2.10.0. We will also cherrypick this commit on TensorFlow 2.9.1, TensorFlow 2.8.1, and TensorFlow 2.7.2, as these are also affected and still in supported range.
-
-
-### For more information
-Please consult [our security guide](https://github.com/tensorflow/tensorflow/blob/master/SECURITY.md) for more information regarding the security model and how to contact us with issues and questions.
-
-
-### Attribution
-This vulnerability has been reported by Jingyi Shi.
-</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2022-35941</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-mgmh-g2v6-mqw5</url>
-    </references>
-    <dates>
-      <discovery>2022-09-16</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: 52311651-f100-4720-8c62-0887dad6d321
+  Topic: py-tensorflow -- unchecked argument causing crash
+  Affects:
+    py37-tensorflow:
+      < 2.7.2 ; 
+      >= 2.8.0 ; < 2.8.1 ; 
+      >= 2.9.0 ; < 2.9.2 ; 
+    py38-tensorflow:
+      < 2.7.2 ; 
+      >= 2.8.0 ; < 2.8.1 ; 
+      >= 2.9.0 ; < 2.9.2 ; 
+    py39-tensorflow:
+      < 2.7.2 ; 
+      >= 2.8.0 ; < 2.8.1 ; 
+      >= 2.9.0 ; < 2.9.2 ; 
+    py310-tensorflow:
+      < 2.7.2 ; 
+      >= 2.8.0 ; < 2.8.1 ; 
+      >= 2.9.0 ; < 2.9.2 ; 
+    py311-tensorflow:
+      < 2.7.2 ; 
+      >= 2.8.0 ; < 2.8.1 ; 
+      >= 2.9.0 ; < 2.9.2 ; 
+  References:
+    cvename: CVE-2022-35941
+    url: https://osv.dev/vulnerability/GHSA-mgmh-g2v6-mqw5
+  Discovery date: 2022-09-16
+  Entry date: 2023-04-09
 
 PYSEC vulnerability:
   Id:        GHSA-cqvq-fvhr-v6hc
@@ -3221,8 +2642,40 @@ This vulnerability has been reported by:
   Summary:   None
   Withdrawn: None
 
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: ae132c6c-d716-11ed-956f-7054d21a9e2a
+  Topic: py-tensorflow -- denial of service vulnerability
+  Affects:
+    py37-tensorflow:
+      < 2.8.4 ; 
+      >= 2.9.0 ; < 2.9.3 ; 
+      >= 2.10.0 ; < 2.10.1 ; 
+    py38-tensorflow:
+      < 2.8.4 ; 
+      >= 2.9.0 ; < 2.9.3 ; 
+      >= 2.10.0 ; < 2.10.1 ; 
+    py39-tensorflow:
+      < 2.8.4 ; 
+      >= 2.9.0 ; < 2.9.3 ; 
+      >= 2.10.0 ; < 2.10.1 ; 
+    py310-tensorflow:
+      < 2.8.4 ; 
+      >= 2.9.0 ; < 2.9.3 ; 
+      >= 2.10.0 ; < 2.10.1 ; 
+    py311-tensorflow:
+      < 2.8.4 ; 
+      >= 2.9.0 ; < 2.9.3 ; 
+      >= 2.10.0 ; < 2.10.1 ; 
+  References:
+    cvename: CVE-2022-35935
+    url: https://osv.dev/vulnerability/GHSA-cqvq-fvhr-v6hc
+    cvename: CVE-2022-35991
+    url: https://osv.dev/vulnerability/GHSA-xf83-q765-xm6m
+  Discovery date: 2022-11-21
+  Entry date: 2023-04-09
+
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="5a0a7a63-1852-4dcd-a77f-55cc3a085c28">
+  <vuln vid="d2a3bb3e-e3e7-47f0-9b23-1109138e6122">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -3270,7 +2723,7 @@ This vulnerability has been reported by:
     </references>
     <dates>
       <discovery>INSERT_YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -3308,8 +2761,40 @@ This vulnerability has been reported by Pattarakrit Rattankul
   Summary:   None
   Withdrawn: None
 
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: ae132c6c-d716-11ed-956f-7054d21a9e2a
+  Topic: py-tensorflow -- denial of service vulnerability
+  Affects:
+    py37-tensorflow:
+      < 2.8.4 ; 
+      >= 2.9.0 ; < 2.9.3 ; 
+      >= 2.10.0 ; < 2.10.1 ; 
+    py38-tensorflow:
+      < 2.8.4 ; 
+      >= 2.9.0 ; < 2.9.3 ; 
+      >= 2.10.0 ; < 2.10.1 ; 
+    py39-tensorflow:
+      < 2.8.4 ; 
+      >= 2.9.0 ; < 2.9.3 ; 
+      >= 2.10.0 ; < 2.10.1 ; 
+    py310-tensorflow:
+      < 2.8.4 ; 
+      >= 2.9.0 ; < 2.9.3 ; 
+      >= 2.10.0 ; < 2.10.1 ; 
+    py311-tensorflow:
+      < 2.8.4 ; 
+      >= 2.9.0 ; < 2.9.3 ; 
+      >= 2.10.0 ; < 2.10.1 ; 
+  References:
+    cvename: CVE-2022-35935
+    url: https://osv.dev/vulnerability/GHSA-cqvq-fvhr-v6hc
+    cvename: CVE-2022-35991
+    url: https://osv.dev/vulnerability/GHSA-xf83-q765-xm6m
+  Discovery date: 2022-11-21
+  Entry date: 2023-04-09
+
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="d05c563a-084a-4a25-917c-6c8bd5168175">
+  <vuln vid="121d4482-5c29-4a24-a57a-f43931bcd7e3">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -3358,7 +2843,7 @@ This vulnerability has been reported by Pattarakrit Rattankul
     </references>
     <dates>
       <discovery>INSERT_YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -3396,7 +2881,7 @@ This vulnerability has been reported by Tong Liu, ShanghaiTech University
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="948f99a6-7d09-441d-a6fd-321ff18cc66a">
+  <vuln vid="0f45fe84-4841-4245-8b12-51336fcc98d8">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -3445,7 +2930,7 @@ This vulnerability has been reported by Tong Liu, ShanghaiTech University
     </references>
     <dates>
       <discovery>2022-11-18</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -3484,7 +2969,7 @@ This vulnerability has been reported by Pattarakrit Rattankul
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="d624051f-8b3f-4e41-8c71-0ad41ccaf097">
+  <vuln vid="7af365f0-af0b-4ee7-8df2-8e635e499abd">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -3534,7 +3019,7 @@ This vulnerability has been reported by Pattarakrit Rattankul
     </references>
     <dates>
       <discovery>2022-11-18</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -3573,7 +3058,7 @@ This vulnerability has been reported by Pattarakrit Rattankul.
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="d16d6ede-d52b-407d-bc70-6de586fdf303">
+  <vuln vid="93655394-4901-4535-a194-b3bbae7ab5b1">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -3623,7 +3108,7 @@ This vulnerability has been reported by Pattarakrit Rattankul.
     </references>
     <dates>
       <discovery>2022-11-18</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -3661,7 +3146,7 @@ This vulnerability has been reported by Pattarakrit Rattankul.
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="2cc2e483-5ac4-4dd0-b39a-bbeacf25b390">
+  <vuln vid="a9fbf293-5640-4a84-82df-3d48014202da">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -3710,7 +3195,7 @@ This vulnerability has been reported by Pattarakrit Rattankul.
     </references>
     <dates>
       <discovery>2022-11-18</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -3750,7 +3235,7 @@ This vulnerability has been reported by Pattarakrit Rattankul.
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="7a39ebb9-c057-4cfe-8ab7-e50404b2df29">
+  <vuln vid="ac9b7255-f46f-42c5-934b-007f68f54b21">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -3801,7 +3286,7 @@ This vulnerability has been reported by Pattarakrit Rattankul.
     </references>
     <dates>
       <discovery>2022-11-18</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -3841,7 +3326,7 @@ This vulnerability has been reported by Neophytos Christou from the Secure Syste
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="1a60c85c-9562-4992-9698-7a2d2693ae3c">
+  <vuln vid="a4f030c3-d502-462f-a79f-92591e5a1306">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -3892,7 +3377,7 @@ This vulnerability has been reported by Neophytos Christou from the Secure Syste
     </references>
     <dates>
       <discovery>2022-11-18</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -3934,7 +3419,7 @@ This vulnerability has been reported by Vul AI.
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="6ace5e40-3b9b-42fd-ad1f-f901435026a2">
+  <vuln vid="0e1e7f47-581c-464b-b4cc-44a165d781d3">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -3987,7 +3472,7 @@ This vulnerability has been reported by Vul AI.
     </references>
     <dates>
       <discovery>2022-11-18</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -4026,7 +3511,7 @@ This vulnerability has been reported by Neophytos Christou from the Secure Syste
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="2d13a575-95c2-48fe-9470-a6add7a5bfbf">
+  <vuln vid="2ad3d708-84cd-4224-a984-e028035de486">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -4076,7 +3561,7 @@ This vulnerability has been reported by Neophytos Christou from the Secure Syste
     </references>
     <dates>
       <discovery>2022-11-18</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -4118,7 +3603,7 @@ This vulnerability has been reported by Vul AI.
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="4d2a7a06-0073-4ef7-8e3a-7d6f078f5e34">
+  <vuln vid="446234d4-7984-4264-be48-0617768bf8e2">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -4171,7 +3656,7 @@ This vulnerability has been reported by Vul AI.
     </references>
     <dates>
       <discovery>2022-11-18</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -4208,7 +3693,7 @@ This vulnerability has been reported by Jiawei Liu, PhD student at University of
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="2e058656-d40b-4309-a02f-9e999972a63b">
+  <vuln vid="f7c280f3-a438-442e-be5d-bd50cc32d084">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -4256,7 +3741,7 @@ This vulnerability has been reported by Jiawei Liu, PhD student at University of
     </references>
     <dates>
       <discovery>2022-11-18</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -4291,7 +3776,7 @@ This vulnerability has been reported by Kang Hong Jin
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="c8603bbe-6c3b-49ad-81d5-378bcf302ea2">
+  <vuln vid="1df2233f-ce2e-4277-886d-914be4fc3951">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -4337,7 +3822,7 @@ This vulnerability has been reported by Kang Hong Jin
     </references>
     <dates>
       <discovery>2022-11-18</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -4363,7 +3848,7 @@ Please consult [our security guide](https://github.com/tensorflow/tensorflow/blo
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="aa865098-5782-47ac-bd2f-37919a46230d">
+  <vuln vid="dea1265b-f36f-4163-99ff-58eb3ef63c72">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -4400,7 +3885,7 @@ Please consult [our security guide](https://github.com/tensorflow/tensorflow/blo
     </references>
     <dates>
       <discovery>2022-12-06</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -4428,7 +3913,7 @@ This vulnerability was discovered via internal fuzzing.
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="da24b8d6-e6e9-4c35-9be1-ea410927e121">
+  <vuln vid="8dd32788-8b93-4cbd-9d94-f2ba0d9fd869">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -4467,7 +3952,7 @@ This vulnerability was discovered via internal fuzzing.
     </references>
     <dates>
       <discovery>2022-11-18</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -4507,7 +3992,7 @@ This vulnerability has been reported by pattarakritr@smu.edu.sg
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="9032ace6-7dde-4bca-9f73-e2fbd1671dae">
+  <vuln vid="5ff917d5-a623-485e-888d-6ddaf30d87c7">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -4558,7 +4043,7 @@ This vulnerability has been reported by pattarakritr@smu.edu.sg
     </references>
     <dates>
       <discovery>2022-11-18</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -4610,7 +4095,7 @@ This vulnerability has been reported by Zizhuang Deng of IIE, UCAS
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="471dc1e0-6044-41a9-b8b0-e6e134745ded">
+  <vuln vid="e8bebeea-c239-4c8a-b902-9457698e1dc5">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -4673,7 +4158,7 @@ This vulnerability has been reported by Zizhuang Deng of IIE, UCAS
     </references>
     <dates>
       <discovery>2022-11-18</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -4714,7 +4199,7 @@ Please consult [our security guide](https://github.com/tensorflow/tensorflow/blo
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="12fa7740-1b7b-48d3-943c-49cb99773227">
+  <vuln vid="8e682ff2-46aa-48c2-96e1-98dae7e21299">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -4766,7 +4251,7 @@ Please consult [our security guide](https://github.com/tensorflow/tensorflow/blo
     </references>
     <dates>
       <discovery>2022-12-06</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -4803,7 +4288,7 @@ This vulnerability has been reported by Vul AI.
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="9676457a-c9ee-40ad-af7d-53a7518dc4fe">
+  <vuln vid="33529788-ca05-40fc-987e-e322a79f0690">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -4851,7 +4336,7 @@ This vulnerability has been reported by Vul AI.
     </references>
     <dates>
       <discovery>2022-11-18</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -4877,7 +4362,7 @@ Please consult [our security guide](https://github.com/tensorflow/tensorflow/blo
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="8620f2e9-a928-4ee9-872f-1cdb25d85275">
+  <vuln vid="7e715b09-adbd-4e34-a2b8-5c92130b28ef">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -4914,7 +4399,7 @@ Please consult [our security guide](https://github.com/tensorflow/tensorflow/blo
     </references>
     <dates>
       <discovery>2022-11-18</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -4949,7 +4434,7 @@ This vulnerability has been reported by Pattarakrit Rattankul.
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="82c8bfca-6dbe-42b9-a48d-30505e144401">
+  <vuln vid="59f1f2e4-89c4-4a13-8c7c-7b253ba4f6b0">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -4995,7 +4480,7 @@ This vulnerability has been reported by Pattarakrit Rattankul.
     </references>
     <dates>
       <discovery>2022-11-18</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -5035,7 +4520,7 @@ This vulnerability has been reported by Yu Tian of Qihoo 360 AIVul Team.
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="a9fff347-03cb-439a-b6ee-40114b8f9842">
+  <vuln vid="fe72ba5f-e372-4d84-b603-65f2b9544a23">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -5086,7 +4571,7 @@ This vulnerability has been reported by Yu Tian of Qihoo 360 AIVul Team.
     </references>
     <dates>
       <discovery>2022-11-18</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -5130,7 +4615,7 @@ This vulnerability has been reported by Pattarakrit Rattanukul.
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="4d381963-557f-497b-bd31-ece52d3484b2">
+  <vuln vid="4a669a9d-7ff3-4738-a7ec-b1ba177397a6">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -5185,7 +4670,7 @@ This vulnerability has been reported by Pattarakrit Rattanukul.
     </references>
     <dates>
       <discovery>2022-11-18</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -5225,7 +4710,7 @@ This vulnerability has been reported by pattarakritr@smu.edu.sg
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="37a849a8-d711-4d75-bc0b-a7d6b860ad2a">
+  <vuln vid="9ba1d735-1e69-46df-a3ef-ee01a819d0d3">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -5276,7 +4761,7 @@ This vulnerability has been reported by pattarakritr@smu.edu.sg
     </references>
     <dates>
       <discovery>2022-11-18</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -5326,7 +4811,7 @@ This vulnerability has been reported by <evn@google.com>
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="3e5f0c82-0a4f-422c-ba74-852b7ba159bc">
+  <vuln vid="ddc63e48-1ee6-44d9-a4c8-7647038196ba">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -5387,7 +4872,7 @@ This vulnerability has been reported by &lt;evn@google.com&gt;
     </references>
     <dates>
       <discovery>2023-03-24</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -5423,7 +4908,7 @@ This has been reported via Google OSS VRP.
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="b7b0e84a-f411-41c8-83dc-359fc79e2cd0">
+  <vuln vid="7da3df91-cd15-4679-8a1e-3ea66d81457b">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -5470,7 +4955,7 @@ This has been reported via Google OSS VRP.</p>
     </references>
     <dates>
       <discovery>2023-03-24</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -5514,7 +4999,7 @@ This vulnerability has been reported by r3pwnx of 360 AIVul Team
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="c6985fc3-fb4b-4f42-9a4c-e1fc8602b994">
+  <vuln vid="317882a9-870c-4920-9324-3e11fc47fd37">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -5569,7 +5054,7 @@ This vulnerability has been reported by r3pwnx of 360 AIVul Team
     </references>
     <dates>
       <discovery>2023-03-24</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -5609,7 +5094,7 @@ This vulnerability has been reported by Yu Tian of Qihoo 360 AIVul Team
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="34021cdf-98a2-4628-abc3-a5e2f2e1f290">
+  <vuln vid="015044f2-535b-403a-a3ff-aa0a4c18d153">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -5660,7 +5145,7 @@ This vulnerability has been reported by Yu Tian of Qihoo 360 AIVul Team
     </references>
     <dates>
       <discovery>2023-03-24</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -5693,7 +5178,7 @@ This vulnerability has been reported by Yu Tian
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="e9588cc5-67da-41b5-b53d-c2c21e7309b9">
+  <vuln vid="f363f5f3-d26b-412a-92a3-4d0e5f757b28">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -5737,7 +5222,7 @@ This vulnerability has been reported by Yu Tian</p>
     </references>
     <dates>
       <discovery>2023-03-24</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -5784,7 +5269,7 @@ Please consult [our security guide](https://github.com/tensorflow/tensorflow/blo
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="e67a5f68-6fad-4c27-97e0-014d9e2e1370">
+  <vuln vid="fef26b49-c2ce-42f5-b995-d2190baf2d82">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -5842,7 +5327,7 @@ Please consult [our security guide](https://github.com/tensorflow/tensorflow/blo
     </references>
     <dates>
       <discovery>2023-03-24</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -5880,7 +5365,7 @@ This vulnerability has been reported by r3pwnx
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="044002c1-56f0-4fb3-adda-cc28d324ad46">
+  <vuln vid="7997c296-a700-497b-86ff-7d675063dce5">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -5929,7 +5414,7 @@ This vulnerability has been reported by r3pwnx
     </references>
     <dates>
       <discovery>2023-03-24</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -5972,7 +5457,7 @@ This vulnerability has been reported by r3pwnx
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="b82131e6-909f-4904-9829-537a9f6d4203">
+  <vuln vid="f194c44e-daab-4fbf-bb13-5649361cb6ef">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -6026,7 +5511,7 @@ This vulnerability has been reported by r3pwnx
     </references>
     <dates>
       <discovery>2023-03-24</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -6070,7 +5555,7 @@ This vulnerability has been reported by r3pwnx of 360 AIVul Team
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="e30c0731-5e24-4502-b900-e60897a2a577">
+  <vuln vid="9ce4d3ed-cb25-490f-b5c5-0cd3fba64104">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -6125,7 +5610,7 @@ This vulnerability has been reported by r3pwnx of 360 AIVul Team
     </references>
     <dates>
       <discovery>2023-03-24</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -6161,7 +5646,7 @@ This vulnerability has been reported by r3pwnx
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="9fc1bdf8-5f6e-49e9-babf-1b7470b58d66">
+  <vuln vid="da419eca-5716-4c5c-beda-b52e893ee3e1">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -6208,7 +5693,7 @@ This vulnerability has been reported by r3pwnx
     </references>
     <dates>
       <discovery>2023-03-24</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -6254,7 +5739,7 @@ This vulnerability has been reported by r3pwnx of 360 AIVul Team
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="05b84f1c-4124-4fd1-bfd4-dcf00a202208">
+  <vuln vid="ca1ac905-34de-49d1-8c55-600803b28f11">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -6311,7 +5796,7 @@ This vulnerability has been reported by r3pwnx of 360 AIVul Team
     </references>
     <dates>
       <discovery>2023-03-24</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -6353,7 +5838,7 @@ This vulnerability has been reported by r3pwnx of 360 AIVul Team
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="c039104b-f2be-414c-a200-49436241fcec">
+  <vuln vid="fbefc50f-964d-4be3-af6a-df046cce212b">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -6406,7 +5891,7 @@ This vulnerability has been reported by r3pwnx of 360 AIVul Team
     </references>
     <dates>
       <discovery>2023-03-24</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -6450,7 +5935,7 @@ This vulnerability has been reported by r3pwnx
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="feabb709-04cb-4ae8-bd05-9bf2314952dd">
+  <vuln vid="58bbb6fc-d949-47a9-a3b7-99fd5e4d4f01">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -6505,7 +5990,7 @@ This vulnerability has been reported by r3pwnx</p>
     </references>
     <dates>
       <discovery>2023-03-24</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -6547,7 +6032,7 @@ This vulnerability has been reported by r3pwnx
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="456438e9-6cff-48dd-8598-4c3443a9c9ef">
+  <vuln vid="8af6d9dd-be37-4969-910c-45212db12f53">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -6600,7 +6085,7 @@ This vulnerability has been reported by r3pwnx</p>
     </references>
     <dates>
       <discovery>2023-03-24</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -6644,7 +6129,7 @@ This vulnerability has been reported by r3pwnx.
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="ab6f6658-5b29-489b-bd5a-eb70f6561f36">
+  <vuln vid="533bc416-c4e6-4408-bb1a-8344ec5e497e">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -6699,7 +6184,7 @@ This vulnerability has been reported by r3pwnx.
     </references>
     <dates>
       <discovery>2023-03-24</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -6729,7 +6214,7 @@ This vulnerability was reported by Wang Xuan of Qihoo 360 AIVul Team.
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="e953ecc3-12a2-4f35-817e-e0ded6d1c59a">
+  <vuln vid="aa208395-72e9-4e40-92c7-ccd1f88c6f30">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -6770,7 +6255,7 @@ This vulnerability was reported by Wang Xuan of Qihoo 360 AIVul Team.
     </references>
     <dates>
       <discovery>2023-03-24</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -6821,7 +6306,7 @@ This vulnerability has been reported by r3pwnx
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="23203415-23c0-431a-8622-23913ac2c012">
+  <vuln vid="b0cbf7bf-b042-49ab-96c2-cada494603d3">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -6883,7 +6368,7 @@ This vulnerability has been reported by r3pwnx
     </references>
     <dates>
       <discovery>2023-03-24</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -6924,7 +6409,7 @@ This vulnerability has been reported by Yu Tian of Qihoo 360 AIVul Team
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="415b48d7-7e97-4417-8eda-aaa65a807ae5">
+  <vuln vid="3b1634d8-d3e6-47d1-bc37-2ee7acf6ef98">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -6976,7 +6461,7 @@ This vulnerability has been reported by Yu Tian of Qihoo 360 AIVul Team</p>
     </references>
     <dates>
       <discovery>2023-03-24</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -7026,7 +6511,7 @@ This vulnerability was reported by [dmc1778](https://github.com/dmc1778), of [ni
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="f6d84919-1ac2-449e-8c54-1c36eea0eb72">
+  <vuln vid="c738cc09-0769-4066-9d48-c0f3cff561bd">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -7087,7 +6572,7 @@ This vulnerability was reported by [dmc1778](https://github.com/dmc1778), of [ni
     </references>
     <dates>
       <discovery>2023-03-24</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -7123,7 +6608,7 @@ This vulnerability has been reported by Andrei
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="b1cc8ab4-797f-47d8-b8dc-a7169148878a">
+  <vuln vid="fd6c62a7-ac8d-44ba-8efa-3846ec0c450d">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -7170,7 +6655,7 @@ This vulnerability has been reported by Andrei
     </references>
     <dates>
       <discovery>2023-03-24</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -7218,7 +6703,7 @@ Please consult [Tensor Flow's security guide](https://github.com/tensorflow/tens
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="5658e724-3e01-45b6-a3ec-9b2a9e40deb1">
+  <vuln vid="4a65a86f-3fb6-4a51-8dbe-378303d1cbf8">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -7277,7 +6762,7 @@ Please consult [Tensor Flow's security guide](https://github.com/tensorflow/tens
     </references>
     <dates>
       <discovery>2023-03-27</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -7338,8 +6823,38 @@ This vulnerability has been reported by Thibaut Goetghebuer-Planchon, Arm Ltd.
   Summary:   None
   Withdrawn: None
 
+FreeBSD VuXML vulnerability for ANOTHER port:
+Vulnerability ID: 326b2f3e-6fc7-4661-955d-a772760db9cf
+  Topic: py-tflite -- buffer overflow vulnerability
+  Affects:
+    py37-tflite:
+      < 2.8.4 ; 
+      >= 2.9.0 ; < 2.9.3 ; 
+      >= 2.10.0 ; < 2.10.1 ; 
+    py38-tflite:
+      < 2.8.4 ; 
+      >= 2.9.0 ; < 2.9.3 ; 
+      >= 2.10.0 ; < 2.10.1 ; 
+    py39-tflite:
+      < 2.8.4 ; 
+      >= 2.9.0 ; < 2.9.3 ; 
+      >= 2.10.0 ; < 2.10.1 ; 
+    py310-tflite:
+      < 2.8.4 ; 
+      >= 2.9.0 ; < 2.9.3 ; 
+      >= 2.10.0 ; < 2.10.1 ; 
+    py311-tflite:
+      < 2.8.4 ; 
+      >= 2.9.0 ; < 2.9.3 ; 
+      >= 2.10.0 ; < 2.10.1 ; 
+  References:
+    cvename: CVE-2022-41894
+    url: https://osv.dev/vulnerability/GHSA-h6q3-vv32-2cq5
+  Discovery date: 2022-11-21
+  Entry date: 2023-04-09
+
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="b5e45bea-1216-4f2c-8544-cf64cc5e963e">
+  <vuln vid="05211874-d19e-4cba-9703-39181e78e3dc">
     <topic>py-tensorflow -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -7412,7 +6927,7 @@ This vulnerability has been reported by Thibaut Goetghebuer-Planchon, Arm Ltd.
     </references>
     <dates>
       <discovery>2022-11-18</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -7450,51 +6965,25 @@ This issue has been present since `update_into` was originally introduced in cry
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="cfd81fe4-f086-49f4-afc3-b1fa6cb00b30">
-    <topic>py-cryptography -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-cryptography</name>
-    <name>py38-cryptography</name>
-    <name>py39-cryptography</name>
-    <name>py310-cryptography</name>
-    <name>py311-cryptography</name>
-    <range><lt>39.0.1</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-w7pp-m8wf-vj6r">
-      <p>Previously, `Cipher.update_into` would accept Python objects which implement the buffer protocol, but provide only immutable buffers:
-
-```pycon
-&gt;&gt;&gt; outbuf = b"\x00" * 32
-&gt;&gt;&gt; c = ciphers.Cipher(AES(b"\x00" * 32), modes.ECB()).encryptor()
-&gt;&gt;&gt; c.update_into(b"\x00" * 16, outbuf)
-16
-&gt;&gt;&gt; outbuf
-b'\xdc\x95\xc0x\xa2@\x89\x89\xadH\xa2\x14\x92\x84 \x87\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
-```
-
-This would allow immutable objects (such as `bytes`) to be mutated, thus violating fundamental rules of Python. This is a soundness bug -- it allows programmers to misuse an API, it cannot be exploited by attacker controlled data alone.
-
-This now correctly raises an exception.
-
-This issue has been present since `update_into` was originally introduced in cryptography 1.8.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2023-23931</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-w7pp-m8wf-vj6r</url>
-    </references>
-    <dates>
-      <discovery>2023-02-07</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: a32ef450-9781-414b-a944-39f2f61677f2
+  Topic: py-cryptography -- allows programmers to misuse an API
+  Affects:
+    py37-cryptography:
+      >= 1.8 ; < 39.0.1 ; 
+    py38-cryptography:
+      >= 1.8 ; < 39.0.1 ; 
+    py39-cryptography:
+      >= 1.8 ; < 39.0.1 ; 
+    py310-cryptography:
+      >= 1.8 ; < 39.0.1 ; 
+    py311-cryptography:
+      >= 1.8 ; < 39.0.1 ; 
+  References:
+    cvename: CVE-2023-23931
+    url: https://osv.dev/vulnerability/GHSA-w7pp-m8wf-vj6r
+  Discovery date: 2023-02-07
+  Entry date: 2023-04-10
 
 PYSEC vulnerability:
   Id:        GHSA-x4qr-2fvf-3mr5
@@ -7510,62 +6999,25 @@ If you are building cryptography source ("sdist") then you are responsible for u
   Summary:   None
   Withdrawn: None
 
-FreeBSD VuXML vulnerability for ANOTHER port:
-Vulnerability ID: 648a432c-a71f-11ed-86e9-d4c9ef517024
-  Topic: OpenSSL -- Multiple vulnerabilities
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: c1a8ed1c-2814-4260-82aa-9e37c83aac93
+  Topic: py-cryptography -- includes a vulnerable copy of OpenSSL
   Affects:
-    openssl:
-      < 1.1.1t,1 ; 
-    openssl-devel:
-      < 3.0.8 ; 
-    openssl-quictls:
-      < 3.0.8 ; 
+    py37-cryptography:
+      < 39.0.1 ; 
+    py38-cryptography:
+      < 39.0.1 ; 
+    py39-cryptography:
+      < 39.0.1 ; 
+    py310-cryptography:
+      < 39.0.1 ; 
+    py311-cryptography:
+      < 39.0.1 ; 
   References:
     cvename: CVE-2023-0286
-    cvename: CVE-2022-4304
-    cvename: CVE-2022-4203
-    cvename: CVE-2023-0215
-    cvename: CVE-2022-4450
-    cvename: CVE-2023-0216
-    cvename: CVE-2023-0401
-    url: https://www.openssl.org/news/secadv/20230207.txt
-  Discovery date: 2023-02-07
-  Entry date: 2023-02-07
-
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="86296f3c-1e29-417d-a406-880602b34b9b">
-    <topic>py-cryptography -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-cryptography</name>
-    <name>py38-cryptography</name>
-    <name>py39-cryptography</name>
-    <name>py310-cryptography</name>
-    <name>py311-cryptography</name>
-    <range><lt>39.0.1</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-x4qr-2fvf-3mr5">
-      <p>pyca/cryptography's wheels include a statically linked copy of OpenSSL. The versions of OpenSSL included in cryptography 0.8.1-39.0.0  are vulnerable to a security issue. More details about the vulnerabilities themselves can be found in https://www.openssl.org/news/secadv/20221213.txt and https://www.openssl.org/news/secadv/20230207.txt.
-
-If you are building cryptography source ("sdist") then you are responsible for upgrading your copy of OpenSSL. Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions.
-
-</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2023-0286</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-x4qr-2fvf-3mr5</url>
-    </references>
-    <dates>
-      <discovery>2023-02-08</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+    url: https://osv.dev/vulnerability/GHSA-x4qr-2fvf-3mr5
+  Discovery date: 2023-02-08
+  Entry date: 2023-04-10
 
 --------------------------------------------------------------------------------
 Python package 'kerberos 1.3.1' / FreeBSD port 'py39-kerberos 1.3.1' is vulnerable:
@@ -7585,36 +7037,25 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="b0be0b07-7ca5-4629-8a76-ba86c7a43a54">
-    <topic>py-kerberos -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-kerberos</name>
-    <name>py38-kerberos</name>
-    <name>py39-kerberos</name>
-    <name>py310-kerberos</name>
-    <name>py311-kerberos</name>
-    <range><le>1.3.1</le></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2017-49">
-      <p>The checkPassword function in python-kerberos does not authenticate the KDC it attempts to communicate with, which allows remote attackers to cause a denial of service (bad response), or have other unspecified impact by performing a man-in-the-middle attack.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2015-3206</cvename>
-      <url>https://osv.dev/vulnerability/PYSEC-2017-49</url>
-    </references>
-    <dates>
-      <discovery>2017-08-25</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: 2acdf364-9f8d-4aaf-8d1b-867fdfd771c6
+  Topic: py-kerberos -- DoS and MitM vulnerabilities
+  Affects:
+    py37-kerberos:
+      <= 1.3.1 ; 
+    py38-kerberos:
+      <= 1.3.1 ; 
+    py39-kerberos:
+      <= 1.3.1 ; 
+    py310-kerberos:
+      <= 1.3.1 ; 
+    py311-kerberos:
+      <= 1.3.1 ; 
+  References:
+    cvename: CVE-2015-3206
+    url: https://osv.dev/vulnerability/PYSEC-2017-49
+  Discovery date: 2017-08-25
+  Entry date: 2023-04-10
 
 --------------------------------------------------------------------------------
 Python package 'pysaml2 4.9.0' / FreeBSD port 'py39-pysaml24 4.9.0_1' is vulnerable:
@@ -7637,7 +7078,7 @@ PYSEC vulnerability:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="964b1d62-7450-4ba5-862a-1109952bb88d">
+  <vuln vid="1f06d9ef-d0c2-41eb-9d92-b4f18810d639">
     <topic>py-pysaml2 -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -7663,7 +7104,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2020-01-13</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -7699,7 +7140,7 @@ Vulnerability ID: fb67567a-5d95-11eb-a955-08002728f74c
   Entry date: 2021-01-26
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="a183a2c3-df18-4af2-b7e1-c857eef96e68">
+  <vuln vid="91ab83a1-99c6-474e-b2dd-192ade87ac4a">
     <topic>py-pysaml2 -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -7725,7 +7166,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2021-01-21</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -7761,7 +7202,7 @@ Vulnerability ID: fb67567a-5d95-11eb-a955-08002728f74c
   Entry date: 2021-01-26
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="37de400d-80d5-4424-8475-723795236ed5">
+  <vuln vid="68ea7669-6b2e-4e09-9742-5aa61df21343">
     <topic>py-pysaml2 -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -7787,7 +7228,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2021-01-21</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -7802,7 +7243,7 @@ PYSEC vulnerability:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="73811676-de28-4e77-81e2-91a4dddb3254">
+  <vuln vid="0975090a-e6a2-4b74-a536-faadc47936dd">
     <topic>py-pysaml2 -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -7828,7 +7269,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2020-01-13</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -7890,7 +7331,7 @@ Vulnerability ID: fb67567a-5d95-11eb-a955-08002728f74c
   Entry date: 2021-01-26
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="69e77dc8-840f-4282-8439-c98818cd1df8">
+  <vuln vid="1e65c359-f388-4418-be04-42d388a3eb9f">
     <topic>py-pysaml2 -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -7942,7 +7383,7 @@ If you have any questions or comments about this advisory:
     </references>
     <dates>
       <discovery>2021-01-21</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -8004,7 +7445,7 @@ Vulnerability ID: fb67567a-5d95-11eb-a955-08002728f74c
   Entry date: 2021-01-26
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="35085842-4516-4107-b0cd-0aa03548345a">
+  <vuln vid="880f166d-a308-4931-bec2-62794a4d3d5d">
     <topic>py-pysaml2 -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -8056,7 +7497,7 @@ If you have any questions or comments about this advisory:
     </references>
     <dates>
       <discovery>2021-01-21</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -8069,7 +7510,7 @@ Existing flavours and versions, plus similar names:
   py39-ansible-iocage-g20200327,1
   py39-ansible-kld-g20200803,1
   py39-ansible-sysrc-g20200803_1,1
-  py39-ansible-compat-3.0.1
+  py39-ansible-compat-3.0.2
   py39-ansible-core-2.14.3
   py39-ansible-lint-6.14.6
   py39-ansible-runner-2.3.2
@@ -8085,36 +7526,27 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="65e06516-a9c2-4d95-8ac9-c3ebc6b78e40">
-    <topic>py-ansible -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-ansible</name>
-    <name>py38-ansible</name>
-    <name>py39-ansible</name>
-    <name>py310-ansible</name>
-    <name>py311-ansible</name>
-    <range><le>7.1.0</le></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2020-221">
-      <p>A flaw was found in Ansible Base when using the aws_ssm connection plugin as there is no namespace separation for file transfers. Files are written directly to the root bucket, making possible to have collisions when running multiple ansible processes. This issue affects mainly the service availability.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2020-25636</cvename>
-      <url>https://osv.dev/vulnerability/PYSEC-2020-221</url>
-    </references>
-    <dates>
-      <discovery>2020-10-05</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: e1b77733-a982-442e-8796-a200571bfcf2
+  Topic: py-ansible -- multiple vulnerabilities
+  Affects:
+    py37-ansible:
+      <= 7.2.0 ; 
+    py38-ansible:
+      <= 7.2.0 ; 
+    py39-ansible:
+      <= 7.2.0 ; 
+    py310-ansible:
+      <= 7.2.0 ; 
+    py311-ansible:
+      <= 7.2.0 ; 
+  References:
+    cvename: CVE-2020-25635
+    url: https://osv.dev/vulnerability/PYSEC-2020-220
+    cvename: CVE-2020-25636
+    url: https://osv.dev/vulnerability/PYSEC-2020-221
+  Discovery date: 2020-10-05
+  Entry date: 2023-04-10
 
 PYSEC vulnerability:
   Id:        PYSEC-2020-220
@@ -8126,36 +7558,27 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="862669fd-79d2-4cdd-b420-2912af152469">
-    <topic>py-ansible -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-ansible</name>
-    <name>py38-ansible</name>
-    <name>py39-ansible</name>
-    <name>py310-ansible</name>
-    <name>py311-ansible</name>
-    <range><le>7.1.0</le></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2020-220">
-      <p>A flaw was found in Ansible Base when using the aws_ssm connection plugin as garbage collector is not happening after playbook run is completed. Files would remain in the bucket exposing the data. This issue affects directly data confidentiality.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2020-25635</cvename>
-      <url>https://osv.dev/vulnerability/PYSEC-2020-220</url>
-    </references>
-    <dates>
-      <discovery>2020-10-05</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: e1b77733-a982-442e-8796-a200571bfcf2
+  Topic: py-ansible -- multiple vulnerabilities
+  Affects:
+    py37-ansible:
+      <= 7.2.0 ; 
+    py38-ansible:
+      <= 7.2.0 ; 
+    py39-ansible:
+      <= 7.2.0 ; 
+    py310-ansible:
+      <= 7.2.0 ; 
+    py311-ansible:
+      <= 7.2.0 ; 
+  References:
+    cvename: CVE-2020-25635
+    url: https://osv.dev/vulnerability/PYSEC-2020-220
+    cvename: CVE-2020-25636
+    url: https://osv.dev/vulnerability/PYSEC-2020-221
+  Discovery date: 2020-10-05
+  Entry date: 2023-04-10
 
 PYSEC vulnerability:
   Id:        PYSEC-2021-125
@@ -8167,36 +7590,25 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="62427e87-ffd0-4efe-bd3e-7276d4f434b2">
-    <topic>py-ansible -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-ansible</name>
-    <name>py38-ansible</name>
-    <name>py39-ansible</name>
-    <name>py310-ansible</name>
-    <name>py311-ansible</name>
-    <range><le>7.1.0</le></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2021-125">
-      <p>A flaw was found in Ansible where the secret information present in async_files are getting disclosed when the user changes the jobdir to a world readable directory. Any secret information in an async status file will be readable by a malicious user on that system. This flaw affects Ansible Tower 3.7 and Ansible Automation Platform 1.2.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2021-3532</cvename>
-      <url>https://osv.dev/vulnerability/PYSEC-2021-125</url>
-    </references>
-    <dates>
-      <discovery>2021-06-09</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: f418cd50-561a-49a2-a133-965d03ede72a
+  Topic: py-ansible -- data leak vulnerability
+  Affects:
+    py37-ansible:
+      <= 7.1.0 ; 
+    py38-ansible:
+      <= 7.1.0 ; 
+    py39-ansible:
+      <= 7.1.0 ; 
+    py310-ansible:
+      <= 7.1.0 ; 
+    py311-ansible:
+      <= 7.1.0 ; 
+  References:
+    cvename: CVE-2021-3532
+    url: https://osv.dev/vulnerability/PYSEC-2021-125
+  Discovery date: 2021-06-09
+  Entry date: 2023-04-10
 
 --------------------------------------------------------------------------------
 Python package 'psutil 1.2.1' / FreeBSD port 'py39-psutil121 1.2.1_2' is vulnerable:
@@ -8217,36 +7629,26 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="bc90a565-565e-4d3e-94f8-11aabf269ffa">
-    <topic>py-psutil -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-psutil121</name>
-    <name>py38-psutil121</name>
-    <name>py39-psutil121</name>
-    <name>py310-psutil121</name>
-    <name>py311-psutil121</name>
-    <range><lt>5.6.6</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2019-41">
-      <p>psutil (aka python-psutil) through 5.6.5 can have a double free. This occurs because of refcount mishandling within a while or for loop that converts system data into a Python object.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2019-18874</cvename>
-      <url>https://osv.dev/vulnerability/PYSEC-2019-41</url>
-    </references>
-    <dates>
-      <discovery>2019-11-12</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: 374793ad-2720-4c4a-b86c-fc4a1780deac
+  Topic: py-psutil -- double free vulnerability
+  Affects:
+    py37-psutil121:
+      < 5.6.6 ; 
+    py38-psutil121:
+      < 5.6.6 ; 
+    py39-psutil121:
+      < 5.6.6 ; 
+    py310-psutil121:
+      < 5.6.6 ; 
+    py311-psutil121:
+      < 5.6.6 ; 
+  References:
+    cvename: CVE-2019-18874
+    url: https://osv.dev/vulnerability/PYSEC-2019-41
+    url: https://osv.dev/vulnerability/GHSA-qfc5-mcwq-26q8
+  Discovery date: 2019-11-12
+  Entry date: 2023-04-10
 
 PYSEC vulnerability:
   Id:        GHSA-qfc5-mcwq-26q8
@@ -8258,36 +7660,26 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="dc88d035-5e44-48b9-8a7a-6d0bdb3cb1df">
-    <topic>py-psutil -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-psutil121</name>
-    <name>py38-psutil121</name>
-    <name>py39-psutil121</name>
-    <name>py310-psutil121</name>
-    <name>py311-psutil121</name>
-    <range><lt>5.6.6</lt></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/GHSA-qfc5-mcwq-26q8">
-      <p>psutil (aka python-psutil) through 5.6.5 can have a double free. This occurs because of refcount mishandling within a while or for loop that converts system data into a Python object.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2019-18874</cvename>
-      <url>https://osv.dev/vulnerability/GHSA-qfc5-mcwq-26q8</url>
-    </references>
-    <dates>
-      <discovery>2019-11-12</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: 374793ad-2720-4c4a-b86c-fc4a1780deac
+  Topic: py-psutil -- double free vulnerability
+  Affects:
+    py37-psutil121:
+      < 5.6.6 ; 
+    py38-psutil121:
+      < 5.6.6 ; 
+    py39-psutil121:
+      < 5.6.6 ; 
+    py310-psutil121:
+      < 5.6.6 ; 
+    py311-psutil121:
+      < 5.6.6 ; 
+  References:
+    cvename: CVE-2019-18874
+    url: https://osv.dev/vulnerability/PYSEC-2019-41
+    url: https://osv.dev/vulnerability/GHSA-qfc5-mcwq-26q8
+  Discovery date: 2019-11-12
+  Entry date: 2023-04-10
 
 --------------------------------------------------------------------------------
 Python package 'dparse 0.5.1' / FreeBSD port 'py39-dparse 0.5.1' is vulnerable:
@@ -8325,7 +7717,7 @@ If you have any questions or comments about this advisory:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="afb18cf9-4a9d-40a3-977f-bd2b722b0f6e">
+  <vuln vid="9dcfc682-d7ba-47a3-9f1b-694d0921f3cd">
     <topic>py-dparse -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -8368,7 +7760,7 @@ If you have any questions or comments about this advisory:
     </references>
     <dates>
       <discovery>2022-10-06</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -8383,7 +7775,7 @@ PYSEC vulnerability:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="0fbac1f3-2d0e-4b8c-9af7-ea63cb208a54">
+  <vuln vid="a1be9819-4d71-468e-960e-51d765b0ee5b">
     <topic>py-dparse -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -8409,7 +7801,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2022-10-06</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -8432,7 +7824,7 @@ PYSEC vulnerability:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="a86e28c4-ab0b-4f92-b28e-308c88a21284">
+  <vuln vid="c9b3324f-8e03-4ae3-89ce-8098cdc5bfa9">
     <topic>py-markdown2 -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -8458,7 +7850,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2021-03-03</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -8473,7 +7865,7 @@ PYSEC vulnerability:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="e24f5334-e03f-4629-85f9-3e4b8970df85">
+  <vuln vid="cf6f3465-e996-4672-9458-ce803f29fdb7">
     <topic>py-markdown2 -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -8499,7 +7891,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2020-04-20</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -8514,7 +7906,7 @@ PYSEC vulnerability:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="352711e0-a1dd-4dc2-b90f-8f2f19aa5097">
+  <vuln vid="41d6d2fa-477b-470e-949d-38ad38c7f711">
     <topic>py-markdown2 -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -8540,7 +7932,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2020-04-20</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -8555,7 +7947,7 @@ PYSEC vulnerability:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="3fc922a2-0683-4215-966d-8ac4ecad3ba5">
+  <vuln vid="beda3b03-a891-4635-a664-fc92552bc1c9">
     <topic>py-markdown2 -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -8581,7 +7973,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2021-03-03</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -8605,7 +7997,7 @@ PYSEC vulnerability:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="fb204408-a481-4933-a75b-e9a3fb76db3f">
+  <vuln vid="cdc685b5-1724-49a1-ad57-2eaab68e9cc0">
     <topic>py-pygments -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -8631,7 +8023,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2021-03-23</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -8646,7 +8038,7 @@ PYSEC vulnerability:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="3d57bfc0-3ac0-45e2-bc95-80ce80d2675c">
+  <vuln vid="1d08b5ea-11f4-4770-83ba-5e825e0c5b10">
     <topic>py-pygments -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -8672,7 +8064,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2021-03-17</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -8687,7 +8079,7 @@ PYSEC vulnerability:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="ecc5e5f8-d4cb-4890-8f2d-cc8b2fba51fd">
+  <vuln vid="65b84c8d-c10b-4d5a-a83c-fc5a01ab7c96">
     <topic>py-pygments -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -8713,7 +8105,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2021-03-17</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -8728,7 +8120,7 @@ PYSEC vulnerability:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="a5f3b3c8-ddc2-4a02-93b5-8dc80ef84fed">
+  <vuln vid="bde6e7b5-dd93-4594-a717-bd7fd3f8bbd1">
     <topic>py-pygments -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -8754,7 +8146,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2021-03-23</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -8776,36 +8168,25 @@ PYSEC vulnerability:
   Summary:   None
   Withdrawn: None
 
-UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="d45ba372-f750-4bdc-a8bc-857d4743ea6c">
-    <topic>py-beaker -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
-    <affects>
-      <package>
-    <name>py37-beaker</name>
-    <name>py38-beaker</name>
-    <name>py39-beaker</name>
-    <name>py310-beaker</name>
-    <name>py311-beaker</name>
-    <range><le>1.12.1</le></range>
-      </package>
-    </affects>
-    <description>
-      <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>INSERT_SOURCE_NAME_HERE reports:</p>
-    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2020-216">
-      <p>The Beaker library through 1.11.0 for Python is affected by deserialization of untrusted data, which could lead to arbitrary code execution.</p>
-    </blockquote>
-      </body>
-    </description>
-    <references>
-      <cvename>CVE-2013-7489</cvename>
-      <url>https://osv.dev/vulnerability/PYSEC-2020-216</url>
-    </references>
-    <dates>
-      <discovery>2020-06-26</discovery>
-      <entry>2023-04-13</entry>
-    </dates>
-  </vuln>
+FreeBSD VuXML vulnerability for THIS port:
+Vulnerability ID: b54abe9d-7024-4d10-98b2-180cf1717766
+  Topic: py-beaker -- arbitrary code execution vulnerability
+  Affects:
+    py37-beaker:
+      <= 1.12.1 ; 
+    py38-beaker:
+      <= 1.12.1 ; 
+    py39-beaker:
+      <= 1.12.1 ; 
+    py310-beaker:
+      <= 1.12.1 ; 
+    py311-beaker:
+      <= 1.12.1 ; 
+  References:
+    cvename: CVE-2013-7489
+    url: https://osv.dev/vulnerability/PYSEC-2020-216
+  Discovery date: 2020-06-26
+  Entry date: 2023-04-10
 
 --------------------------------------------------------------------------------
 Python package 'django-photologue 3.15' / FreeBSD port 'py39-django-photologue 3.15_1' is vulnerable:
@@ -8826,7 +8207,7 @@ PYSEC vulnerability:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="2c01016b-8628-4283-8d16-f0867d3a2c6e">
+  <vuln vid="c2c89dea-2859-4231-8f3b-12be07d475ff">
     <topic>py-django-photologue -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -8852,7 +8233,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2022-12-15</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -8875,7 +8256,7 @@ PYSEC vulnerability:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="faf90c43-984d-4188-9857-52676b2c0e8e">
+  <vuln vid="692a5fd5-bb25-4df4-8a0e-eb91581f2531">
     <topic>py-flask-caching -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -8901,7 +8282,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2021-05-13</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -8924,7 +8305,7 @@ Any situation where all 3 of those is true is a situation where the application 
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="ac9d405b-2868-4091-9699-2f0c0f2bc3fa">
+  <vuln vid="49624f9b-dbd4-4354-8187-aab0c9433c6f">
     <topic>py-flask-caching -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -8958,7 +8339,7 @@ Any situation where all 3 of those is true is a situation where the application 
     </references>
     <dates>
       <discovery>2021-05-13</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -8981,7 +8362,7 @@ PYSEC vulnerability:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="93fcd33f-a63b-4ac4-80e1-dbe5d07bcbc0">
+  <vuln vid="252f40cb-618c-47f4-a2cf-1abf30cffbbe">
     <topic>py-Flask-Cors -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -9007,7 +8388,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2020-08-31</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -9022,7 +8403,7 @@ PYSEC vulnerability:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="4d6ac5c7-be3c-4431-9964-8ce506165b16">
+  <vuln vid="ed926b03-20dc-4d9f-a251-7492345f6a55">
     <topic>py-Flask-Cors -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -9048,7 +8429,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2020-08-31</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -9073,7 +8454,7 @@ PYSEC vulnerability:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="1b4529e9-3d57-46ba-a3b6-b0243b887fd5">
+  <vuln vid="06492bd5-085a-4cc0-9743-e30164bdcb1c">
     <topic>py-flask-security -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -9101,7 +8482,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2022-08-02</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -9124,7 +8505,7 @@ PYSEC vulnerability:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="7c37914f-55fd-42a8-b816-375ab67e8a92">
+  <vuln vid="1e37fa3e-5988-4991-808f-eae98047e2af">
     <topic>py-httpie -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -9150,7 +8531,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2022-03-07</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -9165,7 +8546,7 @@ PYSEC vulnerability:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="43b6e538-cc3b-4469-a2f5-ef51915b5cca">
+  <vuln vid="10868f59-0e71-4612-b02d-a004ded4403d">
     <topic>py-httpie -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -9191,7 +8572,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2022-03-15</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -9284,7 +8665,7 @@ If you have any questions or comments about this advisory:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="e7239342-63a8-4af9-91ad-733a280a64a4">
+  <vuln vid="f8894ea8-aaf4-479b-97a7-29ebaca37a09">
     <topic>py-httpie -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -9388,7 +8769,7 @@ If you have any questions or comments about this advisory:
     </references>
     <dates>
       <discovery>2022-03-07</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -9403,7 +8784,7 @@ PYSEC vulnerability:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="30f88dcd-fd61-4955-9811-046ac2ddff55">
+  <vuln vid="361a368f-872d-4788-b2b1-9f705fa61bc3">
     <topic>py-httpie -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -9429,7 +8810,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2022-03-15</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -9456,7 +8837,7 @@ PYSEC vulnerability:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="004ac54b-af6c-4f90-a08e-0505578b2ff5">
+  <vuln vid="e831dd5a-7d8e-4818-aa1f-17dd495584ec">
     <topic>py-httpx -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -9482,7 +8863,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2022-04-28</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -9497,7 +8878,7 @@ PYSEC vulnerability:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="2b457ad9-2f12-401d-a206-9e2297e6d29a">
+  <vuln vid="2cf57d0c-5601-48bc-8076-06d2867b75e4">
     <topic>py-httpx -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -9523,7 +8904,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2022-04-28</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -9546,7 +8927,7 @@ PYSEC vulnerability:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="fa9093e7-92f0-4438-b532-44bd717a15bf">
+  <vuln vid="4eb5dccb-923c-4f18-9cd4-b53f9e28d4d7">
     <topic>py-Scrapy -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -9572,7 +8953,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2017-09-05</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -9587,7 +8968,7 @@ PYSEC vulnerability:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="d688999f-0e58-41c3-89e9-b2b922801f02">
+  <vuln vid="67fe5e5b-549f-4a2a-9834-53f60eaa415e">
     <topic>py-Scrapy -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -9613,7 +8994,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2022-03-02</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -9650,7 +9031,7 @@ If you have any questions or comments about this advisory:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="7fe0bbc2-3d34-4b0b-90c5-c6e6c17871e0">
+  <vuln vid="a5403af6-225e-48ba-b233-bd95ad26434a">
     <topic>py-Scrapy -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -9697,7 +9078,7 @@ If you have any questions or comments about this advisory:
     </references>
     <dates>
       <discovery>INSERT_YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -9739,7 +9120,7 @@ If you have any questions or comments about this advisory:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="afbe7655-3dbb-4b3d-bce2-3b27af21d42c">
+  <vuln vid="25e6b8ee-91e8-4cff-9162-70e33633e167">
     <topic>py-Scrapy -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -9792,7 +9173,7 @@ If you have any questions or comments about this advisory:
     </references>
     <dates>
       <discovery>2022-03-02</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -9807,7 +9188,7 @@ PYSEC vulnerability:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="0afb1a03-24dd-4863-8cde-39296a93944a">
+  <vuln vid="230577bf-fe14-4e69-a4fb-f8fae6a283c2">
     <topic>py-Scrapy -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -9833,7 +9214,7 @@ UNREPORTED FreeBSD VuXML vulnerability skeleton:
     </references>
     <dates>
       <discovery>2017-09-05</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -9875,7 +9256,7 @@ If you have any questions or comments about this advisory:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="88e0b315-9e3b-4494-b350-61800bec6118">
+  <vuln vid="2ad25820-c71a-4e6c-bb99-770c66fe496d">
     <topic>py-Scrapy -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -9927,7 +9308,7 @@ If you have any questions or comments about this advisory:
     </references>
     <dates>
       <discovery>INSERT_YEAR-MONTH-DAY</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -9988,7 +9369,7 @@ client.get('https://example.com/')
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="2db83ce6-d73e-41c4-bed1-01ebe9e76179">
+  <vuln vid="181f5e49-b71d-4527-9464-d4624d69acc3">
     <topic>py-treq -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -10052,7 +9433,7 @@ client.get('https://example.com/')
     </references>
     <dates>
       <discovery>2022-02-01</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -10171,7 +9552,7 @@ class PatchedInspectView(InspectView):
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="7cc08551-485a-4b39-8eaa-0392d574a61c">
+  <vuln vid="17efbe19-4e72-426a-8016-2b4e001c1378">
     <topic>py-wagtail -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -10287,7 +9668,7 @@ class PatchedInspectView(InspectView):
     </references>
     <dates>
       <discovery>2023-04-03</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -10324,7 +9705,7 @@ The changes themselves are deep inside Wagtail, making patching incredibly diffi
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="b72381ce-ec3c-4f7a-969d-866214ef0594">
+  <vuln vid="2def7c4b-736f-4754-9f03-236fcb586d91">
     <topic>py-wagtail -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -10372,7 +9753,7 @@ The changes themselves are deep inside Wagtail, making patching incredibly diffi
     </references>
     <dates>
       <discovery>2023-04-03</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
@@ -10422,7 +9803,7 @@ If you have any questions or comments about this advisory:
   Withdrawn: None
 
 UNREPORTED FreeBSD VuXML vulnerability skeleton:
-  <vuln vid="a6573d22-9e4a-4775-868c-edf64e090e21">
+  <vuln vid="1a15b928-5011-4953-8133-d49e24902fe1">
     <topic>py-WsgiDAV -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>
     <affects>
       <package>
@@ -10475,7 +9856,7 @@ If you have any questions or comments about this advisory:
     </references>
     <dates>
       <discovery>2022-11-11</discovery>
-      <entry>2023-04-13</entry>
+      <entry>2023-04-15</entry>
     </dates>
   </vuln>
 
