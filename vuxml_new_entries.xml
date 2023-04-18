@@ -1,3 +1,35 @@
+  <vuln vid="692a5fd5-bb25-4df4-8a0e-eb91581f2531">
+    <topic>py-flask-caching -- remote code execution or local privilege escalation vulnerabilities</topic>
+    <affects>
+      <package>
+    <name>py37-flask-caching</name>
+    <name>py38-flask-caching</name>
+    <name>py39-flask-caching</name>
+    <name>py310-flask-caching</name>
+    <name>py311-flask-caching</name>
+    <range><le>2.0.2</le></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>subnix reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2021-13">
+      <p>The Flask-Caching extension through 2.0.2 for Flask relies on Pickle for serialization, which may lead to remote code execution or local privilege escalation.</p>
+      <p>If an attacker gains access to cache storage (e.g., filesystem, Memcached, Redis, etc.), they can construct a crafted payload, poison the cache, and execute Python code.</p>	  
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2021-33026</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2021-13</url>
+      <url>https://osv.dev/vulnerability/GHSA-656c-6cxf-hvcv</url>
+    </references>
+    <dates>
+      <discovery>2021-05-13</discovery>
+      <entry>2023-04-15</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="c2c89dea-2859-4231-8f3b-12be0d475ff">
     <topic>py-django-photologue -- XSS vulnerability</topic>
     <affects>
