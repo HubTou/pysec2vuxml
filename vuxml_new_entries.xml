@@ -1,3 +1,36 @@
+  <vuln vid="06492bd5-085a-4cc0-9743-e30164bdcb1c">
+    <topic>py-flask-security -- user redirect to arbitrary URL vulnerability</topic>
+    <affects>
+      <package>
+    <name>py37-flask-security</name>
+    <name>py38-flask-security</name>
+    <name>py39-flask-security</name>
+    <name>py310-flask-security</name>
+    <name>py311-flask-security</name>
+    <range><le>3.0.0_1</le></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>Snyk reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/GHSA-cg8c-gc2j-2wf7">
+      <p>This affects all versions of package Flask-Security.</p>
+      <p>When using the `get_post_logout_redirect` and `get_post_login_redirect` functions, it is possible to bypass URL validation and redirect a user to an arbitrary URL by providing multiple back slashes such as `\\\evil.com/path`.</p>
+      <p>This vulnerability is only exploitable if an alternative WSGI server other than Werkzeug is used, or the default behaviour of Werkzeug is modified using `'autocorrect_location_header=False`.</p>
+      <p>**Note:** Flask-Security is not maintained anymore.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2021-23385</cvename>
+      <url>https://osv.dev/vulnerability/GHSA-cg8c-gc2j-2wf7</url>
+    </references>
+    <dates>
+      <discovery>2022-08-02</discovery>
+      <entry>2023-04-15</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="252f40cb-618c-47f4-a2cf-1abf30cffbbe">
     <topic>py-Flask-Cors -- directory traversal vulnerability</topic>
     <affects>
