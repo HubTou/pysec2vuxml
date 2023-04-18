@@ -1,3 +1,40 @@
+  <vuln vid="c2c89dea-2859-4231-8f3b-12be0d475ff">
+    <topic>py-django-photologue -- XSS vulnerability</topic>
+    <affects>
+      <package>
+    <name>py37-django-photologue</name>
+    <name>py38-django-photologue</name>
+    <name>py39-django-photologue</name>
+    <name>py310-django-photologue</name>
+    <name>py311-django-photologue</name>
+    <range><le>3.15_1</le></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>domiee13 reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/GHSA-287q-jfcp-9vhv">
+      <p>A vulnerability was found in django-photologue up to 3.15.1 and classified as problematic.</p>
+      <p>Affected by this issue is some unknown functionality of the file photologue/templates/photologue/photo_detail.html of the component Default Template Handler.</p>
+      <p>The manipulation of the argument object.caption leads to cross site scripting.</p>
+      <p>The attack may be launched remotely.</p>
+      <p>Upgrading to version 3.16 is able to address this issue.</p>
+      <p>The name of the patch is 960cb060ce5e2964e6d716ff787c72fc18a371e7.</p>
+      <p>It is recommended to apply a patch to fix this issue.</p>
+      <p>VDB-215906 is the identifier assigned to this vulnerability.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2022-4526</cvename>
+      <url>https://osv.dev/vulnerability/GHSA-287q-jfcp-9vhv</url>
+    </references>
+    <dates>
+      <discovery>2022-12-15</discovery>
+      <entry>2023-04-15</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="cdc685b5-1724-49a1-ad57-2eaab68e9cc0">
     <topic>py-pygments -- multiple DoS vulnerabilities</topic>
     <affects>
