@@ -1,3 +1,71 @@
+  <vuln vid="17efbe19-4e72-426a-8016-2b4e001c1378">
+    <topic>py-wagtail -- stored XSS vulnerability</topic>
+    <affects>
+      <package>
+    <name>py37-wagtail</name>
+    <name>py38-wagtail</name>
+    <name>py39-wagtail</name>
+    <name>py310-wagtail</name>
+    <name>py311-wagtail</name>
+    <range><lt>4.1.4</lt></range>
+    <range><ge>4.2.0</ge><lt>4.2.2</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <blockquote cite="https://osv.dev/vulnerability/GHSA-5286-f2rf-35c2">
+      <p>A stored cross-site scripting (XSS) vulnerability exists on ModelAdmin views within the Wagtail admin interface.</p>
+      <p>A user with a limited-permission editor account for the Wagtail admin could potentially craft pages and documents that, when viewed by a user with higher privileges, could perform actions with that user's credentials.</p>
+      <p>The vulnerability is not exploitable by an ordinary site visitor without access to the Wagtail admin, and only affects sites with ModelAdmin enabled.</p>
+      <p>For page, the vulnerability is in the "Choose a parent page" ModelAdmin view, available when managing pages via ModelAdmin.</p>
+      <p>For documents, the vulnerability is in the ModelAdmin Inspect view when displaying document fields.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2023-28836</cvename>
+      <url>https://osv.dev/vulnerability/GHSA-5286-f2rf-35c2</url>
+    </references>
+    <dates>
+      <discovery>2023-04-03</discovery>
+      <entry>2023-04-15</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="2def7c4b-736f-4754-9f03-236fcb586d91">
+    <topic>py-wagtail -- DoS vulnerability</topic>
+    <affects>
+      <package>
+    <name>py37-wagtail</name>
+    <name>py38-wagtail</name>
+    <name>py39-wagtail</name>
+    <name>py310-wagtail</name>
+    <name>py311-wagtail</name>
+    <range><ge>4.2.0</ge><lt>4.2.2</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <blockquote cite="https://osv.dev/vulnerability/GHSA-33pv-vcgh-jfg9">
+      <p>A memory exhaustion bug exists in Wagtail's handling of uploaded images and documents.</p>
+      <p>For both images and documents, files are loaded into memory during upload for additional processing.</p>
+      <p>A user with access to upload images or documents through the Wagtail admin interface could upload a file so large that it results in a crash or denial of service.</p>
+      <p>The vulnerability is not exploitable by an ordinary site visitor without access to the Wagtail admin.</p>
+      <p>It can only be exploited by admin users with permission to upload images or documents.</p>
+      <p>Image uploads are restricted to 10MB by default, however this validation only happens on the frontend and on the backend after the vulnerable code.</p> 
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2023-28837</cvename>
+      <url>https://osv.dev/vulnerability/GHSA-33pv-vcgh-jfg9</url>
+    </references>
+    <dates>
+      <discovery>2023-04-03</discovery>
+      <entry>2023-04-15</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="181f5e49-b71d-4527-9464-d4624d69acc3">
     <topic>py-treq -- sensitive information leak vulnerability</topic>
     <affects>
