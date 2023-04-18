@@ -1,3 +1,129 @@
+  <vuln vid="4eb5dccb-923c-4f18-9cd4-b53f9e28d4d7">
+    <topic>py-Scrapy -- DoS vulnerability</topic>
+    <affects>
+      <package>
+    <name>py37-Scrapy</name>
+    <name>py38-Scrapy</name>
+    <name>py39-Scrapy</name>
+    <name>py310-Scrapy</name>
+    <name>py311-Scrapy</name>
+    <range><le>2.8.0</le></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>kmike and nramirezuy report:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2017-83">
+      <p>Scrapy 1.4 allows remote attackers to cause a denial of service (memory consumption) via large files because arbitrarily many files are read into memory, which is especially problematic if the files are then individually written in a separate thread to a slow storage resource, as demonstrated by interaction between dataReceived (in core/downloader/handlers/http11.py) and S3FilesStore.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2017-14158</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2017-83</url>
+      <url>https://osv.dev/vulnerability/GHSA-h7wm-ph43-c39p</url>
+    </references>
+    <dates>
+      <discovery>2017-09-05</discovery>
+      <entry>2023-04-15</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="67fe5e5b-549f-4a2a-9834-53f60eaa415e">
+    <topic>py-Scrapy -- exposure of sensitive information vulnerability</topic>
+    <affects>
+      <package>
+    <name>py37-Scrapy</name>
+    <name>py38-Scrapy</name>
+    <name>py39-Scrapy</name>
+    <name>py310-Scrapy</name>
+    <name>py311-Scrapy</name>
+    <range><lt>2.6.1</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>ranjit-git reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2022-159">
+      <p>Exposure of Sensitive Information to an Unauthorized Actor in GitHub repository scrapy/scrapy prior to 2.6.1.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2022-0577</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2022-159</url>
+      <url>https://osv.dev/vulnerability/GHSA-cjvr-mfj7-j4j8</url>
+    </references>
+    <dates>
+      <discovery>2022-03-02</discovery>
+      <entry>2023-04-15</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="a5403af6-225e-48ba-b233-bd95ad26434a">
+    <topic>py-Scrapy -- cookie injection vulnerability</topic>
+    <affects>
+      <package>
+    <name>py37-Scrapy</name>
+    <name>py38-Scrapy</name>
+    <name>py39-Scrapy</name>
+    <name>py310-Scrapy</name>
+    <name>py311-Scrapy</name>
+    <range><lt>1.8.2</lt></range>
+    <range><ge>2.0.0</ge><lt>2.6.0</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <blockquote cite="https://osv.dev/vulnerability/GHSA-mfjm-vh54-3f96">
+      <p>Responses from domain names whose public domain name suffix contains 1 or more periods (e.g. responses from `example.co.uk`, given its public domain name suffix is `co.uk`) are able to set cookies that are included in requests to any other domain sharing the same domain name suffix.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <url>https://osv.dev/vulnerability/GHSA-mfjm-vh54-3f96</url>
+    </references>
+    <dates>
+      <discovery>2022-03-01</discovery>
+      <entry>2023-04-15</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="2ad25820-c71a-4e6c-bb99-770c66fe496d">
+    <topic>py-Scrapy -- credentials leak vulnerability</topic>
+    <affects>
+      <package>
+    <name>py37-Scrapy</name>
+    <name>py38-Scrapy</name>
+    <name>py39-Scrapy</name>
+    <name>py310-Scrapy</name>
+    <name>py311-Scrapy</name>
+    <range><lt>1.8.3</lt></range>
+    <range><ge>2.0.0</ge><lt>2.6.2</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <blockquote cite="https://osv.dev/vulnerability/GHSA-9x8m-2xpf-crp3">
+      <p>When the built-in HTTP proxy downloader middleware processes a request with `proxy` metadata, and that `proxy` metadata includes proxy credentials, the built-in HTTP proxy downloader middleware sets the `Proxy-Authentication` header, but only if that header is not already set.</p>
+      <p>There are third-party proxy-rotation downloader middlewares that set different `proxy` metadata every time they process a request.</p>
+      <p>Because of request retries and redirects, the same request can be processed by downloader middlewares more than once, including both the built-in HTTP proxy downloader middleware and any third-party proxy-rotation downloader middleware.</p>
+      <p>These third-party proxy-rotation downloader middlewares could change the `proxy` metadata of a request to a new value, but fail to remove the `Proxy-Authentication` header from the previous value of the `proxy` metadata, causing the credentials of one proxy to be leaked to a different proxy.</p>
+      <p>If you rotate proxies from different proxy providers, and any of those proxies requires credentials, you are affected, unless you are handling proxy rotation as described under **Workarounds** below.</p>
+      <p>If you use a third-party downloader middleware for proxy rotation, the same applies to that downloader middleware, and installing a patched version of Scrapy may not be enough;</p>
+      <p>patching that downloader middlware may be necessary as well.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <url>https://osv.dev/vulnerability/GHSA-9x8m-2xpf-crp3</url>
+    </references>
+    <dates>
+      <discovery>2022-07-29</discovery>
+      <entry>2023-04-15</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="e831dd5a-7d8e-4818-aa1f-17dd495584ec">
     <topic>py-httpx -- input validation vulnerability</topic>
     <affects>
