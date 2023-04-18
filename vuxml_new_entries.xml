@@ -1,3 +1,51 @@
+  <vuln vid="cdc685b5-1724-49a1-ad57-2eaab68e9cc0">
+    <topic>py-pygments -- multiple DoS vulnerabilities</topic>
+    <affects>
+      <package>
+    <name>py37-pygments</name>
+    <name>py38-pygments</name>
+    <name>py39-pygments</name>
+    <name>py310-pygments</name>
+    <name>py311-pygments</name>
+    <range><lt>2.7.4</lt></range>
+      </package>
+      <package>
+    <name>py37-pygments-25</name>
+    <name>py38-pygments-25</name>
+    <name>py39-pygments-25</name>
+    <name>py310-pygments-25</name>
+    <name>py311-pygments-25</name>
+    <range><lt>2.7.4</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>Red Hat reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2021-140">
+      <p>An infinite loop in SMLLexer in Pygments versions 1.5 to 2.7.3 may lead to denial of service when performing syntax highlighting of a Standard ML (SML) source file, as demonstrated by input that only contains the "exception" keyword.</p>
+    </blockquote>
+    <p>Ben Caller reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2021-141">
+      <p>In pygments 1.1+, fixed in 2.7.4, the lexers used to parse programming languages rely heavily on regular expressions.</p>
+      <p>Some of the regular expressions have exponential or cubic worst-case complexity and are vulnerable to ReDoS.</p>
+      <p>By crafting malicious input, an attacker can cause a denial of service.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2021-20270</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2021-140</url>
+      <url>https://osv.dev/vulnerability/GHSA-9w8r-397f-prfh</url>
+      <cvename>CVE-2021-27291</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2021-141</url>
+      <url>https://osv.dev/vulnerability/GHSA-pq64-v7f5-gqh8</url>
+    </references>
+    <dates>
+      <discovery>2021-03-17</discovery>
+      <entry>2023-04-15</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="c9b3324f-8e03-4ae3-89ce-8098cdc5bfa9">
     <topic>py-markdown2 -- regular expression denial of service vulnerability</topic>
     <affects>
