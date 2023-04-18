@@ -1,3 +1,34 @@
+  <vuln vid="e831dd5a-7d8e-4818-aa1f-17dd495584ec">
+    <topic>py-httpx -- input validation vulnerability</topic>
+    <affects>
+      <package>
+    <name>py37-httpx013</name>
+    <name>py38-httpx013</name>
+    <name>py39-httpx013</name>
+    <name>py310-httpx013</name>
+    <name>py311-httpx013</name>
+    <range><lt>0.20.0</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>lebr0nli reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2022-183">
+      <p>Encode OSS httpx &lt;=1.0.0.beta0 is affected by improper input validation in `httpx.URL`, `httpx.Client` and some functions using `httpx.URL.copy_with`.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2021-41945</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2022-183</url>
+      <url>https://osv.dev/vulnerability/GHSA-h8pj-cxx2-jfg2</url>
+    </references>
+    <dates>
+      <discovery>2022-04-28</discovery>
+      <entry>2023-04-15</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="1e37fa3e-5988-4991-808f-eae98047e2af">
     <topic>py-httpie -- exposure of sensitive information vulnerabilities</topic>
     <affects>
