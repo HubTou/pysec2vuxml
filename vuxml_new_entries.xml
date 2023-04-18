@@ -1,3 +1,67 @@
+  <vuln vid="c9b3324f-8e03-4ae3-89ce-8098cdc5bfa9">
+    <topic>py-markdown2 -- regular expression denial of service vulnerability</topic>
+    <affects>
+      <package>
+    <name>py37-markdown2</name>
+    <name>py38-markdown2</name>
+    <name>py39-markdown2</name>
+    <name>py310-markdown2</name>
+    <name>py311-markdown2</name>
+    <range><lt>2.4.0</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>Ben Caller reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2021-20">
+      <p>markdown2 &gt;=1.0.1.18, fixed in 2.4.0, is affected by a regular expression denial of service vulnerability.</p>
+      <p>If an attacker provides a malicious string, it can make markdown2 processing difficult or delayed for an extended period of time.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2021-26813</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2021-20</url>
+      <url>https://osv.dev/vulnerability/GHSA-jr9p-r423-9m2r</url>
+    </references>
+    <dates>
+      <discovery>2021-03-03</discovery>
+      <entry>2023-04-15</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="cf6f3465-e996-4672-9458-ce803f29fdb7">
+    <topic>py-markdown2 -- XSS vulnerability</topic>
+    <affects>
+      <package>
+    <name>py37-markdown2</name>
+    <name>py38-markdown2</name>
+    <name>py39-markdown2</name>
+    <name>py310-markdown2</name>
+    <name>py311-markdown2</name>
+    <range><lt>2.3.9</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>TheGrandPew reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2020-65">
+      <p>python-markdown2 through 2.3.8 allows XSS because element names are mishandled unless a \w+ match succeeds.</p>
+      <p>For example, an attack might use elementname@ or elementname- with an onclick attribute.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2020-11888</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2020-65</url>
+      <url>https://osv.dev/vulnerability/GHSA-fv3h-8x5j-pvgq</url>
+    </references>
+    <dates>
+      <discovery>2020-04-20</discovery>
+      <entry>2023-04-15</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="83b29e3f-886f-439f-b9a8-72e014479ff9">
     <topic>py-dparse -- REDoS vulnerability</topic>
     <affects>
