@@ -1,3 +1,45 @@
+  <vuln vid="1e37fa3e-5988-4991-808f-eae98047e2af">
+    <topic>py-httpie -- exposure of sensitive information vulnerabilities</topic>
+    <affects>
+      <package>
+    <name>py37-httpie</name>
+    <name>py38-httpie</name>
+    <name>py39-httpie</name>
+    <name>py310-httpie</name>
+    <name>py311-httpie</name>
+    <range><lt>3.1.0</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <p>Glyph reports:</p>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2022-34">
+      <p>HTTPie is a command-line HTTP client.</p>
+      <p>HTTPie has the practical concept of sessions, which help users to persistently store some of the state that belongs to the outgoing requests and incoming responses on the disk for further usage.</p>
+      <p>Before 3.1.0, HTTPie didn't distinguish between cookies and hosts they belonged.</p>
+      <p>This behavior resulted in the exposure of some cookies when there are redirects originating from the actual host to a third party website.</p>
+      <p>Users are advised to upgrade.</p>
+      <p>There are no known workarounds.</p>
+    </blockquote>
+    <blockquote cite="https://osv.dev/vulnerability/PYSEC-2022-167">
+      <p>Exposure of Sensitive Information to an Unauthorized Actor in GitHub repository httpie/httpie prior to 3.1.0.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2022-24737</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2022-34</url>
+      <url>https://osv.dev/vulnerability/GHSA-9w4w-cpc8-h2fq</url>
+      <cvename>CVE-2022-0430</cvename>
+      <url>https://osv.dev/vulnerability/PYSEC-2022-167</url>
+      <url>https://osv.dev/vulnerability/GHSA-6pc9-xqrg-wfqw</url>
+    </references>
+    <dates>
+      <discovery>2022-03-07</discovery>
+      <entry>2023-04-15</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="06492bd5-085a-4cc0-9743-e30164bdcb1c">
     <topic>py-flask-security -- user redirect to arbitrary URL vulnerability</topic>
     <affects>
