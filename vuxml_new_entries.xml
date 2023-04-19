@@ -81,7 +81,7 @@
       <p>A user with access to upload images or documents through the Wagtail admin interface could upload a file so large that it results in a crash or denial of service.</p>
       <p>The vulnerability is not exploitable by an ordinary site visitor without access to the Wagtail admin.</p>
       <p>It can only be exploited by admin users with permission to upload images or documents.</p>
-      <p>Image uploads are restricted to 10MB by default, however this validation only happens on the frontend and on the backend after the vulnerable code.</p> 
+      <p>Image uploads are restricted to 10MB by default, however this validation only happens on the frontend and on the backend after the vulnerable code.</p>
     </blockquote>
       </body>
     </description>
@@ -407,7 +407,7 @@
     <p>subnix reports:</p>
     <blockquote cite="https://osv.dev/vulnerability/PYSEC-2021-13">
       <p>The Flask-Caching extension through 2.0.2 for Flask relies on Pickle for serialization, which may lead to remote code execution or local privilege escalation.</p>
-      <p>If an attacker gains access to cache storage (e.g., filesystem, Memcached, Redis, etc.), they can construct a crafted payload, poison the cache, and execute Python code.</p>	  
+      <p>If an attacker gains access to cache storage (e.g., filesystem, Memcached, Redis, etc.), they can construct a crafted payload, poison the cache, and execute Python code.</p>
     </blockquote>
       </body>
     </description>
