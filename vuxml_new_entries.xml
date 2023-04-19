@@ -1,3 +1,32 @@
+  <vuln vid="1a15b928-5011-4953-8133-d49e24902fe1">
+    <topic>py-WsgiDAV -- XSS vulnerability</topic>
+    <affects>
+      <package>
+    <name>py37-WsgiDAV</name>
+    <name>py38-WsgiDAV</name>
+    <name>py39-WsgiDAV</name>
+    <name>py310-WsgiDAV</name>
+    <name>py311-WsgiDAV</name>
+    <range><lt>4.1.0</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+    <blockquote cite="https://osv.dev/vulnerability/GHSA-xx6g-jj35-pxjv">
+      <p>Implementations using this library with directory browsing enabled may be susceptible to Cross Site Scripting (XSS) attacks.</p>
+    </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2022-41905</cvename>
+      <url>https://osv.dev/vulnerability/GHSA-xx6g-jj35-pxjv</url>
+    </references>
+    <dates>
+      <discovery>2022-11-11</discovery>
+      <entry>2023-04-15</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="17efbe19-4e72-426a-8016-2b4e001c1378">
     <topic>py-wagtail -- stored XSS vulnerability</topic>
     <affects>
