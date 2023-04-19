@@ -1,3 +1,5 @@
+<!-- Vulnerabilities below reported at https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=270923 -->
+
   <vuln vid="1a15b928-5011-4953-8133-d49e24902fe1">
     <topic>py-WsgiDAV -- XSS vulnerability</topic>
     <affects>
