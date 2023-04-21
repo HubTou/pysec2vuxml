@@ -78,6 +78,8 @@ make validate
 
 If it's the case, please clone this repository and [submit pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) to the [vuxml_new_entries.xml](https://github.com/HubTou/pysec2vuxml/blob/main/vuxml_new_entries.xml) and [vuxml_modified_entries.xml](https://github.com/HubTou/pysec2vuxml/blob/main/vuxml_modified_entries.xml) files, and/or directly create [FreeBSD bug reports](https://bugs.freebsd.org/bugzilla/enter_bug.cgi?product=Ports%20%26%20Packages&component=Individual%20Port%28s%29) with your entries, using a title starting with **security/vuxml:** and adding the **security** keyword.
 
+If you don't want to see VuXML entries proposals for vulnerabilities that have been reported but are not yet committed to the FreeBSD files, you can add their IDs in the [reported.txt](https://github.com/HubTou/pysec2vuxml/blob/main/reported.txt) file.
+
 ## House cleaning
 The tool downloads and caches files in the following directories, which you can remove if you want:
 ```
