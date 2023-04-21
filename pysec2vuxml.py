@@ -20,28 +20,29 @@ MAJOR_VERSION=3
 FIRST_MINOR_VERSION=7
 LAST_MINOR_VERSION=11
 
+# The FreeBSD ports list
+PORTS_INDEX = "/usr/ports/INDEX-13"
+
+
 ####################################################################################################
 def get_freebsd_ports_list():
     """ Returns a list of FreeBSD ports """
     ports_list = []
 
-    # The FreeBSD ports list
-    ports_index = "/usr/ports/INDEX-13"
-
     # Is the ports list installed?
-    if not os.path.isfile(ports_index):
-        print("Please install and update the ports tree", file=sys.stderr)
+    if not os.path.isfile(PORTS_INDEX):
+        print("Please install and update the ports tree ('portsnap fetch extract' as root)", file=sys.stderr)
         sys.exit(1)
 
     # Loading the ports list:
-    with open(ports_index, encoding='utf-8', errors='ignore') as file:
+    with open(PORTS_INDEX, encoding='utf-8', errors='ignore') as file:
         lines = file.read().splitlines()
 
     for line in lines:
         # The file format is described at: https://wiki.freebsd.org/Ports/INDEX
         fields = line.split('|')
         if len(fields) != 13:
-            print(f"WARNING: line '{line}' from '{ports_index}' doesn't have 13 fields", file=sys.stderr)
+            print(f"WARNING: line '{line}' from '{PORTS_INDEX}' doesn't have 13 fields", file=sys.stderr)
         else:
             # {"vname": versioned_name, "dir": port_directory}
             ports_list.append({"vname": fields[0], "dir": fields[1]})
@@ -63,7 +64,7 @@ def select_python_ports(ports_list):
 
 ####################################################################################################
 def enrich_ports_list(ports_list):
-    """ Try to get name, version and maintainer from the port's Makefile """
+    """ Try to get additional info from the port's Makefile """
     enriched_ports_list = []
 
     for port in ports_list:
@@ -75,10 +76,12 @@ def enrich_ports_list(ports_list):
         else:
             lines = []
 
-        # Searching for PORTNAME=, PORTVERSION= or DISTVERSION= lines:
+        # Searching for PORTNAME=, PORTVERSION=, DISTVERSION=, WWW= and COMMENT= lines:
         name = ''
         version = ''
         maintainer = ''
+        www = ''
+        comment = ''
         for line in lines:
             line = re.sub(r'[ 	]*#.*', '', line)
             if line.startswith('PORTNAME='):
@@ -89,6 +92,10 @@ def enrich_ports_list(ports_list):
                 version = re.sub(r'^DISTVERSION=[ 	]*', '', line)
             elif line.startswith('MAINTAINER='):
                 maintainer = re.sub(r'^MAINTAINER=[ 	]*', '', line)
+            elif line.startswith('WWW='):
+                www = re.sub(r'^WWW=[ 	]*', '', line)
+            elif line.startswith('COMMENT='):
+                comment = re.sub(r'^COMMENT=[ 	]*', '', line)
 
         if not name or not version or "$" in name or "$" in version:
             simplified_vname = re.sub(r",[0-9]*$", "", port["vname"]) # remove ,PORTEPOCH
@@ -97,6 +104,15 @@ def enrich_ports_list(ports_list):
             version = re.sub(r"" + name + "-", "", simplified_vname)
             name = re.sub(r"^py[0-9]+-", "", name)
 
+        if '$' in www:
+            www = ''
+        elif www.endswith('/'):
+            www = re.sub(r"/$", "", www)
+        elif www.endswith('/ \\'):
+            www = re.sub(r"/ \\$", "", www)
+        elif www.endswith('\\'):
+            www = re.sub(r"\\$", "", www)
+
         enriched_ports_list.append(
             {
                 "vname": port["vname"],
@@ -104,6 +120,8 @@ def enrich_ports_list(ports_list):
                 "name": name,
                 "version": version,
                 "maintainer": maintainer,
+                "www": www,
+                "comment": comment,
             }
         )
 
@@ -111,12 +129,12 @@ def enrich_ports_list(ports_list):
 
 
 ####################################################################################################
-def get_ignored_vulnerabilities():
+def get_ids_from_file(filename):
     """ Load a list of vulnerabilities IDs to ignore """
     lines = []
 
-    if os.path.isfile('ignore.txt'):
-        with open('ignore.txt', encoding='utf-8', errors='ignore') as file:
+    if os.path.isfile(filename):
+        with open(filename, encoding='utf-8', errors='ignore') as file:
             lines = file.read().splitlines()
 
     # Return all non empty lines not starting with a '#' comment character
@@ -301,7 +319,7 @@ def print_table_of_contents(python_ports, vulnerable_ports, ignored_vulns):
 
 
 ####################################################################################################
-def print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, vuxml_data):
+def print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, reported_vulns, vuxml_data):
     """ Print vulnerabilities to stdout """
     today = datetime.date.today()
     today_string = f"{today.year}-{today.month:02}-{today.day:02}"
@@ -320,6 +338,7 @@ def print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, vuxml_d
             port_version = ''
             port_subdir = ''
             port_maintainer = ''
+            port_www = ''
             for port in python_ports:
                 if port['name'] == package_name and port['version'] == package_version:
                     found = True
@@ -328,6 +347,8 @@ def print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, vuxml_d
                     port_version = re.sub(r"^" + port_name + "-", "", port_vname)
                     port_subdir = port['dir'].replace('/usr/ports/', '')
                     port_maintainer = port['maintainer']
+                    port_www = port['www']
+                    port_comment = port['comment']
                     break
             if not found:
                 print(f"Python package '{package_name}-{package_version}' not found in the FreeBSD ports tree!", file=sys.stderr)
@@ -337,10 +358,23 @@ def print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, vuxml_d
             print(f"Python package '{package_name} {package_version}' / FreeBSD port '{port_name} {port_version}' is vulnerable:")
             print(f"  Please report to  maintainer '{port_maintainer}' for port '{port_subdir}'")
             print("-" * 80)
-            print("Existing flavours and versions, plus similar names:")
+            print("Flavours and versions detection")
+            print("Similar names, with (=W) for same WWW site and/or (=C) for same description:")
             for port in python_ports:
                 if re.match(r'py[23][0-9]+-' + package_name, port['vname']) is not None:
-                    print(f"  {port['vname']}")
+                    same_www = False
+                    same_comment = False
+                    if port_www and port['www'] == port_www:
+                        same_www = True
+                    if port_comment and port['comment'] == port_comment:
+                        same_comment = True
+                    if same_www or same_comment:
+                        print(f"  {port['vname']}", end="")
+                        if same_www:
+                            print(" (=W)", end="")
+                        if same_comment:
+                            print(" (=C)", end="")
+                        print()
             print("-" * 80)
             print()
 
@@ -353,21 +387,51 @@ def print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, vuxml_d
                         ignore_vuln = True
                         break
                 if ignore_vuln:
-                    print("Package ignored (this vulnerability doesn't apply to FreeBSD)\n")
+                    print("=> Package ignored (this vulnerability doesn't apply to FreeBSD)\n")
                     continue
 
                 print("PYSEC vulnerability:")
                 print(f"  Id:        {vulnerability['id']}")
-                print(f"  Aliases:   {vulnerability['aliases']}")
-                print(f"  Details:   {vulnerability['details']}")
-                print(f"  Fixed in:  {vulnerability['fixed_in']}")
+                if vulnerability['aliases']:
+                    print(f"  Aliases:   {vulnerability['aliases']}")
+                print("  Details:   ", end="")
+                # We print around 120 characters of details, skipping blank lines
+                characters_count = 0
+                for line in vulnerability['details'].splitlines():
+                    line = re.sub(r"^[ 	]*$", "", line)
+                    if line:
+                        print(line, end="")
+                    characters_count += len(line)
+                    if characters_count > 120:
+                        print(" +++")
+                        break
+                    else:
+                        print()
+                if vulnerability['fixed_in']:
+                    print(f"  Fixed in:  {vulnerability['fixed_in']}")
                 print(f"  Link:      {vulnerability['link']}")
                 print(f"  Source:    {vulnerability['source']}")
-                print(f"  Summary:   {vulnerability['summary']}")
-                print(f"  Withdrawn: {vulnerability['withdrawn']}\n")
+                if vulnerability['summary'] is not None:
+                    print(f"  Summary:   {vulnerability['summary']}")
+                if vulnerability['withdrawn'] is not None:
+                    print(f"  Withdrawn: {vulnerability['withdrawn']}")
+                print()
 
                 # Don't process withdrawn vulnerabilities
                 if vulnerability['withdrawn'] is not None:
+                    print("=> Vulnerability withdrawn\n")
+                    continue
+
+                # Don't process already reported vulnerabilities
+                reported_vuln = False
+                if vulnerability['id'] in reported_vulns:
+                    reported_vuln = True
+                for alias in vulnerability['aliases']:
+                    if alias in reported_vulns:
+                        reported_vuln = True
+                        break
+                if reported_vuln:
+                    print("=> Package vulnerability already reported\n")
                     continue
 
                 # Gather related CVEs (if any)
@@ -390,7 +454,7 @@ def print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, vuxml_d
                     for vid in vulns:
                         if vid not in vid_list:
                             if not something_found:
-                                print("FreeBSD VuXML vulnerability for THIS port:")
+                                print("=> FreeBSD VuXML vulnerability for THIS port:")
                                 something_found = True
                             vuxml.print_vuln(vid, vuxml_data[vid])
                             vid_list.append(vid)
@@ -404,7 +468,7 @@ def print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, vuxml_d
                                     if key == "cvename":
                                         if value in cve_list:
                                             if not something_found:
-                                                print("FreeBSD VuXML vulnerability for THIS port:")
+                                                print("=> FreeBSD VuXML vulnerability for THIS port:")
                                                 something_found = True
                                             vuxml.print_vuln(vid, vuxml_data[vid])
                                             cve_list.remove(value)
@@ -417,7 +481,7 @@ def print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, vuxml_d
                                         if key == "cvename":
                                             if value in cve_list:
                                                 if not something_found:
-                                                    print("FreeBSD VuXML vulnerability for THIS port:")
+                                                    print("=> FreeBSD VuXML vulnerability for THIS port:")
                                                     something_found = True
                                                 vuxml.print_vuln(vid, vuxml_data[vid])
                                                 cve_list.remove(value)
@@ -430,7 +494,7 @@ def print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, vuxml_d
                     for vid in vulns:
                         if vid not in vid_list:
                             if not something_found:
-                                print("FreeBSD VuXML vulnerability for ANOTHER port:")
+                                print("=> FreeBSD VuXML vulnerability for ANOTHER port:")
                                 something_found = True
                             vuxml.print_vuln(vid, vuxml_data[vid])
                             vid_list.append(vid)
@@ -439,7 +503,7 @@ def print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, vuxml_d
                 if len(cve_list) > 0 or no_cve:
                     root_port_name = re.sub(r"^py[0-9]+-", "", port_name)
                     details = vulnerability["details"].replace(">", "&gt;").replace("<", "&lt;")
-                    print("UNREPORTED FreeBSD VuXML vulnerability skeleton:")
+                    print("=> UNREPORTED FreeBSD VuXML vulnerability skeleton:")
                     print(f'  <vuln vid="{str(uuid.uuid4())}">')
                     if vulnerability['summary'] is None:
                         print(f'    <topic>py-{package_name} -- INSERT_VULNERABILITY_SUMMARY_HERE</topic>')
@@ -496,15 +560,16 @@ def main():
     vulnerable_ports = pipinfo.get_packages_vulnerabilities(python_ports)
     #vulnerable_ports = pipinfo.get_packages_vulnerabilities(python_ports, progress_meter=False)
 
-    # Getting the ignore list:
-    ignored_vulns = get_ignored_vulnerabilities()
+    # Getting the ignore and reported lists:
+    ignored_vulns = get_ids_from_file("ignore.txt")
+    reported_vulns = get_ids_from_file("reported.txt")
 
     # Getting the FreeBSD VuXML
     vuxml_data = vuxml.load_vuxml()
 
     # Printing identified vulnerabilities
     print_table_of_contents(python_ports, vulnerable_ports, ignored_vulns)
-    print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, vuxml_data)
+    print_vulnerabilities(python_ports, vulnerable_ports, ignored_vulns, reported_vulns, vuxml_data)
 
     sys.exit(0)
 
